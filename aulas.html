@@ -9,10 +9,22 @@
   <script src="./semantic/semantic.js"></script>
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <script>
+    function show(shown, hidden) {
+      document.getElementById(shown).style.display='block';
+      document.getElementById(hidden).style.display='none';
+      return false;
+    }
+  </script>
+
 </head>
 
 
 <body>
+
+  <div id="aula_cam">
   <header>
     <div class="ui secondary menu">
       <a class="item" href="index.html">Início</a>
@@ -37,7 +49,7 @@
 
     <div class="fluid ui buttons">
       <a class="ui red button">Operando a câmera</a>
-      <a class="ui button" href="aulas-pc.html">Editando as fotos</a>
+      <a class="ui button" href="#" onclick="return show('aula_cam','aula_pc');">Editando as fotos</a>
     </div>
 
     <div class="ui divided link items">
@@ -79,9 +91,65 @@
 
     </div>
 
+</section>
+</div>
+<div id="aula_pc">
+  <header>
+    <div class="ui secondary menu">
+      <a class="item" href="index.html">Início</a>
+      <div class="right menu">
+        <div class="item">
+          <div class="ui breadcrumb">
+    <a class="section" href="index.html">Início</a>
+    <div class="divider"> / </div>
+  <div class="active section">Aulas</div>
+  </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
+<div class="ui hidden divider"></div>
+
+<section class="ui container">
+
+
+    <h2 class="ui center aligned header">Aulas</h2>
+
+    <div class="fluid ui buttons">
+      <a class="ui button" href="#" onclick="return show('aula_cam','aula_pc');">Operando a câmera</a>
+      <a class="ui red button">Editando as fotos</a>
+    </div>
+
+    <div class="ui divided link items">
+
+      <div class="item">
+        <div class="content">
+          <div class="header">Que software usar?</div>
+          <div class="description"><p>Descubra ferramentas para editar fotos</p></div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="content">
+          <div class="header">GIMP</div>
+          <div class="description"><p>Um editor gratuito e poderoso</p></div>
+        </div>
+      </div>
+
+
+
+      <div class="item">
+        <div class="content">
+          <div class="header">Enquadramento</div>
+          <div class="description"><p>Não é só apontar e clicar</p></div>
+        </div>
+      </div>
+
+    </div>
 
 </section>
+</div>
 </body>
 
 </html>
