@@ -9,22 +9,19 @@
   <script src="./semantic/semantic.js"></script>
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
   <script>
-    function show(shown, hidden) {
-      document.getElementById(shown).style.display='block';
-      document.getElementById(hidden).style.display='none';
-      return false;
-    }
+  function MostraSoUm(){
+    $("#aula_pc").hide();
+    };
   </script>
+
 
 </head>
 
 
-<body>
+<body onload="MostraSoUm();">
 
-  <div id="aula_cam">
+
   <header>
     <div class="ui secondary menu">
       <a class="item" href="index.html">Início</a>
@@ -40,8 +37,8 @@
     </div>
   </header>
 
+<div id="aula_cam">
 <div class="ui hidden divider"></div>
-
 <section class="ui container">
 
 
@@ -49,7 +46,7 @@
 
     <div class="fluid ui buttons">
       <a class="ui red button">Operando a câmera</a>
-      <a class="ui button" href="#" onclick="return show('aula_cam','aula_pc');">Editando as fotos</a>
+      <a class="ui button" href="#" id="btn_pc">Editando as fotos</a>
     </div>
 
     <div class="ui divided link items">
@@ -94,21 +91,6 @@
 </section>
 </div>
 <div id="aula_pc">
-  <header>
-    <div class="ui secondary menu">
-      <a class="item" href="index.html">Início</a>
-      <div class="right menu">
-        <div class="item">
-          <div class="ui breadcrumb">
-    <a class="section" href="index.html">Início</a>
-    <div class="divider"> / </div>
-  <div class="active section">Aulas</div>
-  </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
 <div class="ui hidden divider"></div>
 
 <section class="ui container">
@@ -117,7 +99,7 @@
     <h2 class="ui center aligned header">Aulas</h2>
 
     <div class="fluid ui buttons">
-      <a class="ui button" href="#" onclick="return show('aula_cam','aula_pc');">Operando a câmera</a>
+      <a class="ui button" href="#" id="btn_cam">Operando a câmera</a>
       <a class="ui red button">Editando as fotos</a>
     </div>
 
@@ -150,6 +132,17 @@
 
 </section>
 </div>
+
+<script>
+  $("#btn_cam").click(function(){
+      $("#aula_pc").hide();
+      $("#aula_cam").show();
+  });
+  $("#btn_pc").click(function(){
+      $("#aula_cam").hide();
+      $("#aula_pc").show();
+  });
+</script>
 </body>
 
 </html>
