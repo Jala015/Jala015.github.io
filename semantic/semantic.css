@@ -620,13 +620,13 @@ p:last-child {
 --------------------*/
 
 a {
-  color:currentColor;
-  font-weight: bold;
+  color:red;
   text-decoration: none;
 }
 
 a:hover {
   color: red;
+  font-weight: bold;
   text-decoration: none;
 }
 
