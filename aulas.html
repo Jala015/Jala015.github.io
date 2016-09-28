@@ -127,6 +127,13 @@
 </section>
 </div>
 
+<div class="ui hidden divider"></div>
+
+<div class="ui container">
+<button class="ui fluid basic button" id="back-to-top-btn"><i class="fa fa-arrow-up"></i></button>
+<div class="ui hidden divider"></div>
+<div>
+
 <script>
   $("#btn_cam").click(function(){
       $("#aula_pc").hide();
@@ -136,14 +143,11 @@
       $("#aula_cam").hide();
       $("#aula_pc").show();
   });
+
+  $("#back-to-top-btn").click(function(){
+      $('html, body').scrollTop(0);
+  });
 </script>
-
-<div class="ui hidden divider"></div>
-
-<div class="ui container">
-
-<button class="ui fluid basic button" tabindex="0"><i class="fa fa-arrow-up"></i></button>
-<div>
 </body>
 
 </html>
