@@ -17261,7 +17261,7 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui.breadcrumb a:hover {
-  color: #1e70bf;
+  color: red;
 }
 
 /* Icon Divider */
@@ -17281,6 +17281,11 @@ ol.ui.horizontal.list li:before,
   display: inline-block;
   margin: 0em;
   padding: 0em;
+  color:red;
+}
+
+.ui.breadcrumb .active.section {
+  color:black;
 }
 
 /* Loose Coupling */
