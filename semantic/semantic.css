@@ -12775,10 +12775,10 @@ a.ui.red.label:hover {
   border-color: #b21e1e !important;
 }
 
-/* Basic */
+/* Basic |fundo antes era #FFFF*/
 
 .ui.basic.red.label {
-  background-color: #FFFFFF !important;
+  background-color: #eaeff2 !important;
   color: #DB2828 !important;
   border-color: #DB2828 !important;
 }
