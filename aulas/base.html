@@ -1,0 +1,77 @@
+<!-- Página inicial de aulas -->
+<html>
+
+<head>
+  <title>#######</title>
+  <link rel="shortcut icon" href="../img/camera.ico"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="../semantic/semantic.css">
+  <script src="../semantic/jquery.min.js"></script>
+  <script src="../semantic/semantic.js "></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+
+</head>
+
+
+<body onload="MostraSoUm();" style="background:#eaeff2">
+
+
+  <header>
+    <div class="ui secondary menu">
+      <div class="item">
+        <div class="ui breadcrumb">
+          <a class="section" href="../index.html">Início</a>
+          <div class="divider"> > </div>
+          <a class="section" href="../aulas.html">Aulas</a>
+          <div class="divider"> > </div>
+          <div class="active section">######</div>
+        </div>
+      </div>
+      <div class="right menu">
+        <div class="item"><a href="https://facebook.com/sharer.php?u=https://jala015.github.io" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.5em; color:#afb2b5"></i></a></div>
+        <div class="item"><a href="https://twitter.com/intent/tweet?url=https://jala015.github.io&text=Dicas%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter-square" style="font-size: 1.5em; color:#afb2b5"></i></a></div>
+        <div class="item"><a href="https://plusone.google.com/_/+1/confirm?hl=en&url=https://jala015.github.io<?php if(is_home()){echo home_url();}else{the_permalink();} ?>" target="_blank" title="Plus one this page on Google"><i class="fa fa-google-plus-square" style="font-size: 1.5em; color:#afb2b5"></i></a></div>
+      </div>
+    </div>
+    <h1 class="ui center aligned header">#####</h1>
+  </header>
+
+  <div class="ui hidden divider"></div>
+
+  <section>
+  </section>
+
+  <footer class="ui center aligned container">
+    <div class="ui hidden divider"></div>
+
+    <div class="ui hidden divider"></div>
+    <div class="ui buttons">
+      <button class="ui disabled basic button"><i class="fa fa-caret-left" style="font-size:2em"></i></button>
+      <button class="ui basic button" onclick="location.href='../index.html'"><div class="sub header" style="color:black">SIM[ O ]ES<br>fotografia</div></button>
+      <button class="ui basic button" onclick="location.href='#'"><i class="fa fa-caret-right" style="font-size:2em"></i></button>
+    </div>
+  </footer>
+
+
+  <script>
+    $("#btn_cam").click(function(){
+        $("#aula_pc").hide();
+        $("#aula_cam").show();
+    });
+    $("#btn_pc").click(function(){
+        $("#aula_cam").hide();
+        $("#aula_pc").show();
+    });
+
+    $("#back-to-top-btn").click(function(){
+        $('html, body').scrollTop(0);
+    });
+
+  </script>
+</body>
+
+</html>
