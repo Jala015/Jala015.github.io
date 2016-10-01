@@ -19,136 +19,128 @@
 
 <body onload="MostraSoUm();" style="background:#eaeff2">
 
-
   <header>
-    <div class="ui secondary menu">
-      <div class="item">
-        <div class="ui breadcrumb">
-          <a class="section" href="index.html">[ O ]</a>
-          <div class="divider"> > </div>
-          <div class="active section">Aulas</div>
+
+    <div class="ui grid container" style="width:90%">
+      <div class="left aligned left floated six wide column">
+        <div class="column" style="padding: 15px 0; text-align:left">
+          <div class="ui breadcrumb">
+            <a class="section" href="index.html">SIM[ O ]ES</a>
+            <div class="divider"> > </div>
+            <div class="active section">Aulas</div>
+          </div>
         </div>
       </div>
 
-      <div class="right menu">
-        <div class="item"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.5em; color:#afb2b5"></i></a></div>
-        <div class="item"><a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf&text=Dicas%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter-square" style="font-size: 1.5em; color:#afb2b5"></i></a></div>
-        <div class="item"><a href="https://plusone.google.com/_/+1/confirm?hl=en&url=https://cursofotografia.cf<?php if(is_home()){echo home_url();}else{the_permalink();} ?>" target="_blank" title="Plus one this page on Google"><i class="fa fa-google-plus-square" style="font-size: 1.5em; color:#afb2b5"></i></a></div>
+
+      <div class="six wide column" style="padding: 27px 0; text-align:right;">
+        <a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.5em; color:black; padding: 0 10px"></i></a>
+        <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf&text=Dicas%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter-square" style="font-size: 1.5em; color:black; padding: 0 10px"></i></a>
+        <a href="https://plusone.google.com/_/+1/confirm?hl=en&url=https://cursofotografia.cf<?php if(is_home()){echo home_url();}else{the_permalink();} ?>" target="_blank" title="Plus one this page on Google"><i class="fa fa-google-plus-square" style="font-size: 1.5em; color:black; padding: 0 10px"></i></a>
       </div>
     </div>
+
   </header>
 
-<div id="aula_cam">
-<div class="ui hidden divider"></div>
-<section class="ui container">
+  <h2 class="ui center aligned header">Aulas</h2>
+  <div class="ui hidden divider"></div>
 
+  <div id="aula_cam">
+    <section class="ui container">
+      <div class="fluid ui buttons">
+        <a class="ui red button" style="color:#eaeff2">Operando a câmera</a>
+        <a class="ui basic red button" href="#" id="btn_pc">Editando as fotos</a>
+      </div>
 
-    <h2 class="ui center aligned header">Aulas</h2>
+      <div class="ui divided link items">
+        <a class="item" href="./aulas/o_basico.html">
+          <div class="content">
+            <div class="header">O Básico</div>
+            <div class="description"><p>Conceitos básicos para você não se perder daqui a pouco</p></div>
+          </div>
+        </a>
 
-    <div class="fluid ui buttons">
-      <a class="ui red button" style="color:#eaeff2">Operando a câmera</a>
-      <a class="ui basic red button" href="#" id="btn_pc">Editando as fotos</a>
-    </div>
+        <a class="item">
+          <div class="content">
+            <div class="header">Abertura</div>
+            <div class="description"><p>Aprenda o que é e para que serve o diafragma de sua câmera</p></div>
+            <div class="extra">
+              <div class="ui mini basic label">DSLR</div>
+              <div class="ui mini basic label">COMPACTAS</div>
+            </div>
+          </div>
+        </a>
 
-    <div class="ui divided link items">
+        <a class="item">
+          <div class="content">
+            <div class="header">ISO</div>
+            <div class="description"><p>Altere a sensibilidade do sensor</p></div>
+            <div class="extra">
+              <div class="ui mini basic label">DSLR</div>
+              <div class="ui mini basic label">COMPACTAS</div>
+              <div class="ui mini basic label">CELULAR</div>
+            </div>
+          </div>
+        </a>
 
-      <a class="item" href="./aulas/o_basico.html">
-        <div class="content">
-          <div class="header">O Básico</div>
-          <div class="description"><p>Conceitos básicos para você não se perder daqui a pouco</p></div>
-        </div>
-      </a>
-
-      <a class="item">
-        <div class="content">
-          <div class="header">Abertura</div>
-          <div class="description"><p>Aprenda o que é e para que serve o diafragma de sua câmera</p></div>
-          <div class="extra">
-            <div class="ui mini basic label">DSLR</div>
-            <div class="ui mini basic label">COMPACTAS</div>
+        <div class="item">
+          <div class="content">
+            <div class="header">Velocidade do Obturador</div>
+            <div class="description"><p>Como e porque mudar o tempo em que o sensor fica exposto à luz</p></div>
+            <div class="extra">
+              <div class="ui mini basic label">DSLR</div>
+              <div class="ui mini basic label">COMPACTAS</div>
+              <div class="ui mini basic label">CELULAR</div>
+            </div>
           </div>
         </div>
-      </a>
 
-      <a class="item">
-        <div class="content">
-          <div class="header">ISO</div>
-          <div class="description"><p>Altere a sensibilidade do sensor</p></div>
-          <div class="extra">
-            <div class="ui mini basic label">DSLR</div>
-            <div class="ui mini basic label">COMPACTAS</div>
-            <div class="ui mini basic label">CELULAR</div>
-          </div>
-        </div>
-      </a>
-
-      <div class="item">
-        <div class="content">
-          <div class="header">Velocidade do Obturador</div>
-          <div class="description"><p>Como e porque mudar o tempo em que o sensor fica exposto à luz</p></div>
-          <div class="extra">
-            <div class="ui mini basic label">DSLR</div>
-            <div class="ui mini basic label">COMPACTAS</div>
-            <div class="ui mini basic label">CELULAR</div>
+        <div class="item">
+          <div class="content">
+            <div class="header">Enquadramento</div>
+            <div class="description"><p>Não é só apontar e clicar</p></div>
+            <div class="extra">
+              <div class="ui mini basic label">DSLR</div>
+              <div class="ui mini basic label">COMPACTAS</div>
+              <div class="ui mini basic label">CELULAR</div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+  </div>
 
-      <div class="item">
-        <div class="content">
-          <div class="header">Enquadramento</div>
-          <div class="description"><p>Não é só apontar e clicar</p></div>
-          <div class="extra">
-            <div class="ui mini basic label">DSLR</div>
-            <div class="ui mini basic label">COMPACTAS</div>
-            <div class="ui mini basic label">CELULAR</div>
+  <div id="aula_pc" hidden>
+    <section class="ui container">
+      <div class="fluid ui buttons">
+        <a class="ui basic red button" href="#" id="btn_cam">Operando a câmera</a>
+        <a class="ui red button" style="color:#eaeff2">Editando as fotos</a>
+      </div>
+
+      <div class="ui divided link items">
+
+        <div class="item">
+          <div class="content">
+            <div class="header">Que software usar?</div>
+            <div class="description"><p>Descubra ferramentas para editar fotos</p></div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="content">
+            <div class="header">GIMP</div>
+            <div class="description"><p>Um editor gratuito e poderoso</p></div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="content">
+            <div class="header">Affinity Photo</div>
+            <div class="description"><p>Uma alternativa para o photoshop</p></div>
           </div>
         </div>
       </div>
-
-    </div>
-
-</section>
-</div>
-
-<div id="aula_pc" hidden>
-<div class="ui hidden divider"></div>
-
-<section class="ui container">
-
-
-    <h2 class="ui center aligned header">Aulas</h2>
-
-    <div class="fluid ui buttons">
-      <a class="ui basic red button" href="#" id="btn_cam">Operando a câmera</a>
-      <a class="ui red button" style="color:#eaeff2">Editando as fotos</a>
-    </div>
-
-    <div class="ui divided link items">
-
-      <div class="item">
-        <div class="content">
-          <div class="header">Que software usar?</div>
-          <div class="description"><p>Descubra ferramentas para editar fotos</p></div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="content">
-          <div class="header">GIMP</div>
-          <div class="description"><p>Um editor gratuito e poderoso</p></div>
-        </div>
-      </div>
-
-
-      <div class="item">
-        <div class="content">
-          <div class="header">Affinity Photo</div>
-          <div class="description"><p>Uma alternativa para o photoshop</p></div>
-        </div>
-      </div>
-    </div>
-</section>
+    </section>
 </div>
 
 <div class="ui hidden divider"></div>
@@ -158,21 +150,21 @@
 <div class="ui hidden divider"></div>
 <div>
 
-<script>
-  $("#btn_cam").click(function(){
-      $("#aula_pc").hide();
-      $("#aula_cam").show();
-  });
-  $("#btn_pc").click(function(){
-      $("#aula_cam").hide();
-      $("#aula_pc").show();
-  });
+  <script>
+    $("#btn_cam").click(function(){
+        $("#aula_pc").hide();
+        $("#aula_cam").show();
+    });
+    $("#btn_pc").click(function(){
+        $("#aula_cam").hide();
+        $("#aula_pc").show();
+    });
 
-  $("#back-to-top-btn").click(function(){
-      $('html, body').scrollTop(0);
-  });
+    $("#back-to-top-btn").click(function(){
+        $('html, body').scrollTop(0);
+    });
 
-</script>
+  </script>
 </body>
 
 </html>
