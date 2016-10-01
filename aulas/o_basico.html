@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="../semantic/semantic.css">
   <script src="../semantic/jquery.min.js"></script>
   <script src="../semantic/semantic.js "></script>
+  <script src="../jquery-imageloader/jquery.imageloader.js "></script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
@@ -18,7 +19,6 @@
 
 
 <body onload="MostraSoUm();">
-
 
   <header>
     <div class="ui secondary menu">
@@ -44,14 +44,28 @@
 
   <section class="ui container">
     <h2 class="ui center aligned header">O Básico</h2>
+
+    <div class="ui center aligned container" id="carr-img-container">
+      <button id="btn-carr-img" class="ui mini basic button"><i class="fa fa-image"></i> Carregar imagens</button>
+      <div class="ui hidden divider"></div>
+    </div>
+
     <p>Com certeza você já olhou para um cenário e imaginou a foto perfeita, mas ao tentar clicá-la não conseguiu o resultado que queria. Existem uma série de processos que ocorrem entre a sua decisão de tirar a foto e a criação do arquivo. Conhecendo esses processos, você vai ter mais facilidade para conseguir extrair do ambiente a fotografia da maneira como estava imaginando, ou seja, conseguir registrar melhor seu ponto de vista.</p>
     <p>Não pretendo trazer muitos conceitos de física para cá. A ideia é te ensinar a tirar fotos melhores, não te dar um susto! Porém, antes de começar qualquer conversa, precisamos resolver aqui o conceito de luz que vamos usar. Se você já está pensando pular essa parte, peço que dê uma chance. Tentei deixar o mais simples possível.</p>
     <p></p>
     <h3>A luz</h3>
     <p>De modo simplificado, podemos estudar a luz como um raio que sai de um emissor (uma lâmpada, por exemplo) e segue pelo ambiente em linha reta. Quanto maior o emissor, mais raios ele emite. Os raios se propagam em todas as direções até encontrar um obstáculo.</p>
-    <p> <img src='../img/o_basico/lampada.png' alt='lampada' style="max-width: 100%;display: block;margin:0 auto;"/></p>
+
+    <p>
+      <img class="lazy-img" data-src="../img/o_basico/lampada.png" style="max-width: 100%;display: block;margin:0 auto;"/>
+    </p>
+
     <p>Um raio de luz branca carrega com ele todas as cores. Quando um raio desses encontra um obstáculo, algumas dessas cores são absorvidas e o que restou é refletido como um raio de outra cor, e é por isso que enxergamos cores. Exemplo: um morango absorve todas as cores menos o vermelho, então reflete um raio de luz vermelho. Se esse raio chega no nosso olho, enxergamos &quot;vermelho&quot; na região do morango, e é isso que dá a impressão de cor.</p>
-    <p> <img src='../img/o_basico/morango.png' alt='morango'  style="max-width: 100%;display: block;margin:0 auto;"/></p>
+
+    <p>
+      <img class="lazy-img" data-src="../img/o_basico/morango.png" style="max-width: 100%;display: block;margin:0 auto;"/>
+    </p>
+
     <p>Na verdade, tudo o que você enxerga é uma interpretação dos raios de luz que chegam no seu olho com diversas cores. No escuro, não temos uma fonte de luz, então não há raios no ambiente. Por isso não enxergamos nada.</p>
     <p></p>
     <h3>O caminho da luz na fotografia</h3>
@@ -67,6 +81,18 @@
     </ol>
     <p>Nas aulas seguintes vamos ver em detalhe cada um desses processos e aprender a controlar esses raios de luz para gerar a fotografia desejada.</p>
   </section>
+
+
+  <script>
+  //detectar mobile
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  }
+  else{
+    $('.lazy-img').imageloader();
+    $('#carr-img-container').hide()
+  };
+  </script>
+
 
   <footer class="ui center aligned container">
     <div class="ui hidden divider"></div>
@@ -94,7 +120,14 @@
         $('html, body').scrollTop(0);
     });
 
+    $('#btn-carr-img').click(function() {
+      $('.lazy-img').imageloader();
+      $('#carr-img-container').hide()
+    });
+
+
   </script>
+
 </body>
 
 </html>
