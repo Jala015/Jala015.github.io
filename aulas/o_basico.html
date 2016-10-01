@@ -42,10 +42,16 @@
     </div>
   </header>
 
+
   <div class="ui hidden divider"></div>
 
   <section class="ui container">
     <h2 class="ui center aligned header">O Básico</h2>
+
+    <div class="ui center aligned container">
+      <div class="ui hidden divider"></div>
+    <a class="ui tiny basic button" style="font-size:1.2em;color: black" id="qr_btn"><i class="fa fa-qrcode"></i> QR</a>
+    <div class="ui hidden divider"></div></div>
 
     <div class="ui center aligned container" id="carr-img-container">
       <button id="btn-carr-img" class="ui mini basic button"><i class="fa fa-image"></i> Carregar imagens</button>
@@ -90,6 +96,7 @@
   <script>
   //detectar mobile
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    $('#qr_btn').hide()
   }
   else{
     $('.lazy-img').imageloader();
@@ -109,6 +116,9 @@
     </div>
   </footer>
 
+  <div class="ui basic modal">
+
+  </div>
 
   <script>
     $("#btn_cam").click(function(){
@@ -122,6 +132,12 @@
 
     $("#back-to-top-btn").click(function(){
         $('html, body').scrollTop(0);
+    });
+
+    $("#qr_btn").click(function(){
+      $('.ui.basic.modal')
+      .modal('show')
+      ;
     });
 
     $('#btn-carr-img').click(function() {
