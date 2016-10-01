@@ -25,7 +25,7 @@
       <div class="left aligned left floated ten wide column">
         <div class="column" style="padding: 15px 0; text-align:left">
           <div class="ui breadcrumb">
-            <a class="section" href="index.html">SIM[ O ]ES</a>
+            <a class="section" href="index.html">[ O ]</a>
             <div class="divider"> > </div>
             <div class="active section">Aulas</div>
           </div>
@@ -149,6 +149,7 @@
 <button class="ui fluid basic button" id="back-to-top-btn"><i class="fa fa-arrow-up"></i></button>
 <div class="ui hidden divider"></div>
 <div>
+  <div class="ui basic modal">a</div>
 
   <script>
     $("#btn_cam").click(function(){
@@ -161,8 +162,11 @@
     });
 
     $("#back-to-top-btn").click(function(){
-        $('html, body').scrollTop(0);
-        $("#back-to-top-btn").blur()
+        //$('html, body').scrollTop(0);
+        //$("#back-to-top-btn").blur()
+        $('.ui.basic.modal')
+  .modal('show')
+;
     });
 
   </script>
