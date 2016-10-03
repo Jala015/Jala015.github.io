@@ -92,19 +92,10 @@
 
     <div class="ui hidden divider"></div>
     <div class="ui buttons">
-      <button class="ui basic button" id="btn_voltar" onclick="location.href='./o_basico.html'"><i class="fa fa-caret-left" style="font-size:2em;"></i></button>
+      <button class="ui basic button" id="btn_voltar" onclick="location.href='./o_basico.html'" data-content="O Básico"><i class="fa fa-caret-left" style="font-size:2em;"></i></button><script>$('#btn_voltar').popup()</script>
       <button class="ui basic button" onclick="location.href='../aulas.html'"><div class="sub header">AULAS</div></button>
-      <button class="ui basic button" onclick="location.href='###'"><i class="fa fa-caret-right" style="font-size:2em;"></i></button>
+      <button class="ui disabled basic button" onclick="location.href='###'"><i class="fa fa-caret-right" style="font-size:2em;"></i></button>
     </div>
-
-    <script>
-      $("#btn_voltar").hover(function(){
-        $('.ui.popup')
-          .popup({
-            title   : 'O Básico',
-          });
-      })
-    </script>
 
   </footer>
 
