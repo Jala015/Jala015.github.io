@@ -1,0 +1,134 @@
+<!-- Página inicial de aulas -->
+<html lang="pt-BR">
+
+<head>
+  <title>Abertura</title>
+  <link rel="shortcut icon" href="../img/camera.ico"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="../semantic/semantic.css">
+  <script src="../semantic/jquery.min.js"></script>
+  <script src="../semantic/semantic.min.js "></script>
+  <script src="../jquery-imageloader/jquery.imageloader.js "></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+
+</head>
+
+
+<body onload="MostraSoUm();" style="background:#eaeff2">
+
+  <header>
+    <div class="ui grid container" style="width:90%">
+      <div class="left aligned left floated ten wide column">
+        <div class="column" style="padding: 15px 0; text-align:left">
+          <div class="ui breadcrumb">
+            <a class="section" href="../index.html">[ O ]</a>
+            <div class="divider"> > </div>
+            <a class="section" href="../aulas.html">Aulas</a>
+            <div class="divider"> > </div>
+            <div class="active section">Abertura</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="six wide column" style="padding: 27px 0; text-align:right;">
+        <a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/abertura" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.5em; color:black; padding: 0 10px"></i></a>
+        <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf/aulas/abertura&text=Dicas%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter-square" style="font-size: 1.5em; color:black; padding: 0 10px"></i></a>
+        <a href="https://plusone.google.com/_/+1/confirm?hl=en&url=https://cursofotografia.cf/aulas/abertura<?php if(is_home()){echo home_url();}else{the_permalink();} ?>" target="_blank" title="Plus one this page on Google"><i class="fa fa-google-plus-square" style="font-size: 1.5em; color:black; padding: 0 10px"></i></a>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="ui hidden divider"></div>
+
+  <section class="ui container">
+    <h2 class="ui center aligned header">Abertura</h2>
+
+    <div class="ui center aligned container">
+      <div class="ui hidden divider"></div>
+    <a class="ui tiny basic button" style="font-size:1em;color: black;margin: auto;" id="qr_btn"><i class="fa fa-qrcode"></i> Continue no celular</a>
+    <div class="ui hidden divider"></div></div>
+
+    <div class="ui center aligned container" id="carr-img-container">
+      <button id="btn-carr-img" class="ui mini basic button"><i class="fa fa-image"></i> Carregar imagens</button>
+      <div class="ui hidden divider"></div>
+    </div>
+  <div>
+    <p>Antes de entrarmos em termos técnicos de fotografia, vou usar o olho humano para fazer uma comparação que vai facilitar a compreensão dos conceitos.</p>
+    <p></p>
+    <h3>O olho</h3>
+    <p>Vou usar o olho como modelo porque ele tem estruturas com funções bem parecidas com estruturas da câmera. Aqui vou focar em uma estrutura: a pupila.</p>
+    <p>A pupila é aquela bolinha preta que fica bem no meio do olho: <img class="lazy-img" src='../img/abertura/pupila.png' alt='pupila' style="max-width: 100%;display: block;margin:0 auto;"/></p>
+    <p>Em um ambiente bem iluminado, <a href='./o_basico'>raios de luz</a> vindo de todas as direções chegam nos nossos olhos. Assim, para um mesmo ponto, um olho receberia raios vindos de direções diferentes, ou seja, do reflexo de mais de um objeto. Isso tornaria tudo muito confuso.</p>
+    <p>A pupila funciona como um filtro para esses raios. Na verdade a pupila é um buraquinho, e é por ele que os raios de luz entram no olho. Como ela é muito pequena, só alguns raios conseguem passar, o que torna a imagem mais nítida.</p>
+    <p>Podemos concluir que a pupila controla a quantidade de luz que entra no olho. Porém, a quantidade de luz varia de ambiente para ambiente (e ao longo das horas do dia). A pupila contorna esse problema mudando de tamanho. Quando está escuro, ela dilata (aumenta), permitindo que mais raios entrem no olho. Quando está claro ela diminui, gerando o efeito contrário.</p>
+    <p></p>
+    <h3>O diafragma</h3>
+    <p>Câmeras fotográficas também tem uma &quot;pupila&quot;. Ela recebe o nome de <strong>diafragma</strong> e fica atrás da objetiva (lente).</p>
+    <p>Assim como a pupila, o diafragma pode aumentar ou diminuir, dependendo da luminosidade do local. A medida do quanto o diafragma está aberto ou fechado recebe o nome de <strong>abertura</strong>. Com uma grande abertura, a câmera recebe mais luz, e a foto fica mais clara. Com uma abertura menor, a câmera recebe menos luz, e a foto fica mais escura.</p>
+    <p>Devo ressaltar que mudanças na abertura não mudam só a claridade da foto. Da mesma forma que a pupila &quot;filtra&quot; os raios de luz que chegam no olho gerando nitidez, a pupila filtra os raios que estão no sensor. Quanto menor o buraquinho (ou a abertura) do diafragma, mais nítida -ou seja - mais focada fica a imagem.</p>
+  </div>
+  </section>
+
+
+  <script>
+  //detectar mobile
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    $('#qr_btn').hide()
+  }
+  else{
+    $('.lazy-img').imageloader();
+    $('#carr-img-container').hide()
+  };
+  </script>
+
+
+  <footer class="ui center aligned container">
+    <div class="ui hidden divider"></div>
+
+    <div class="ui hidden divider"></div>
+    <div class="ui buttons">
+      <button class="ui disabled basic button"><i class="fa fa-caret-left" style="font-size:2em;"></i></button>
+      <button class="ui basic button" onclick="location.href='../index.html'"><div class="sub header">SIM[ O ]ES<br>FOTOGRAFIA</div></button>
+      <button class="ui basic button" onclick="location.href='###'"><i class="fa fa-caret-right" style="font-size:2em;"></i></button>
+    </div>
+  </footer>
+
+  <div class="ui basic modal">
+    <img class="ui centar aligned container" style="width:30%" src="../img/o_basico/qr_basico.gif"></i>
+  </div>
+
+  <script>
+    $("#btn_cam").click(function(){
+        $("#aula_pc").hide();
+        $("#aula_cam").show();
+    });
+    $("#btn_pc").click(function(){
+        $("#aula_cam").hide();
+        $("#aula_pc").show();
+    });
+
+    $("#back-to-top-btn").click(function(){
+        $('html, body').scrollTop(0);
+    });
+
+    $("#qr_btn").click(function(){
+      $('.ui.basic.modal')
+      .modal('show')
+      ;
+    });
+
+    $('#btn-carr-img').click(function() {
+      $('.lazy-img').imageloader();
+      $('#carr-img-container').hide()
+    });
+
+  </script>
+
+</body>
+
+</html>
