@@ -17,7 +17,7 @@
 </head>
 
 
-<body onload="MostraSoUm();" style="background:#f2eeea" id="altura">
+<body onload="MostraSoUm();" style="background:#f2eeea">
 
   <header>
     <div class="ui grid container" style="width:90%">
@@ -153,25 +153,11 @@
   <button class="ui fluid basic button" id="back-to-top-btn"><i class="fa fa-arrow-up"></i></button>
   <div class="ui hidden divider"></div>
   <div>
-
+  
   <script>
-  $(window).scroll(function(){
-  if ($(document.body).scrollTop() > 0)
-  {
-    $(".ui.fluid.button").show();
-    alert("oi")
-  }
-});
-else {
-  $(".ui.fluid.button").show();
-  alert("pé")
-}
-  </script>
-
-  <script>
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-          $('.extra').hide();
-    };
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        $('.extra').hide();
+  };
   </script>
 
   <script>
