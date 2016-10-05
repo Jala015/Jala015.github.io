@@ -1,0 +1,75 @@
+<!-- Página inicial de aulas -->
+<html lang="pt-BR">
+
+<head>
+  <title>SIM[ O ]ES</title>
+  <link rel="shortcut icon" href="../img/camera.ico"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="./semantic/semantic.css">
+  <script src="./semantic/jquery.min.js"></script>
+  <script src="./semantic/semantic.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+</head>
+
+
+<body onload="MostraSoUm();" style="background:#f2eeea">
+
+  <header>
+    <div class="ui grid container" style="width:90%">
+      <div class="left aligned left floated ten wide column">
+        <div class="column" style="padding: 15px 0; text-align:left">
+          <div class="ui breadcrumb">
+            <a class="section" href="index.html">[ O ]</a>
+            <div class="divider"> > </div>
+            <div class="active section">Tira-dúvidas</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="six wide column" style="padding: 27px 0; text-align:right;">
+        <a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/tira-duvidas.html" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.5em; color:black; padding: 0 10px" data-content="compartilhe" data-position="bottom left" data-variation="inverted" id="btn_face"></i></a><script>$('#btn_face').popup()</script>
+        <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf/tira-duvidas.html&text=Dicas%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter-square" style="font-size: 1.5em; color:black; padding: 0 10px" data-content="tweet" data-position="bottom center" data-variation="inverted" id="btn_tweeter"></i></a><script>$('#btn_tweeter').popup()</script>
+        <a href="https://plusone.google.com/_/+1/confirm?hl=en&url=https://cursofotografia.cf/tira-duvidas.html<?php if(is_home()){echo home_url();}else{the_permalink();} ?>" target="_blank" title="Plus one this page on Google"><i class="fa fa-google-plus-square" style="font-size: 1.5em; color:black; padding: 0 10px" data-content="compartilhe" data-position="bottom right" data-variation="inverted" id="btn_gplus"></i></a><script>$('#btn_gplus').popup()</script>
+      </div>
+    </div>
+  </header>
+
+  <h2 class="ui center aligned header">Tira-dúvidas</h2>
+  <p style="text-align:center;font-size:0.9em"><a href='aulas.html'>Veja aulas completas</a></p>
+  <div class="ui hidden divider"></div>
+  <p>Em breve...</p>
+
+
+
+  <div class="ui hidden divider"></div>
+
+  <div class="ui container">
+  <button class="ui fluid basic button" id="back-to-top-btn"><i class="fa fa-arrow-up"></i></button>
+  <div class="ui hidden divider"></div>
+  <div>
+
+  <script>
+    var x = $(window).height();
+    if ($('#altura').height() > x) {
+      alert('scrollable');
+      $('.ui.fluid.button').show()
+    }
+    else {
+      $('.ui.fluid.button').hide()
+  }
+  </script>
+
+  <script>
+    $("#back-to-top-btn").click(function(){
+        $('html, body').scrollTop(0);
+        $("#back-to-top-btn").blur()
+    });
+  </script>
+</body>
+
+</html>
