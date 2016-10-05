@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bitter|Scope+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Scope+One');
 
 /*
  * # Semantic UI - 2.2.2
@@ -40,7 +40,7 @@ html {
 
 p{
   font-size: 1em;
-  font-family: "Bitter","Helvetica"
+  font-family: "Open Sans","Helvetica"
 }
 
 /* iPad Input Shadows */
@@ -627,7 +627,7 @@ p:last-child {
 --------------------*/
 
 a {
-  color:brown;
+  color:red;
   text-decoration: none;
 }
 
@@ -1516,7 +1516,7 @@ input::selection {
 
 .ui.basic.buttons .button:hover,
 .ui.basic.button:hover {
-  background: #FFFFFF !important;
+  background: none !important;
   color: rgba(0, 0, 0, 0.8) !important;
   box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
@@ -12785,7 +12785,7 @@ a.ui.red.label:hover {
 /* Basic |fundo antes era #FFFF*/
 
 .ui.basic.red.label {
-  background-color: #eaeff2 !important;
+  background-color: #FFFFFF !important;
   color: #DB2828 !important;
   border-color: #DB2828 !important;
 }
@@ -13354,7 +13354,7 @@ a.ui.basic.black.label:hover {
 --------------------*/
 
 .ui.basic.label {
-  background: #eaeff2;
+  background: #f2eeea;
   border: 1px solid rgba(34, 36, 38, 0.15);
   color: rgba(0, 0, 0, 0.87);
   box-shadow: none;
@@ -13364,7 +13364,7 @@ a.ui.basic.black.label:hover {
 
 a.ui.basic.label:hover {
   text-decoration: none;
-  background: #eaeff2;
+  background: #f2eeea;
   color: #1e70bf;
   box-shadow: 1px solid rgba(34, 36, 38, 0.15);
   box-shadow: none;
@@ -17264,11 +17264,11 @@ ol.ui.horizontal.list li:before,
 /* Link */
 
 .ui.breadcrumb a {
-  color: brown;
+  color: red;
 }
 
 .ui.breadcrumb a:hover {
-  color: brown;
+  color: red;
   font-weight: bold;
 }
 
@@ -27487,7 +27487,7 @@ a.ui.card:hover,
 
 .ui.items a.item:hover .content .header,
 .ui.link.items > .item:hover .content .header {
-  color: brown;
+  color: red;
 }
 
 /*--------------
@@ -32045,7 +32045,7 @@ a.ui.nag {
 
 [data-tooltip][data-inverted]:after .header {
   background-color: none;
-  color: #FFFFFF;
+  color: #f2eeea;
 }
 
 /*--------------
@@ -32557,7 +32557,7 @@ a.ui.nag {
 
 .ui.inverted.popup {
   background: #1B1C1D;
-  color: #FFFFFF;
+  color: #F2EEEA;
   border: none;
   box-shadow: none;
 }
