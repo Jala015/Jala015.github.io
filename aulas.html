@@ -155,12 +155,13 @@
   <div>
 
   <script>
-    var x = $(window).height();
-    if ($('#altura').height() > x) {
-      alert('scrollable');
-      $('.ui.fluid.button').show()
-      alert('tela baixa')
-    }
+    $(document).ready(function(){
+      var x = $(window).height();
+      if ($('#altura').height() > x) {
+        alert('scrollable');
+        $('.ui.fluid.button').show()
+        alert('tela baixa')};
+    });
     else {
       $('.ui.fluid.button').hide()
       alert('tela alta')
