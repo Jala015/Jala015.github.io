@@ -32,63 +32,60 @@
           </div>
         </div>
       </div>
-
       <div class="six wide column" style="padding: 27px 0; text-align:right;">
-        <a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/abertura" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.5em; color:black; padding: 0 10px" data-content="compartilhe" data-position="bottom left" data-variation="inverted" id="btn_face"></i></a><script>$('#btn_face').popup()</script>
-        <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf/aulas/abertura&text=Dica%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter-square" style="font-size: 1.5em; color:black; padding: 0 10px" data-content="tweet" data-position="bottom center" data-variation="inverted" id="btn_tweeter"></i></a><script>$('#btn_tweeter').popup()</script>
-        <a href="https://plusone.google.com/_/+1/confirm?hl=en&url=https://cursofotografia.cf/aulas/abertura<?php if(is_home()){echo home_url();}else{the_permalink();} ?>" target="_blank" title="Plus one this page on Google"><i class="fa fa-google-plus-square" style="font-size: 1.5em; color:black; padding: 0 10px" data-content="compartilhe" data-position="bottom right" data-variation="inverted" id="btn_gplus"></i></a><script>$('#btn_gplus').popup()</script>
+        <a style="font-size:1.5em;color: black;margin: auto;" id="qr_btn" data-content="Continue no celular" data-variation="inverted" data-position="bottom right"><i class="fa fa-qrcode"></i></a><script>$('#qr_btn').popup()</script>
+        <div class="ui center aligned container" id="carr-img-container">
+          <button id="btn-carr-img" class="ui mini basic button"><i class="fa fa-image"></i> Carregar imagens</button>
+          <div class="ui hidden divider"></div>
+        </div>
       </div>
     </div>
   </header>
 
 
-  <div class="ui hidden divider"></div>
+
 
   <section class="ui container">
     <h2 class="ui center aligned header">Abertura</h2>
 
-    <div class="ui center aligned container">
-      <div class="ui hidden divider"></div>
-    <a class="ui tiny basic button" style="font-size:1em;color: black;margin: auto;" id="qr_btn"><i class="fa fa-qrcode"></i> Continue no celular</a>
-    <div class="ui hidden divider"></div></div>
+    <div class="ui horizontal divider"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/abertura" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a><script>$('#btn_face').popup()</script>
+    <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf/aulas/abertura&text=Dica%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="tweet" data-position="right center" data-variation="inverted" id="btn_tweeter"></i></a><script>$('#btn_tweeter').popup()</script></div>
 
-    <div class="ui center aligned container" id="carr-img-container">
-      <button id="btn-carr-img" class="ui mini basic button"><i class="fa fa-image"></i> Carregar imagens</button>
-      <div class="ui hidden divider"></div>
-    </div>
-  <div>
-    <p>Antes de entrarmos em termos técnicos de fotografia, vou usar o olho humano para fazer uma comparação que vai facilitar a compreensão dos conceitos.</p>
-    <p></p>
-    <h3>O olho</h3>
-    <p>Vou usar o olho como modelo porque ele tem estruturas com funções bem parecidas com estruturas da câmera. Aqui vou focar em uma estrutura: a pupila.</p>
-    <p>A pupila é aquela bolinha preta que fica bem no meio do olho: <img class="lazy-img" data-src='../img/abertura/pupila.png' alt='pupila' style="max-width: 100%;display: block;margin:0 auto;"/></p>
-    <p>Em um ambiente bem iluminado, <a href='./o_basico'>raios de luz</a> vindo de todas as direções chegam nos nossos olhos. Assim, para um mesmo ponto, um olho receberia raios vindos de direções diferentes, ou seja, do reflexo de mais de um objeto. Isso tornaria tudo muito confuso.</p>
-    <p>A pupila funciona como um filtro para esses raios. Na verdade a pupila é um buraquinho, e é por ele que os raios de luz entram no olho. Como ela é muito pequena, só alguns raios conseguem passar, o que torna a imagem mais nítida.</p>
-    <p>Podemos concluir que a pupila controla a quantidade de luz que entra no olho. Porém, a quantidade de luz varia de ambiente para ambiente (e ao longo das horas do dia). A pupila contorna esse problema mudando de tamanho. Quando está escuro, ela dilata (aumenta), permitindo que mais raios entrem no olho. Quando está claro ela diminui, gerando o efeito contrário.</p>
-    <p></p>
-    <h3>O diafragma</h3>
-    <p>Câmeras fotográficas também tem uma &quot;pupila&quot;. Ela recebe o nome de <strong>diafragma</strong> e fica atrás da objetiva (lente).</p>
-    <p>Assim como a pupila, o diafragma pode aumentar ou diminuir, dependendo da luminosidade do local. A medida do quanto o diafragma está aberto ou fechado recebe o nome de <strong>abertura</strong>. Com uma grande abertura, a câmera recebe mais luz, e a foto fica mais clara. Com uma abertura menor, a câmera recebe menos luz, e a foto fica mais escura.</p>
-    <p>Devo ressaltar que mudanças na abertura não mudam só a claridade da foto. Da mesma forma que a pupila &quot;filtra&quot; os raios de luz que chegam no olho gerando nitidez, a pupila filtra os raios que estão no sensor. Quanto menor o buraquinho (ou a abertura) do diafragma, mais nítida -ou seja - mais focada fica a imagem.</p>
-    <p></p>
-    <h3>Na câmera</h3>
-    <p>Agora que você já sabe o que é a abertura, vamos ver como aplicar esses conceitos na sua câmera. Uma das possibilidades para controlar a abertura é deixando a câmera no modo manual (geralmente indicado por <strong>M</strong> na câmera). O manual te dá controle total sobre as possibilidades de sua câmera, mas em contrapartida não existe mais ajuste automático para a claridade da foto. Assim, se você aumenta a abertura a foto vai ficando mais clara, porque a câmera não compensa a claridade alterando outro ajuste (como a <u><strong>velocidade do obturador</strong></u> ou o <u><strong>ISO</strong></u>).</p>
-    <p>Se você quer controlar apenas a abertura de sua foto, existe uma opção mais prática: o modo <strong>prioridade de abertura</strong> (geralmente indicado por <strong>A</strong> ou <strong>Av</strong> na câmera). Nesse modo, a câmera vai adotar a abertura que você desejar, mas vai compensar a mudança na claridade alterando outro ajuste (normalmente a <u><strong>velocidade do obturador</strong></u>).</p>
-    <p></p>
-    <h3>Medindo a abertura</h3>
-    <p>Ao comprar uma lente ou ver as especificações da sua câmera compacta você já deve ter se deparado com algo parecido com F2.8 ou f/3.5-5.6. O número que aparece perto do &quot;F&quot; (conhecido como número F) é uma medida da abertura ou do intervalo de aberturas possíveis da lente. </p>
-    <p>Você deve estar se perguntando: por quê <em>F</em>? A resposta é simples. O valor da abertura mede quantos raios passam pelo buraquinho do diafragma. Esse valor é obtido pela razão entre a <u><strong>distância focal</strong></u> (f) e o diâmetro do buraquinho (D):</p>
-    <p>Abertura=f/D</p>
-    <p>Como a distância focal varia com o zoom, não atribuímos um valor para ela. Assim, para um diâmetro de 2mm, abertura=f/2. Podemos concluir que <strong>quanto maior o número f, mais fechado está o diafragma e mais escura é a imagem</strong>.</p>
-    <p><u><strong>IMG ESCALA F</strong></u></p>
-    <h3>Aprofundando um pouco</h3>
-    <p>Se você experimentar alterar a abertura da sua lente, vai ver que o número F varia em valores estranhos (ex: f/5.6). Isso acontece porque a abertura costuma variar em intervalos, conhecidos como f-stops. A cada f-stop, a área abertura aumenta em dobro. Porém, multiplicar a área por dois significa multiplicar o diâmetro por √2 (aproximadamente 1,4):</p>
-    <table class="ui very basic celled unstackable table"style="padding-bottom:10px;padding-top:10px">
-      <thead>
-      <tr><th>Area</th><th>x</th><th>2x</th><th>3x</th><th>4x</th></tr></thead>
-      <tbody><tr><td>F</td><td>1.4</td><td>2.8</td><td>4.2</td><td>5.6</td></tr></tbody>
-    </table>
-    <p>Muitas vezes as câmeras não seguem essa escala (sempre o dobro da área), o que pode acarretar em valores que não seguem o padrão da tabela.</p>
+    <div class="ui hidden divider"></div>
+
+    <div>
+      <p>Antes de entrarmos em termos técnicos de fotografia, vou usar o olho humano para fazer uma comparação que vai facilitar a compreensão dos conceitos.</p>
+      <p></p>
+      <h3>O olho</h3>
+      <p>Vou usar o olho como modelo porque ele tem estruturas com funções bem parecidas com estruturas da câmera. Aqui vou focar em uma estrutura: a pupila.</p>
+      <p>A pupila é aquela bolinha preta que fica bem no meio do olho: <img class="lazy-img" data-src='../img/abertura/pupila.png' alt='pupila' style="max-width: 100%;display: block;margin:0 auto;"/></p>
+      <p>Em um ambiente bem iluminado, <a href='./o_basico'>raios de luz</a> vindo de todas as direções chegam nos nossos olhos. Assim, para um mesmo ponto, um olho receberia raios vindos de direções diferentes, ou seja, do reflexo de mais de um objeto. Isso tornaria tudo muito confuso.</p>
+      <p>A pupila funciona como um filtro para esses raios. Na verdade a pupila é um buraquinho, e é por ele que os raios de luz entram no olho. Como ela é muito pequena, só alguns raios conseguem passar, o que torna a imagem mais nítida.</p>
+      <p>Podemos concluir que a pupila controla a quantidade de luz que entra no olho. Porém, a quantidade de luz varia de ambiente para ambiente (e ao longo das horas do dia). A pupila contorna esse problema mudando de tamanho. Quando está escuro, ela dilata (aumenta), permitindo que mais raios entrem no olho. Quando está claro ela diminui, gerando o efeito contrário.</p>
+      <p></p>
+      <h3>O diafragma</h3>
+      <p>Câmeras fotográficas também tem uma &quot;pupila&quot;. Ela recebe o nome de <strong>diafragma</strong> e fica atrás da objetiva (lente).</p>
+      <p>Assim como a pupila, o diafragma pode aumentar ou diminuir, dependendo da luminosidade do local. A medida do quanto o diafragma está aberto ou fechado recebe o nome de <strong>abertura</strong>. Com uma grande abertura, a câmera recebe mais luz, e a foto fica mais clara. Com uma abertura menor, a câmera recebe menos luz, e a foto fica mais escura.</p>
+      <p>Devo ressaltar que mudanças na abertura não mudam só a claridade da foto. Da mesma forma que a pupila &quot;filtra&quot; os raios de luz que chegam no olho gerando nitidez, a pupila filtra os raios que estão no sensor. Quanto menor o buraquinho (ou a abertura) do diafragma, mais nítida -ou seja - mais focada fica a imagem.</p>
+      <p></p>
+      <h3>Na câmera</h3>
+      <p>Agora que você já sabe o que é a abertura, vamos ver como aplicar esses conceitos na sua câmera. Uma das possibilidades para controlar a abertura é deixando a câmera no modo manual (geralmente indicado por <strong>M</strong> na câmera). O manual te dá controle total sobre as possibilidades de sua câmera, mas em contrapartida não existe mais ajuste automático para a claridade da foto. Assim, se você aumenta a abertura a foto vai ficando mais clara, porque a câmera não compensa a claridade alterando outro ajuste (como a <u><strong>velocidade do obturador</strong></u> ou o <u><strong>ISO</strong></u>).</p>
+      <p>Se você quer controlar apenas a abertura de sua foto, existe uma opção mais prática: o modo <strong>prioridade de abertura</strong> (geralmente indicado por <strong>A</strong> ou <strong>Av</strong> na câmera). Nesse modo, a câmera vai adotar a abertura que você desejar, mas vai compensar a mudança na claridade alterando outro ajuste (normalmente a <u><strong>velocidade do obturador</strong></u>).</p>
+      <p></p>
+      <h3>Medindo a abertura</h3>
+      <p>Ao comprar uma lente ou ver as especificações da sua câmera compacta você já deve ter se deparado com algo parecido com F2.8 ou f/3.5-5.6. O número que aparece perto do &quot;F&quot; (conhecido como número F) é uma medida da abertura ou do intervalo de aberturas possíveis da lente. </p>
+      <p>Você deve estar se perguntando: por quê <em>F</em>? A resposta é simples. O valor da abertura mede quantos raios passam pelo buraquinho do diafragma. Esse valor é obtido pela razão entre a <u><strong>distância focal</strong></u> (f) e o diâmetro do buraquinho (D):</p>
+      <p>Abertura=f/D</p>
+      <p>Como a distância focal varia com o zoom, não atribuímos um valor para ela. Assim, para um diâmetro de 2mm, abertura=f/2. Podemos concluir que <strong>quanto maior o número f, mais fechado está o diafragma e mais escura é a imagem</strong>.</p>
+      <p><u><strong>IMG ESCALA F</strong></u></p>
+      <h3>Aprofundando um pouco</h3>
+      <p>Se você experimentar alterar a abertura da sua lente, vai ver que o número F varia em valores estranhos (ex: f/5.6). Isso acontece porque a abertura costuma variar em intervalos, conhecidos como f-stops. A cada f-stop, a área abertura aumenta em dobro. Porém, multiplicar a área por dois significa multiplicar o diâmetro por √2 (aproximadamente 1,4):</p>
+      <table class="ui very basic celled unstackable table"style="padding-bottom:10px;padding-top:10px">
+        <thead>
+        <tr><th>Area</th><th>x</th><th>2x</th><th>3x</th><th>4x</th></tr></thead>
+        <tbody><tr><td>F</td><td>1.4</td><td>2.8</td><td>4.2</td><td>5.6</td></tr></tbody>
+      </table>
+      <p>Muitas vezes as câmeras não seguem essa escala (sempre o dobro da área), o que pode acarretar em valores que não seguem o padrão da tabela.</p>
   </section>
 
 
@@ -119,7 +116,7 @@
     <p class="ui right aligned container" style="font-size:0.8em"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img id="creative-commons" data-content="Este texto está licenciado com uma Licença Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional." data-position="top right" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a></p><script>$('#creative-commons').popup()</script>
 
   <div class="ui basic modal">
-    <img class="ui centar aligned container" style="width:30%" src="../img/abertura/qr_abertura.gif"></i>
+    <img class="ui centar aligned container" style="width:30%" src="../img/abertura/qr_abertura.gif"></i><h1 class="ui center aligned header">bit.ly/2d4v6nR</h1>
   </div>
 
   <script>
