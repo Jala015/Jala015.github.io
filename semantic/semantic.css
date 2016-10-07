@@ -87,6 +87,7 @@ html {
 
 body {
   margin: 0;
+  background: #ededed
 }
 
 /* HTML5 display definitions
@@ -627,14 +628,13 @@ p:last-child {
 --------------------*/
 
 a {
-  color:red;
+  color:orange;
   text-decoration: none;
 }
 
 a:hover {
   color: grey;
   font-weight: bold;
-  text-decoration: none;
 }
 
 /*******************************
@@ -17264,11 +17264,11 @@ ol.ui.horizontal.list li:before,
 /* Link */
 
 .ui.breadcrumb a {
-  color: red;
+  color: orange;
 }
 
 .ui.breadcrumb a:hover {
-  color: red;
+  color: orange;
   font-weight: bold;
 }
 
@@ -27487,7 +27487,7 @@ a.ui.card:hover,
 
 .ui.items a.item:hover .content .header,
 .ui.link.items > .item:hover .content .header {
-  color: red;
+  color: orange;
 }
 
 /*--------------
