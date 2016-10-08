@@ -37,8 +37,6 @@
   <div class="ui hidden divider"> </div>
 </header>
 
-<div class="ui center aligned container mensagemAzul"style=" width:60%" hidden><div class="ui blue message">Continuar aula sobre <b class="nomeaula">...</b>?<a class="fa fa-check-circle" style="color:#1678c2;padding-left:10em;font-size:1.5em;padding-right:1em" id="vAzul"></a><a class="fa fa-times-circle" style="color:#1678c2;padding-left:1em;font-size:1.5em" id="xAzul"></a></div><div class="ui hidden divider"> </div></div>
-
 <section class="ui container" style="width:80%">
 
     <p style="text-align:justify">
@@ -76,16 +74,7 @@
 
 
 </section>
-
 <div class="ui hidden divider"></div><div class="ui hidden divider"></div>
-
-<script>
-
-      $(".mensagemAzul").show();
-      $(".nomeaula").innerHTML = localStorage.getItem("ultimaAula_nome");
-      $("#vAzul").href=localStorage.getItem("ultimaAula_url");
-  
-</script>
 
   <div class="ui horizontal divider">
     <a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.5em; color:black; padding: 0 10px"  data-content="compartilhe" data-position="top center" data-variation="inverted" id="btn_face"></i></a><script>$('#btn_face').popup()</script>
@@ -93,14 +82,6 @@
     <a href="https://plusone.google.com/_/+1/confirm?hl=en&url=https://cursofotografia.cf<?php if(is_home()){echo home_url();}else{the_permalink();} ?>" target="_blank" title="Plus one this page on Google"><i class="fa fa-google-plus-square" style="font-size: 1.5em; color:black; padding: 0 10px" data-content="compartilhe" data-position="top center" data-variation="inverted" id="btn_gplus"></i></a><script>$('#btn_gplus').popup()</script>
   </div>
 
-
-
-  <script>
-    $("#xAzul").on("click",function(){
-      localStorage.setItem("ultimaAula_nome","");
-      $('.mensagemAzul').transition('slide down');
-    });
-  </script>
 </body>
 
 </html>
