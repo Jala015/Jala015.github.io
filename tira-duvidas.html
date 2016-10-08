@@ -43,21 +43,194 @@
   <p style="text-align:center;font-size:0.9em"><a href='aulas.html'>Leia aulas completas</a></p>
   <div class="ui hidden divider"></div>
 
-  <section class="ui container">
-    <p>Em breve...</p>
+  <section class="ui center aligned container" style="font-size:1.5em">
+    Minhas fotos estão
+    <select class="ui search dropdown" id="escolha">
+      <div class="menu">
+        <option class="default text" value="reticencias">...</option>
+        <option value="claras">claras</option>
+        <option value="escuras">escuras</option>
+        <option value="desfocadas">desfocadas</option>
+        <option value="ruidosas">ruidosas</option>
+      </div>
+    </select>
+    <div class="ui hidden divider"></div>
+
   </section>
 
 
+  <section class="ui container">
+    <div class="ui two stackable cards">
 
-  <div class="ui hidden divider"></div>
+      <div class="card clarasCard">
+        <div class="content">
+          <i class="right floated icon"><i class="fa fa-camera"></i></i>
+          <div class="header" style="padding-top:7px">Reduzir <a>ISO</a></div>
+          <div class="ui divider"></div>
+          <div class="description">
+            <div class="ui bulleted list">
+              <div class="item">Escurece imagem</div>
+              <div class="item">Reduz ruído</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <div class="ui container">
-  <button class="ui fluid basic button" id="back-to-top-btn"><i class="fa fa-arrow-up"></i></button>
-  <div class="ui hidden divider"></div>
-  <div>
+      <div class="card clarasCard">
+        <div class="content">
+          <i class="right floated icon"><i class="fa fa-camera"></i></i>
+          <div class="header" style="padding-top:7px">Reduzir <a>tempo do obturador</a></div>
+        <div class="ui divider"></div>
+          <div class="description">
+            <div class="ui bulleted list">
+              <div class="item">Escurece imagem</div>
+              <div class="item">Congela Movimento</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card clarasCard">
+        <div class="content">
+          <i class="right floated icon"><i class="fa fa-camera"></i></i>
+          <div class="header" style="padding-top:7px">Reduzir <a href="aulas/abertura.html">abertura</a></div>
+        <div class="ui divider"></div>
+          <div class="description">
+            <div class="ui bulleted list">
+              <div class="item">Escurece imagem</div>
+              <div class="item">Aumenta <a>profundidade de campo</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card clarasCard">
+        <div class="content">
+          <i class="right floated icon"><i class="fa fa-sliders"></i></i>
+          <div class="header" style="padding-top:7px">Reduzir <a href="aulas/abertura.html">brilho</a></div>
+        <div class="ui divider"></div>
+          <div class="description">
+            <div class="ui bulleted list">
+              <div class="item">Fotos menos escuras</div>
+              <div class="item">Cores menos saturadas</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card escurasCard">
+        <div class="content">
+          <i class="right floated icon"><i class="fa fa-camera"></i></i>
+          <div class="header" style="padding-top:7px">Aumentar <a>ISO</a></div>
+          <div class="ui divider"></div>
+          <div class="description">
+            <div class="ui bulleted list">
+              <div class="item">Clareia imagem</div>
+              <div class="item">Gera ruído</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card escurasCard">
+        <div class="content">
+          <i class="right floated icon"><i class="fa fa-camera"></i></i>
+          <div class="header" style="padding-top:7px">Aumentar <a>tempo do obturador</a></div>
+        <div class="ui divider"></div>
+          <div class="description">
+            <div class="ui bulleted list">
+              <div class="item">Clareia imagem</div>
+              <div class="item">Borra Movimento (recomendo uso de tripé)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card escurasCard">
+        <div class="content">
+          <i class="right floated icon"><i class="fa fa-camera"></i></i>
+          <div class="header" style="padding-top:7px">Aumentar <a href="aulas/abertura.html">abertura</a></div>
+        <div class="ui divider"></div>
+          <div class="description">
+            <div class="ui bulleted list">
+              <div class="item">Clareia imagem</div>
+              <div class="item">Reduz <a>profundidade de campo</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PC -->
+
+      <div class="card clarasCard escurasCard">
+        <div class="content">
+          <i class="right floated icon"><i class="fa fa-sliders"></i></i>
+          <div class="header" style="padding-top:7px">Alterar <a href="aulas/abertura.html">níveis</a></div>
+        <div class="ui divider"></div>
+          <div class="description">
+            <div class="ui bulleted list">
+              <div class="item">[PESQUISAR]</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card escurasCard">
+        <div class="content">
+          <i class="right floated icon"><i class="fa fa-sliders"></i></i>
+          <div class="header" style="padding-top:7px">Aumentar <a href="aulas/abertura.html">brilho</a></div>
+        <div class="ui divider"></div>
+          <div class="description">
+            <div class="ui bulleted list">
+              <div class="item">Imagem mais clara</div>
+              <div class="item">Cores mais vivas</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="ui hidden divider"></div>
+  </section>
+
+  <div class="ui container back-to-top-btn">
+  <button class="ui fluid basic button"><i class="fa fa-arrow-up"></i></button>
+  </div>
 
   <script>
-    $("#back-to-top-btn").click(function(){
+  $(".card").hide();
+  $(".back-to-top-btn").hide()
+  </script>
+
+  <script>
+    $('.ui.dropdown').dropdown({
+      onChange:function(){
+        var problema = $('#escolha :selected').val();
+        //alert(problema)
+        //$("#escolha").blur();
+
+        $(".card").hide();
+
+        if (problema=="reticencias") {
+          $(".back-to-top-btn").hide()
+        };
+        if (problema=="claras") {
+          $(".clarasCard").show()
+          $(".back-to-top-btn").show()
+        };
+        if (problema=="escuras") {
+          $(".escurasCard").show()
+          $(".back-to-top-btn").show()
+        };
+      }
+    });
+  </script>
+
+  <div class="ui hidden divider"></div>
+
+  <script>
+    $(".fluid.button").click(function(){
         $('html, body').scrollTop(0);
         $("#back-to-top-btn").blur()
     });
