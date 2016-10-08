@@ -25906,13 +25906,13 @@ body.dimmable > .dimmer {
 }
 
 /*--------------
- Dropdown Icon
+ Dropdown Icon.85714286em
 ---------------*/
 
 .ui.dropdown > .dropdown.icon {
-  position: relative;
+  position: none;
   width: auto;
-  font-size: 0.85714286em;
+  font-size: 0px;
   margin: 0em 0em 0em 1em;
 }
 
