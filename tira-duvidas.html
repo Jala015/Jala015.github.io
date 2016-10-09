@@ -52,6 +52,8 @@
         <option value="claras">brancas</option>
         <option value="escuras">escuras</option>
         <option value="escuras">pretas</option>
+        <option value="ruidosas">ruidosas</option>
+        <option value="ruidosas">granuladas</option>
       </div>
     </select>
     <div class="ui hidden divider"></div>
@@ -62,7 +64,7 @@
   <section class="ui container">
     <div class="ui two doubling cards">
 
-      <div class="card clarasCard" hidden>
+      <div class="card clarasCard ruidosasCard" hidden>
         <div class="content">
           <i class="right floated icon"><i class="fa fa-camera"></i></i>
           <div class="header" style="padding-top:7px">Reduzir <a>ISO</a></div>
@@ -189,6 +191,20 @@
         </div>
       </div>
 
+      <div class="card ruidosasCard" hidden>
+        <div class="content">
+          <i class="right floated icon"><i class="fa fa-sliders"></i></i>
+          <div class="header" style="padding-top:7px">Aplicar filtro denoise</div>
+        <div class="ui divider"></div>
+          <div class="description">
+            <div class="ui bulleted list">
+              <div class="item">Reduz ruído</div>
+              <div class="item">Perde detalhes mais delicados</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     </div>
     <div class="ui hidden divider"></div>
@@ -223,6 +239,10 @@
         };
         if (problema=="escuras") {
           $(".escurasCard").show();
+          $(".back-to-top-btn").show();
+        };
+        if (problema=="ruidosas") {
+          $(".ruidosasCard").show();
           $(".back-to-top-btn").show();
         };
       }
