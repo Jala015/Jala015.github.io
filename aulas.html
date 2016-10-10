@@ -2,74 +2,81 @@
 <html lang="pt-BR">
 
 <head>
-  <title>Aulas</title>
-  <link rel="shortcut icon" href="../img/camera.ico"/>
+    <title>Aulas</title>
+    <link rel="shortcut icon" href="../img/camera.ico" />
 
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" type="text/css" href="./semantic/semantic.css">
-  <script src="./semantic/jquery.min.js"></script>
-  <script src="./semantic/semantic.min.js"></script>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="./semantic/semantic.css">
+    <script src="./semantic/jquery.min.js"></script>
+    <script src="./semantic/semantic.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
 </head>
 
 
 <body onload="MostraSoUm();" style="background: #ededed">
 
-  <header>
-    <div class="ui grid container" style="width:90%">
-      <div class="left aligned left floated ten wide column">
-        <div class="column" style="padding: 15px 0; text-align:left">
-          <div class="ui breadcrumb">
-            <a class="section" href="index.html">[ O ]</a>
-            <div class="divider"> > </div>
-            <div class="active section">Aulas</div>
-          </div>
+    <header>
+        <div class="ui grid container" style="width:90%">
+            <div class="left aligned left floated ten wide column">
+                <div class="column" style="padding: 15px 0; text-align:left">
+                    <div class="ui breadcrumb">
+                        <a class="section" href="index.html">[ O ]</a>
+                        <div class="divider"> > </div>
+                        <div class="active section">Aulas</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="six wide column" style="padding: 27px 0; text-align:right;">
+                <a href="tira-duvidas.html"><i class="fa fa-lightbulb-o" style="font-size: 1.5em; color:black; padding: 0 10px" data-content="Respostas para dúvidas rápidas" data-position="bottom right" data-variation="inverted" id="btn_duv"></i></a>
+                <script>
+                    $('#btn_duv').popup()
+                </script>
+            </div>
         </div>
-      </div>
+    </header>
 
-      <div class="six wide column" style="padding: 27px 0; text-align:right;">
-        <a href="tira-duvidas.html"><i class="fa fa-lightbulb-o" style="font-size: 1.5em; color:black; padding: 0 10px" data-content="Respostas para dúvidas rápidas" data-position="bottom right" data-variation="inverted" id="btn_duv"></i></a><script>$('#btn_duv').popup()</script>
-      </div>
-    </div>
-  </header>
+    <h2 class="ui center aligned header">Aulas</h2>
 
-  <h2 class="ui center aligned header">Aulas</h2>
+    <div class="ui hidden divider"></div>
 
-  <div class="ui hidden divider"></div>
-
-  <div id="aula_cam">
-    <section class="ui container">
-      <div class="fluid ui buttons">
-        <a class="ui active black button" style="color:#f2eeea">Operando a câmera</a>
-        <a class="ui basic black button" href="#" id="btn_pc">Editando as fotos</a>
-      </div>
-
-      <div class="ui divided link items">
-      <a class="item" href="./aulas/o_basico.html">
-          <div class="content">
-            <div class="header">O Básico</div>
-            <div class="description"><p>Conceitos básicos para você não se perder daqui a pouco</p></div>
-            <div class="extra">
-              <p style="font-size:0.8em">DSLR / COMPACTAS / MOBILE</p>
+    <div id="aula_cam">
+        <section class="ui container">
+            <div class="fluid ui buttons">
+                <a class="ui active black button" style="color:#f2eeea">Operando a câmera</a>
+                <a class="ui basic black button" href="#" id="btn_pc">Editando as fotos</a>
             </div>
-          </div>
-        </a>
 
-      <a class="item" href="./aulas/abertura.html">
-          <div class="content">
-            <div class="header">Abertura</div>
-            <div class="description"><p>Aprenda o que é e para que serve o diafragma de sua câmera</p></div>
-            <div class="extra">
-              <p style="font-size:0.8em">DSLR / COMPACTAS</p>
-            </div>
-          </div>
-        </a>
+            <div class="ui divided link items">
+                <a class="item" href="./aulas/o_basico.html">
+                    <div class="content">
+                        <div class="header">O Básico</div>
+                        <div class="description">
+                            <p>Conceitos básicos para você não se perder daqui a pouco</p>
+                        </div>
+                        <div class="extra">
+                            <p style="font-size:0.8em">DSLR / COMPACTAS / MOBILE</p>
+                        </div>
+                    </div>
+                </a>
 
-      <!--   <a class="item">
+                <a class="item" href="./aulas/abertura.html">
+                    <div class="content">
+                        <div class="header">Abertura</div>
+                        <div class="description">
+                            <p>Aprenda o que é e para que serve o diafragma de sua câmera</p>
+                        </div>
+                        <div class="extra">
+                            <p style="font-size:0.8em">DSLR / COMPACTAS</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!--   <a class="item">
           <div class="content">
             <div class="header">ISO</div>
             <div class="description"><p>Altere a sensibilidade do sensor</p></div>
@@ -104,21 +111,21 @@
             </div>
           </div>
         </div> -->
-      </div>
-    </section>
-  </div>
+            </div>
+        </section>
+    </div>
 
-  <div id="aula_pc" hidden>
-    <section class="ui container">
-      <div class="fluid ui buttons">
-        <a class="ui basic black button" href="#" id="btn_cam">Operando a câmera</a>
-        <a class="ui active black button" style="color:#f2eeea">Editando as fotos</a>
-      </div>
+    <div id="aula_pc" hidden>
+        <section class="ui container">
+            <div class="fluid ui buttons">
+                <a class="ui basic black button" href="#" id="btn_cam">Operando a câmera</a>
+                <a class="ui active black button" style="color:#f2eeea">Editando as fotos</a>
+            </div>
 
-      <div class="ui divided link items">
-        Em breve...
+            <div class="ui divided link items">
+                Em breve...
 
-      <!--  <div class="item">
+                <!--  <div class="item">
           <div class="content">
             <div class="header">Que software usar?</div>
             <div class="description"><p>Descubra ferramentas para editar fotos</p></div>
@@ -138,38 +145,38 @@
             <div class="description"><p>Uma alternativa para o photoshop</p></div>
           </div>
         </div> -->
-      </div>
-    </section>
-  </div>
+            </div>
+        </section>
+    </div>
 
-  <div class="ui hidden divider"></div>
+    <div class="ui hidden divider"></div>
 
-  <div class="ui container">
-  <button class="ui fluid basic button" id="back-to-top-btn"><i class="fa fa-arrow-up"></i></button>
-  <div class="ui hidden divider"></div>
-  <div>
+    <div class="ui container">
+        <button class="ui fluid basic button" id="back-to-top-btn"><i class="fa fa-arrow-up"></i></button>
+        <div class="ui hidden divider"></div>
+        <div>
 
-  <script>
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        $('.extra').hide();
-  };
-  </script>
+            <script>
+                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                    $('.extra').hide();
+                };
+            </script>
 
-  <script>
-    $("#btn_cam").click(function(){
-        $("#aula_pc").hide();
-        $("#aula_cam").show();
-    });
-    $("#btn_pc").click(function(){
-        $("#aula_cam").hide();
-        $("#aula_pc").show();
-    });
+            <script>
+                $("#btn_cam").click(function() {
+                    $("#aula_pc").hide();
+                    $("#aula_cam").show();
+                });
+                $("#btn_pc").click(function() {
+                    $("#aula_cam").hide();
+                    $("#aula_pc").show();
+                });
 
-    $("#back-to-top-btn").click(function(){
-        $('html, body').scrollTop(0);
-        $("#back-to-top-btn").blur()
-    });
-  </script>
+                $("#back-to-top-btn").click(function() {
+                    $('html, body').scrollTop(0);
+                    $("#back-to-top-btn").blur()
+                });
+            </script>
 </body>
 
 </html>
