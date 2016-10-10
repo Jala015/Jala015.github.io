@@ -55,6 +55,32 @@
     <h2 class="ui center aligned header">Aulas</h2>
 
     <div class="ui hidden divider"></div>
+<div class="ui center aligned container">
+    <div class="ui modal">
+      <script>
+  (function() {
+    var cx = '013108389015981437556:mlonwpjyfli';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+    </div>
+    <button class="ui basic button">BUSCAR</button>
+  </div>
+  <script>
+      $(".fluid.button").click(function() {
+        $('.modal')
+            .modal('show');
+        $(".fluid.button").blur()
+      })
+  </script>
+
+  <div class="ui hidden divider"></div>
 
     <div id="aula_cam">
         <section class="ui container">
@@ -201,6 +227,8 @@
                     $("#back-to-top-btn").blur()
                 });
             </script>
+
+
 </body>
 
 </html>
