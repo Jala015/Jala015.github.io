@@ -74,6 +74,7 @@
 
 
   <section class="ui container">
+    <h3 class="o_que_fazer" style="text-align:left">O que você pode fazer:</h3>
     <div class="ui two doubling cards">
 
       <div class="card clarasCard ruidosasCard" hidden>
@@ -231,6 +232,7 @@
   $('.search').focus();
   $(".card").hide();
   $(".back-to-top-btn").hide()
+  $(".o_que_fazer").hide();
   </script>
 
   <script>
@@ -244,18 +246,22 @@
 
         if (problema=="reticencias") {
           $(".back-to-top-btn").hide()
+          $(".o_que_fazer").hide();
         };
         if (problema=="claras") {
           $(".clarasCard").show();
           $(".back-to-top-btn").show();
+          $(".o_que_fazer").show();
         };
         if (problema=="escuras") {
           $(".escurasCard").show();
           $(".back-to-top-btn").show();
+          $(".o_que_fazer").show();
         };
         if (problema=="ruidosas") {
           $(".ruidosasCard").show();
           $(".back-to-top-btn").show();
+          $(".o_que_fazer").show();
         };
       }
     });
