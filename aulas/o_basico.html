@@ -1,166 +1,211 @@
 <html lang="pt-BR">
 
 <head>
-  <title>O Básico</title>
-  <link rel="shortcut icon" href="../img/camera.ico"/>
+    <title>O Básico</title>
+    <link rel="shortcut icon" href="../img/camera.ico" />
 
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" type="text/css" href="../semantic/semantic.css">
-  <script src="../semantic/jquery.min.js"></script>
-  <script src="../semantic/semantic.min.js "></script>
-  <script src="../jquery-imageloader/jquery.imageloader.js "></script>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../semantic/semantic.css">
+    <script src="../semantic/jquery.min.js"></script>
+    <script src="../semantic/semantic.min.js "></script>
+    <script src="../jquery-imageloader/jquery.imageloader.js "></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
 
-  <style>
-::-moz-selection { /* Code for Firefox */
-  color: white;
-  background: teal;
-}
+    <style>
+         ::-moz-selection {
+            /* Code for Firefox */
+            color: white;
+            background: teal;
+        }
 
-::selection {
-  color: white;
-  background: teal;
-}
-</style>
+        ::selection {
+            color: white;
+            background: teal;
+        }
+    </style>
 
 </head>
 
 
 <body onload="MostraSoUm();" style="background:#f2eeea">
 
-  <header>
-    <div class="ui grid container" style="width:90%">
-      <div class="left aligned left floated ten wide column">
-        <div class="column" style="padding: 15px 0; text-align:left">
-          <div class="ui breadcrumb">
-            <a class="section" href="../index.html">[ O ]</a>
-            <div class="divider"> > </div>
-            <a class="section" href="../aulas.html">Aulas</a>
-            <div class="divider"> > </div>
-            <div class="active section">O Básico</div>
-          </div>
+    <header>
+        <div class="ui grid container" style="width:90%">
+            <div class="left aligned left floated ten wide column">
+                <div class="column" style="padding: 15px 0; text-align:left">
+                    <div class="ui breadcrumb">
+                        <a class="section" href="../index.html">[ O ]</a>
+                        <div class="divider"> > </div>
+                        <a class="section" href="../aulas.html">Aulas</a>
+                        <div class="divider"> > </div>
+                        <div class="active section">O Básico</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="six wide column" style="padding: 27px 0; text-align:right;">
+                <a style="font-size:1.5em;color: black;margin: auto;" id="qr_btn" data-content="Continue no celular" data-variation="inverted basic" data-position="bottom right"><i class="fa fa-qrcode"></i></a>
+                <script>
+                    $('#qr_btn').popup()
+                </script>
+                <div class="ui center aligned container" id="carr-img-container">
+                    <button class="ui teal button" id="btn-carr-img">CARREGAR IMAGENS</button>
+                    <div class="ui hidden divider"></div>
+                </div>
+            </div>
         </div>
-      </div>
+    </header>
 
-      <div class="six wide column" style="padding: 27px 0; text-align:right;">
-        <a style="font-size:1.5em;color: black;margin: auto;" id="qr_btn" data-content="Continue no celular" data-variation="inverted basic" data-position="bottom right"><i class="fa fa-qrcode"></i></a><script>$('#qr_btn').popup()</script>
-        <div class="ui center aligned container" id="carr-img-container">
-          <button class="ui teal button" id="btn-carr-img">CARREGAR IMAGENS</button>
-          <div class="ui hidden divider"></div>
+
+
+
+    <section class="ui container">
+        <h2 class="ui center aligned header">O Básico</h2>
+
+
+        <div class="ui horizontal divider"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/o_basico" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a>
+            <script>
+                $('#btn_face').popup()
+            </script>
+            <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf/aulas/o_basico&text=Dica%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="tweet" data-position="right center" data-variation="inverted" id="btn_tweeter"></i></a>
+            <script>
+                $('#btn_tweeter').popup()
+            </script>
         </div>
-      </div>
+
+
+
+        <div class="ui hidden divider"></div>
+
+        <div>
+            <p>Com certeza você já olhou para um cenário e imaginou a foto perfeita, mas ao tentar clicá-la não conseguiu o resultado que queria. Existem uma série de processos que ocorrem entre a sua decisão de tirar a foto e a criação do arquivo.</p>
+            <p>Não pretendo trazer muitos conceitos de física para cá. A ideia é te ensinar a tirar fotos melhores, não te dar um susto! Porém, antes de começar qualquer conversa, precisamos resolver aqui o conceito de luz que vamos usar. Se você já está
+                pensando pular essa parte, peço que dê uma chance. Tentei deixar o mais simples possível.</p>
+            <p></p>
+            <h3>A luz</h3>
+            <p>De modo simplificado, podemos estudar a luz como um raio que sai de um emissor (uma lâmpada, por exemplo) e segue pelo ambiente em linha reta. Os raios saem do emissor em todas as direções até encontrar um obstáculo.</p>
+
+            <p>
+                <img class="lazy-img" data-src="../img/o_basico/lampada.png" style="max-width: 100%;display: block;margin:0 auto;" />
+            </p>
+
+            <p>Um raio de luz branca carrega com ele todas as cores. Quando um raio desses encontra um obstáculo, algumas dessas cores são absorvidas e o que restou é refletido como um raio de outra cor. Exemplo: um morango absorve todas as cores menos o
+                vermelho, então reflete um raio de luz vermelho. Se esse raio chega no nosso olho, enxergamos &quot;vermelho&quot; na região do morango, e é isso que dá a impressão de cor.</p>
+
+            <p>
+                <img class="lazy-img" data-src="../img/o_basico/morango.png" style="max-width: 100%;display: block;margin:0 auto;" />
+            </p>
+
+            <p>Na verdade, tudo o que você enxerga é uma interpretação dos raios de luz de diversas cores que chegam no seu olho. No escuro, não temos uma fonte de luz, então não há raios no ambiente. Por isso não enxergamos nada.</p>
+            <p></p>
+            <h3>O caminho da luz na fotografia</h3>
+            <p>Pronto, agora que alguns conceitos-chave já foram definidos, podemos começar a entender um panorama geral dos processos que geram uma fotografia. Vou simplificar aqui em uma lista:</p>
+            <ol class="ui list">
+                <li>
+                    Uma ou várias fontes de luz emitem raios;</li>
+                <li>
+                    Os raios de luz chegam nos objetos da cena;</li>
+                <li>
+                    Algumas cores são absorvidas e outras são refletidas;</li>
+                <li>
+                    Alguns dos raios refletidos atravessam a lente da câmera, passam por um buraquinho chamado de diafragma (veja <a href="./abertura.html">abertura</a>) e atingem o sensor (ou filme);</li>
+                <li>
+                    O sensor transforma as informações dos raios (cor, intensidade) em sinais elétricos que serão enviados para a parte eletrônica da câmera, onde darão origem a um arquivo de imagem;</li>
+            </ol>
+            <p>Nas aulas seguintes vamos ver em detalhe cada um desses processos e aprender a controlar esses raios de luz para gerar a fotografia desejada.</p>
+        </div>
+    </section>
+
+
+    <script>
+        //detectar mobile
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $('#qr_btn').hide()
+        } else {
+            $('.lazy-img').imageloader();
+            $('#carr-img-container').hide()
+        };
+    </script>
+
+
+    <footer class="ui center aligned container">
+        <div class="ui hidden divider"></div>
+
+        <div class="ui hidden divider"></div>
+        <div class="ui buttons">
+            <button class="ui disabled basic button"><i class="fa fa-caret-left" style="font-size:2em;"></i></button>
+            <button class="ui basic button" onclick="location.href='../aulas.html'"><div class="sub header">AULAS</div></button>
+            <button class="ui basic button" onclick="location.href='./abertura.html'" data-content="Abertura" data-variation="inverted" id="btn_proximo"><i class="fa fa-caret-right" style="font-size:2em;"></i></button>
+            <script>
+                $('#btn_proximo').popup()
+            </script>
+        </div>
+    </footer>
+
+    <div class="ui two column grid container">
+        <div class="column">
+            <a class="typeform-share link" href="https://jala015.typeform.com/to/EuIIA2" data-mode="1" target="_blank">Ficou com dúvidas?</a>
+            <script>
+                (function() {
+                    var qs, js, q, s, d = document,
+                        gi = d.getElementById,
+                        ce = d.createElement,
+                        gt = d.getElementsByTagName,
+                        id = 'typef_orm',
+                        b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+                    if (!gi.call(d, id)) {
+                        js = ce.call(d, 'script');
+                        js.id = id;
+                        js.src = b + 'share.js';
+                        q = gt.call(d, 'script')[0];
+                        q.parentNode.insertBefore(js, q)
+                    }
+                })()
+            </script>
+        </div>
+        <div class="column">
+            <p class="ui right aligned container" style="font-size:0.8em">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img id="creative-commons" data-content="Este texto está licenciado com uma Licença Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional." data-position="top right" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+                    /></a>
+            </p>
+            <script>
+                $('#creative-commons').popup()
+            </script>
+        </div>
     </div>
-  </header>
 
-
-
-
-  <section class="ui container">
-    <h2 class="ui center aligned header">O Básico</h2>
-
-
-    <div class="ui horizontal divider"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/o_basico" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a><script>$('#btn_face').popup()</script>
-    <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf/aulas/o_basico&text=Dica%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="tweet" data-position="right center" data-variation="inverted" id="btn_tweeter"></i></a><script>$('#btn_tweeter').popup()</script></div>
-
-
-
-    <div class="ui hidden divider"></div>
-
-    <div>
-      <p>Com certeza você já olhou para um cenário e imaginou a foto perfeita, mas ao tentar clicá-la não conseguiu o resultado que queria. Existem uma série de processos que ocorrem entre a sua decisão de tirar a foto e a criação do arquivo.</p>
-      <p>Não pretendo trazer muitos conceitos de física para cá. A ideia é te ensinar a tirar fotos melhores, não te dar um susto! Porém, antes de começar qualquer conversa, precisamos resolver aqui o conceito de luz que vamos usar. Se você já está pensando pular essa parte, peço que dê uma chance. Tentei deixar o mais simples possível.</p>
-      <p></p>
-      <h3>A luz</h3>
-      <p>De modo simplificado, podemos estudar a luz como um raio que sai de um emissor (uma lâmpada, por exemplo) e segue pelo ambiente em linha reta. Os raios saem do emissor em todas as direções até encontrar um obstáculo.</p>
-
-      <p>
-        <img class="lazy-img" data-src="../img/o_basico/lampada.png" style="max-width: 100%;display: block;margin:0 auto;"/>
-      </p>
-
-      <p>Um raio de luz branca carrega com ele todas as cores. Quando um raio desses encontra um obstáculo, algumas dessas cores são absorvidas e o que restou é refletido como um raio de outra cor. Exemplo: um morango absorve todas as cores menos o vermelho, então reflete um raio de luz vermelho. Se esse raio chega no nosso olho, enxergamos &quot;vermelho&quot; na região do morango, e é isso que dá a impressão de cor.</p>
-
-      <p>
-        <img class="lazy-img" data-src="../img/o_basico/morango.png" style="max-width: 100%;display: block;margin:0 auto;"/>
-      </p>
-
-      <p>Na verdade, tudo o que você enxerga é uma interpretação dos raios de luz de diversas cores que chegam no seu olho. No escuro, não temos uma fonte de luz, então não há raios no ambiente. Por isso não enxergamos nada.</p>
-      <p></p>
-      <h3>O caminho da luz na fotografia</h3>
-      <p>Pronto, agora que alguns conceitos-chave já foram definidos, podemos começar a entender um panorama geral dos processos que geram uma fotografia. Vou simplificar aqui em uma lista:</p>
-      <ol class="ui list"><li>
-      Uma ou várias fontes de luz emitem raios;</li>
-      <li>
-      Os raios de luz chegam nos objetos da cena;</li>
-      <li>
-      Algumas cores são absorvidas e outras são refletidas;</li>
-      <li>
-      Alguns dos raios refletidos atravessam a lente da câmera, passam por um buraquinho chamado de diafragma (veja <a href="./abertura.html">abertura</a>) e atingem o sensor (ou filme);</li>
-      <li>
-      O sensor transforma as informações dos raios (cor, intensidade) em sinais elétricos que serão enviados para a parte eletrônica da câmera, onde darão origem a um arquivo de imagem;</li>
-      </ol>
-      <p>Nas aulas seguintes vamos ver em detalhe cada um desses processos e aprender a controlar esses raios de luz para gerar a fotografia desejada.</p>
+    <div class="ui basic modal">
+        <img class="ui centar aligned container" style="width:30%" src="../img/o_basico/qr_basico.gif"></i>
+        <h1 class="ui center aligned header">bit.ly/2dtpyqj</h1>
     </div>
-  </section>
 
+    <script>
+        $("#btn_cam").click(function() {
+            $("#aula_pc").hide();
+            $("#aula_cam").show();
+        });
+        $("#btn_pc").click(function() {
+            $("#aula_cam").hide();
+            $("#aula_pc").show();
+        });
 
-  <script>
-  //detectar mobile
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    $('#qr_btn').hide()
-  }
-  else{
-    $('.lazy-img').imageloader();
-    $('#carr-img-container').hide()
-  };
-  </script>
+        $("#back-to-top-btn").click(function() {
+            $('html, body').scrollTop(0);
+        });
 
+        $("#qr_btn").click(function() {
+            $('.ui.basic.modal')
+                .modal('show');
+        });
 
-  <footer class="ui center aligned container">
-    <div class="ui hidden divider"></div>
-
-    <div class="ui hidden divider"></div>
-    <div class="ui buttons">
-      <button class="ui disabled basic button"><i class="fa fa-caret-left" style="font-size:2em;"></i></button>
-      <button class="ui basic button" onclick="location.href='../aulas.html'"><div class="sub header">AULAS</div></button>
-      <button class="ui basic button" onclick="location.href='./abertura.html'" data-content="Abertura" data-variation="inverted" id="btn_proximo"><i class="fa fa-caret-right" style="font-size:2em;"></i></button><script>$('#btn_proximo').popup()</script>
-    </div>
-  </footer>
-
-  <p class="ui right aligned container" style="font-size:0.8em"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img id="creative-commons" data-content="Este texto está licenciado com uma Licença Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional." data-position="top right" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a></p><script>$('#creative-commons').popup()</script>
-
-  <div class="ui basic modal">
-    <img class="ui centar aligned container" style="width:30%" src="../img/o_basico/qr_basico.gif"></i><h1 class="ui center aligned header">bit.ly/2dtpyqj</h1>
-  </div>
-
-  <script>
-    $("#btn_cam").click(function(){
-        $("#aula_pc").hide();
-        $("#aula_cam").show();
-    });
-    $("#btn_pc").click(function(){
-        $("#aula_cam").hide();
-        $("#aula_pc").show();
-    });
-
-    $("#back-to-top-btn").click(function(){
-        $('html, body').scrollTop(0);
-    });
-
-    $("#qr_btn").click(function(){
-      $('.ui.basic.modal')
-      .modal('show')
-      ;
-    });
-
-    $('#btn-carr-img').click(function() {
-      $('.lazy-img').imageloader();
-      $('#carr-img-container').hide()
-    });
-
-  </script>
+        $('#btn-carr-img').click(function() {
+            $('.lazy-img').imageloader();
+            $('#carr-img-container').hide()
+        });
+    </script>
 
 </body>
 

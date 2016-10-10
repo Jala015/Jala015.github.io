@@ -16,15 +16,16 @@
 
 
     <style>
-    ::-moz-selection { /* Code for Firefox */
-    color: white;
-    background: teal;
-    }
+         ::-moz-selection {
+            /* Code for Firefox */
+            color: white;
+            background: teal;
+        }
 
-    ::selection {
-    color: white;
-    background: teal;
-    }
+         ::selection {
+            color: white;
+            background: teal;
+        }
     </style>
 </head>
 
@@ -164,43 +165,71 @@
 
     </footer>
 
-    <p class="ui right aligned container" style="font-size:0.8em">
-        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img id="creative-commons" data-content="Este texto está licenciado com uma Licença Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional." data-position="top right" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
-            /></a>
-    </p>
-    <script>
-        $('#creative-commons').popup()
-    </script>
+    <div class="ui two column grid container">
+        <div class="column">
+            <a class="typeform-share link" href="https://jala015.typeform.com/to/EuIIA2" data-mode="1" target="_blank">Ficou com dúvidas?</a>
+                <script>
+                    (function() {
+                        var qs, js, q, s, d = document,
+                            gi = d.getElementById,
+                            ce = d.createElement,
+                            gt = d.getElementsByTagName,
+                            id = 'typef_orm',
+                            b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+                        if (!gi.call(d, id)) {
+                            js = ce.call(d, 'script');
+                            js.id = id;
+                            js.src = b + 'share.js';
+                            q = gt.call(d, 'script')[0];
+                            q.parentNode.insertBefore(js, q)
+                        }
+                    })()
+                </script>
+        </div>
+        <div class="column">
+            <p class="ui right aligned container" style="font-size:0.8em">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img id="creative-commons" data-content="Este texto está licenciado com uma Licença Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional." data-position="top right" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+                    /></a>
+            </p>
+            <script>
+                $('#creative-commons').popup()
+            </script>
+        </div>
+        </div>
 
-    <div class="ui basic modal">
-        <img class="ui centar aligned container" style="width:30%" src="../img/abertura/qr_abertura.gif"></i>
-        <h1 class="ui center aligned header">bit.ly/2d4v6nR</h1>
-    </div>
+        <script>
+            $('#creative-commons').popup()
+        </script>
 
-    <script>
-        $("#btn_cam").click(function() {
-            $("#aula_pc").hide();
-            $("#aula_cam").show();
-        });
-        $("#btn_pc").click(function() {
-            $("#aula_cam").hide();
-            $("#aula_pc").show();
-        });
+        <div class="ui basic modal">
+            <img class="ui centar aligned container" style="width:30%" src="../img/abertura/qr_abertura.gif"></i>
+            <h1 class="ui center aligned header">bit.ly/2d4v6nR</h1>
+        </div>
 
-        $("#back-to-top-btn").click(function() {
-            $('html, body').scrollTop(0);
-        });
+        <script>
+            $("#btn_cam").click(function() {
+                $("#aula_pc").hide();
+                $("#aula_cam").show();
+            });
+            $("#btn_pc").click(function() {
+                $("#aula_cam").hide();
+                $("#aula_pc").show();
+            });
 
-        $("#qr_btn").click(function() {
-            $('.ui.basic.modal')
-                .modal('show');
-        });
+            $("#back-to-top-btn").click(function() {
+                $('html, body').scrollTop(0);
+            });
 
-        $('#btn-carr-img').click(function() {
-            $('.lazy-img').imageloader();
-            $('#carr-img-container').hide()
-        });
-    </script>
+            $("#qr_btn").click(function() {
+                $('.ui.basic.modal')
+                    .modal('show');
+            });
+
+            $('#btn-carr-img').click(function() {
+                $('.lazy-img').imageloader();
+                $('#carr-img-container').hide()
+            });
+        </script>
 
 </body>
 
