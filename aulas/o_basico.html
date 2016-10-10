@@ -51,7 +51,7 @@
                 <script>
                     $('#qr_btn').popup()
                 </script>
-                <div class="ui center aligned container" id="carr-img-container">
+                <div class="ui center aligned container" id="carr-img-container" hidden>
                     <button class="ui teal button" id="btn-carr-img">CARREGAR IMAGENS</button>
                     <div class="ui hidden divider"></div>
                 </div>
@@ -124,6 +124,7 @@
         //detectar mobile
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             $('#qr_btn').hide()
+            $('#carr-img-container').show()
         } else {
             $('.lazy-img').imageloader();
             $('#carr-img-container').hide()
