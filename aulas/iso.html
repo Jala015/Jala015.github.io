@@ -50,7 +50,7 @@
                 <script>
                     $('#qr_btn').popup()
                 </script>
-                <div class="ui center aligned container" id="carr-img-container">
+                <div class="ui center aligned container" id="carr-img-container" hidden>
                     <button class="ui olive button" id="btn-carr-img">CARREGAR IMAGENS</button>
                     <div class="ui hidden divider"></div>
                 </div>
@@ -85,7 +85,7 @@
                 e de <strong>high key</strong> ISOs excessivamente altos.</p>
             <h3>O ruído</h3>
             <p>Chamamos de ruído a granulação da foto. O ruído aparece porque sensores muito sensíveis começam a registrar raios de luz onde eles não existem. Na verdade, toda foto tem ruído, mas ele fica menos expressivo com sensibilidades menores do sensor.</p>
-            <img class="lazy-img" data-src='../img/iso/asa.png' alt='asa' style="max-width: 80%;display: block;margin:0 auto;" /></p>
+            <img class="lazy-img" data-src='../img/iso/asa.png' alt='foto' style="max-width: 80%;display: block;margin:0 auto;border:thin solid black" /></p>
             <h3>Quando ajustar o ISO</h3>
             <p>Se você não quer ruído, o ideal é tentar manter o ISO sempre baixo (±100) e priorizar outros ajustes para clarear a foto. Recomendo mudar a <a href="./abertura.html">abertura</a> ou a velocidade do obturador. Em alguns casos, também pode ser
                 usado o flash ou outras fontes de iluminação adicionais.</p>
@@ -103,6 +103,7 @@
         //detectar mobile
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             $('#qr_btn').hide()
+            $('#qr_btn').show()
         } else {
             $('.lazy-img').imageloader();
             $('#carr-img-container').hide()
