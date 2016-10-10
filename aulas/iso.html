@@ -1,0 +1,161 @@
+<html lang="pt-BR">
+
+<head>
+    <title>ISO</title>
+    <link rel="shortcut icon" href="../img/camera.ico" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../semantic/semantic.css">
+    <script src="../semantic/jquery.min.js"></script>
+    <script src="../semantic/semantic.min.js "></script>
+    <script src="../jquery-imageloader/jquery.imageloader.js "></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+
+
+    <style>
+    ::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: teal;
+    }
+
+    ::selection {
+    color: white;
+    background: teal;
+    }
+    </style>
+</head>
+
+
+<body onload="MostraSoUm();" style="background:#f2eeea">
+
+    <header>
+        <div class="ui grid container" style="width:90%">
+            <div class="left aligned left floated ten wide column">
+                <div class="column" style="padding: 15px 0; text-align:left">
+                    <div class="ui breadcrumb">
+                        <a class="section" href="../index.html">[ O ]</a>
+                        <div class="divider"> > </div>
+                        <a class="section" href="../aulas.html">Aulas</a>
+                        <div class="divider"> > </div>
+                        <div class="active section">ISO</div>
+                    </div>
+                </div>
+            </div>
+            <div class="six wide column" style="padding: 27px 0; text-align:right;">
+                <a style="font-size:1.5em;color: black;margin: auto;" id="qr_btn" data-content="Continue no celular" data-variation="inverted basic" data-position="bottom right"><i class="fa fa-qrcode"></i></a>
+                <script>
+                    $('#qr_btn').popup()
+                </script>
+                <div class="ui center aligned container" id="carr-img-container">
+                    <button class="ui olive button" id="btn-carr-img">CARREGAR IMAGENS</button>
+                    <div class="ui hidden divider"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <section class="ui container">
+        <h2 class="ui center aligned header">ISO</h2>
+
+        <div class="ui horizontal divider"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/iso" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a>
+            <script>
+                $('#btn_face').popup()
+            </script>
+            <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf/aulas/iso&text=Dica%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="tweet" data-position="right center" data-variation="inverted" id="btn_tweeter"></i></a>
+            <script>
+                $('#btn_tweeter').popup()
+            </script>
+        </div>
+
+        <div class="ui hidden divider"></div>
+
+        <div>
+          <p>Você provavelmente já tirou fotos noturnas com o celular e se deparou com uma foto toda granulada. Isso acontece porque o celular está programado para aumentar a sensibilidade do sensor em condições de pouca luz. Chamamos de ISO a medida da sensibilidade do sensor à luz.</p>
+          <h3>Medindo o ISO</h3>
+          <p>Um ISO baixo significa um sensor menos sensível e consequentemente uma foto mais escura. Aumentar o iso clareia a imagem, mas isso acaba gerando ruído digital.</p>
+          <p>A escala de ISO em que uma câmera trabalha pode variar bastante, mas geralmente fica em uma faixa entre 100 e 800. Mudar de 200 para 400 significa duplicar a claridade da imagem. Chamamos de <strong>low key</strong> ISOs excessivamente baixos e de <strong>high key</strong> ISOs excessivamente altos.</p>
+          <h3>O ruído</h3>
+          <p>Chamamos de ruído a granulação da foto. O ruído aparece porque sensores muito sensíveis começam a registrar raios de luz onde eles não existem. Na verdade, toda foto tem ruído, mas ele fica menos expressivo com sensibilidades menores do sensor.</p>
+          <img class="lazy-img" data-src='../img/iso/asa.png' alt='asa' style="max-width: 90%;display: block;margin:0 auto;" /></p>
+          <h3>Quando ajustar o ISO</h3>
+          <p>Se você não quer ruído, o ideal é tentar manter o ISO sempre baixo (±100) e priorizar outros ajustes para clarear a foto. Recomendo mudar a <a href="./abertura.html">abertura</a> ou a velocidade do obturador. Em alguns casos, também pode ser usado o flash ou outras fontes de iluminação adicionais.</p>
+          <p>Em algumas situações não é possível realizar esses ajustes: ao fotografar pássaros voando, por exemplo, a prioridade é uma velocidade rápida no obturador (para congelar o movimento) e uma abertura pequena (para aumentar a profundidade de campo). Alterações no ISO se tornam necessárias. O excesso de ruído pode ser removido depois no computador, mas a qualidade nunca fica a mesma.</p>
+          <p>Dispositivos <em>mobile</em> costumam ter a abertura fixa. Assim, são programados para aumentarem o ISO em fotos noturnas.</p>
+          <h3>Antigamente</h3>
+          <p>Antes da fotografia digital, o filme da câmera (que fazia o papel do sensor) era oferecido em várias velocidades. Usar um filme rápido significava usar um filme que precisa de menos luz para gerar uma imagem na luminosidade adequada. A velocidade do filme era medida pela escala ASA (hoje convertida para ISO) e se dava pelo tamanho dos cristais fotosensiveis do filme. Esses cristais escureciam quando expostos à luz. Quanto maiores os cristais, mais sensível o o filme, mas a foto ficava mais granulada.</p>
+    </section>
+
+
+    <script>
+        //detectar mobile
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $('#qr_btn').hide()
+        } else {
+            $('.lazy-img').imageloader();
+            $('#carr-img-container').hide()
+        };
+    </script>
+
+
+    <footer class="ui center aligned container">
+        <div class="ui hidden divider"></div>
+
+        <div class="ui hidden divider"></div>
+        <div class="ui buttons">
+            <button class="ui basic button" id="btn_voltar" onclick="location.href='./o_basico.html'" data-content="O Básico" data-variation="inverted"><i class="fa fa-caret-left" style="font-size:2em;"></i></button>
+            <script>
+                $('#btn_voltar').popup()
+            </script>
+            <button class="ui basic button" onclick="location.href='../aulas.html'"><div class="sub header">AULAS</div></button>
+            <button class="ui disabled basic button" onclick="location.href='###'"><i class="fa fa-caret-right" style="font-size:2em;"></i></button>
+        </div>
+
+    </footer>
+
+    <p class="ui right aligned container" style="font-size:0.8em">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img id="creative-commons" data-content="Este texto está licenciado com uma Licença Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional." data-position="top right" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+            /></a>
+    </p>
+    <script>
+        $('#creative-commons').popup()
+    </script>
+
+    <div class="ui basic modal">
+        <img class="ui centar aligned container" style="width:30%" src="../img/iso/qr_iso.gif"></i>
+        <h1 class="ui center aligned header">bit.ly/</h1>
+    </div>
+
+    <script>
+        $("#btn_cam").click(function() {
+            $("#aula_pc").hide();
+            $("#aula_cam").show();
+        });
+        $("#btn_pc").click(function() {
+            $("#aula_cam").hide();
+            $("#aula_pc").show();
+        });
+
+        $("#back-to-top-btn").click(function() {
+            $('html, body').scrollTop(0);
+        });
+
+        $("#qr_btn").click(function() {
+            $('.ui.basic.modal')
+                .modal('show');
+        });
+
+        $('#btn-carr-img').click(function() {
+            $('.lazy-img').imageloader();
+            $('#carr-img-container').hide()
+        });
+    </script>
+
+</body>
+
+</html>
