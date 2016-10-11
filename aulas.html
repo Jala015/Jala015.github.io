@@ -44,7 +44,7 @@
             </div>
 
             <div class="six wide column" style="padding: 27px 0; text-align:right;">
-                <button class="ui basic button"><i class="fa fa-search"></i></button>
+                <button class="ui basic button" style="border-radius:10px"><i class="fa fa-search"></i></button>
             </div>
         </div>
     </header>
@@ -80,107 +80,56 @@
   <div class="ui hidden divider"></div>
 
     <div id="aula_cam">
-        <section class="ui container">
-            <div class="fluid ui buttons">
-                <a class="ui active black button" style="color:#f2eeea">Operando a câmera</a>
-                <a class="ui basic black button" href="#" id="btn_pc">Editando as fotos</a>
+        <section class="ui center aligned container">
+            <div class="ui buttons">
+                <a class="ui active black button" style="color:#f2eeea">Câmera</a>
+                <a class="ui basic black button" href="#" id="btn_pc">Edição</a>
             </div>
+            <div class="ui hidden divider"></div>
 
-            <div class="ui divided link items">
-                <a class="item" href="./aulas/o_basico.html">
+            <div class="ui three stackable cards">
+
+                <a class="card" href="./aulas/o_basico.html" style="border-left:solid grey;border-right:solid grey">
                     <div class="content">
-                        <div class="header">O Básico</div>
+                        <h2 class="header">O Básico</h2>
                         <div class="description">
                             <p>Conceitos básicos para você não se perder daqui a pouco</p>
                         </div>
-                        <div class="extra">
-                            <p style="font-size:0.8em">DSLR / COMPACTAS / MOBILE</p>
-                        </div>
                     </div>
                 </a>
 
-                <a class="item" href="./aulas/abertura.html">
+                <a class="card" href="./aulas/abertura.html" style="border-left:solid grey;border-right:solid grey">
                     <div class="content">
-                        <div class="header">Abertura</div>
+                        <h2 class="header">Abertura</h2>
                         <div class="description">
                             <p>Aprenda o que é e para que serve o diafragma de sua câmera</p>
                         </div>
-                        <div class="extra">
-                            <p style="font-size:0.8em">DSLR / COMPACTAS</p>
-                        </div>
                     </div>
                 </a>
 
-                <a class="item" href="./aulas/iso.html">
+                <a class="card" href="./aulas/iso.html" style="border-left:solid grey;border-right:solid grey">
                     <div class="content">
-                        <div class="header">ISO</div>
+                        <h2 class="header">ISO</h2>
                         <div class="description">
                             <p>Controle a sensibilidade do sensor e previna fotos granuladas</p>
                         </div>
-                        <div class="extra">
-                            <p style="font-size:0.8em">DSLR / COMPACTAS / MOBILE</p>
-                        </div>
+
                     </div>
                 </a>
 
-                <!--
-        <div class="item">
-          <div class="content">
-            <div class="header">Velocidade do Obturador</div>
-            <div class="description"><p>Como e porque mudar o tempo em que o sensor fica exposto à luz</p></div>
-            <div class="extra">
-              <div class="ui small basic label">DSLR</div>
-              <div class="ui small basic label">COMPACTAS</div>
-              <div class="ui small basic label">CELULAR</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="content">
-            <div class="header">Enquadramento</div>
-            <div class="description"><p>Não é só apontar e clicar</p></div>
-            <div class="extra">
-              <div class="ui small basic label">DSLR</div>
-              <div class="ui small basic label">COMPACTAS</div>
-              <div class="ui small basic label">CELULAR</div>
-            </div>
-          </div>
-        </div> -->
             </div>
         </section>
     </div>
 
     <div id="aula_pc" hidden>
-        <section class="ui container">
-            <div class="fluid ui buttons">
-                <a class="ui basic black button" href="#" id="btn_cam">Operando a câmera</a>
-                <a class="ui active black button" style="color:#f2eeea">Editando as fotos</a>
+        <section class="ui center aligned container">
+            <div class="ui buttons">
+                <a class="ui basic black button" href="#" id="btn_cam">Câmera</a>
+                <a class="ui active black button" style="color:#f2eeea">Edição</a>
             </div>
 
             <div class="ui divided link items">
                 Em breve...
-
-                <!--  <div class="item">
-          <div class="content">
-            <div class="header">Que software usar?</div>
-            <div class="description"><p>Descubra ferramentas para editar fotos</p></div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="content">
-            <div class="header">GIMP</div>
-            <div class="description"><p>Um editor gratuito e poderoso</p></div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="content">
-            <div class="header">Affinity Photo</div>
-            <div class="description"><p>Uma alternativa para o photoshop</p></div>
-          </div>
-        </div> -->
             </div>
         </section>
     </div>
@@ -188,7 +137,7 @@
     <div class="ui hidden divider"></div>
 
     <div class="ui container">
-        <button class="ui fluid basic button" id="back-to-top-btn"><i class="fa fa-arrow-up"></i></button>
+        <a class="ui horizontal divider" id="back-to-top-btn"><i class="fa fa-arrow-up"></i></a>
         <div class="ui hidden divider"></div>
         <div>
 
