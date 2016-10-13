@@ -54,7 +54,7 @@
   <h2 class="ui center aligned header">Tira-dúvidas</h2>
   <div class="ui hidden divider"></div>
 
-  <section class="ui center aligned container" style="font-size:1.5em">
+  <!--<section class="ui center aligned container" style="font-size:1.5em">
     Minhas fotos estão
     <select class="ui search dropdown" id="escolha">
       <div class="menu">
@@ -69,7 +69,17 @@
     </select>
     <div class="ui hidden divider"></div>
 
+  </section>-->
+
+  <section class="ui center aligned container">
+    <div class="ui fluid search" id="busca">
+      <h3 style="padding-left:5em">Minhas fotos estão <span class="ui transparent input">
+        <input class="prompt" type="text" placeholder=" (digite aqui)">
+      </span></h3>
+      <div class="results"></div>
+    </div>
   </section>
+
 
 
   <section class="ui container">
@@ -235,6 +245,29 @@
   </script>
 
   <script>
+  var erros = [
+  { title: 'claras',sinonimos:'brancas'},
+  { title: 'escuras',sinonimos:'pretas'},
+  { title: 'ruidosas',sinonimos:'granuladas•pontilhadas'},
+];
+  $('.ui.search').bind('input', function() {
+    $('.ui.search').search({
+      source: erros,searchFields:['title','sinonimos'],
+      minCharacters:1,
+      transition:'fade down',
+      searchFullText: false,
+      onSelect: function(resultado){
+        var classe="."+resultado.title+"Card";
+        $(".card").hide()
+        $(classe).show();
+      }
+
+    });
+});
+//$('.ui.search').onResultsAdd(alert("queijo"));
+  </script>
+
+  <!--<script>
     $('.ui.dropdown').dropdown({
       onChange:function(){
         var problema = $('#escolha :selected').val();
@@ -264,7 +297,7 @@
         };
       }
     });
-  </script>
+  </script> -->
 
   <div class="ui hidden divider"></div>
 
