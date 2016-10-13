@@ -56,19 +56,17 @@
 
   <section class="ui center aligned container">
     <div class="ui fluid search" id="busca">
-      <h3 style="padding-left:5em">Minhas fotos estão <span class="ui transparent input">
+      <h3 style="text-align:left">Minhas fotos estão <span class="ui transparent input"onClick="$('.prompt').select();">
         <input class="prompt" type="text" placeholder=" (digite aqui)">
       </span></h3>
       <div class="results"></div>
     </div>
   </section>
 
-  <section class="ui container" id="o_que_fazer">
-    <h2>Nossas sugestões:</h2>
-  </section>
 
   <section class="ui container">
-    <h3 class="o_que_fazer" style="text-align:left">O que você pode fazer:</h3>
+    <h4 hidden id="o_que_fazer">Nossas sugestões:</h4>
+
     <div class="ui two doubling cards">
 
       <div class="card clarasCard ruidosasCard" hidden>
@@ -218,14 +216,13 @@
   </section>
 
   <div class="ui container back-to-top-btn">
-  <button class="ui fluid basic button"><i class="fa fa-arrow-up"></i></button>
+  <a class="ui horizontal divider"><i class="fa fa-arrow-up"></i></a>
   </div>
 
   <script>
-  $('.input').focus();
+  $('.prompt').focus();
   $(".card").hide();
   $(".back-to-top-btn").hide()
-  $("#o_que_fazer").hide();
   </script>
 
   <script>
@@ -242,8 +239,10 @@
       searchFullText: false,
       onSelect: function(resultado){
         var classe="."+resultado.title+"Card";
-        $(".card").hide()
+        $(".card").hide();
         $(classe).show();
+        $('#o_que_fazer').show();
+        $(".back-to-top-btn").show()
       }
 
     });
@@ -254,9 +253,8 @@
   <div class="ui hidden divider"></div>
 
   <script>
-    $(".fluid.button").click(function(){
+    $(".horizontal.divider").click(function(){
         $('html, body').scrollTop(0);
-        $("#back-to-top-btn").blur()
     });
   </script>
 

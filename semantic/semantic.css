@@ -8327,6 +8327,7 @@ img.ui.bordered.image {
   background-color: transparent !important;
   padding: 0em !important;
   box-shadow: none !important;
+  color:orange
 }
 
 /* Transparent Icon */
@@ -30012,7 +30013,7 @@ a.ui.nag {
  */
 
 /*******************************
-             Search
+             Search - BUSCA
 *******************************/
 
 .ui.search {
@@ -30039,7 +30040,6 @@ a.ui.nag {
 }
 
 .ui.search .prompt {
-  border-radius: 500rem;
 }
 
 /*--------------
@@ -30067,7 +30067,7 @@ a.ui.nag {
   width: 18em;
   border-radius: 0.28571429rem;
   box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15);
-  border: 1px solid #D4D4D5;
+  border: 1px solid black;
   z-index: 998;
 }
 
