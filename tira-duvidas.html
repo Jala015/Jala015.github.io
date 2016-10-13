@@ -54,23 +54,6 @@
   <h2 class="ui center aligned header">Tira-dúvidas</h2>
   <div class="ui hidden divider"></div>
 
-  <!--<section class="ui center aligned container" style="font-size:1.5em">
-    Minhas fotos estão
-    <select class="ui search dropdown" id="escolha">
-      <div class="menu">
-        <option class="default text" value="reticencias">...</option>
-        <option value="claras">claras</option>
-        <option value="claras">brancas</option>
-        <option value="escuras">escuras</option>
-        <option value="escuras">pretas</option>
-        <option value="ruidosas">ruidosas</option>
-        <option value="ruidosas">granuladas</option>
-      </div>
-    </select>
-    <div class="ui hidden divider"></div>
-
-  </section>-->
-
   <section class="ui center aligned container">
     <div class="ui fluid search" id="busca">
       <h3 style="padding-left:5em">Minhas fotos estão <span class="ui transparent input">
@@ -80,7 +63,9 @@
     </div>
   </section>
 
-
+  <section class="ui container" id="o_que_fazer">
+    <h2>Nossas sugestões:</h2>
+  </section>
 
   <section class="ui container">
     <h3 class="o_que_fazer" style="text-align:left">O que você pode fazer:</h3>
@@ -237,11 +222,10 @@
   </div>
 
   <script>
-  $('.ui.dropdown').dropdown('show');
-  $('.search').focus();
+  $('.input').focus();
   $(".card").hide();
   $(".back-to-top-btn").hide()
-  $(".o_que_fazer").hide();
+  $("#o_que_fazer").hide();
   </script>
 
   <script>
@@ -267,38 +251,6 @@
 //$('.ui.search').onResultsAdd(alert("queijo"));
   </script>
 
-  <!--<script>
-    $('.ui.dropdown').dropdown({
-      onChange:function(){
-        var problema = $('#escolha :selected').val();
-        //alert(problema)
-        //$("#escolha").blur();
-
-        $(".card").hide();
-
-        if (problema=="reticencias") {
-          $(".back-to-top-btn").hide()
-          $(".o_que_fazer").hide();
-        };
-        if (problema=="claras") {
-          $(".clarasCard").show();
-          $(".back-to-top-btn").show();
-          $(".o_que_fazer").show();
-        };
-        if (problema=="escuras") {
-          $(".escurasCard").show();
-          $(".back-to-top-btn").show();
-          $(".o_que_fazer").show();
-        };
-        if (problema=="ruidosas") {
-          $(".ruidosasCard").show();
-          $(".back-to-top-btn").show();
-          $(".o_que_fazer").show();
-        };
-      }
-    });
-  </script> -->
-
   <div class="ui hidden divider"></div>
 
   <script>
@@ -307,6 +259,7 @@
         $("#back-to-top-btn").blur()
     });
   </script>
+
 </body>
 
 </html>
