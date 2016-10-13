@@ -227,16 +227,16 @@
 
   <script>
   var erros = [
-  { title: 'claras',sinonimos:'brancas'},
-  { title: 'escuras',sinonimos:'pretas'},
+  { title: 'claras',sinonimos:'brancas•palidas•desbotadas'},
+  { title: 'escuras',sinonimos:'pretas•negras•sombreadas'},
   { title: 'ruidosas',sinonimos:'granuladas•pontilhadas'},
 ];
   $('.ui.search').bind('input', function() {
     $('.ui.search').search({
       source: erros,searchFields:['title','sinonimos'],
-      minCharacters:1,
+      minCharacters:3,
       transition:'fade down',
-      searchFullText: false,
+      searchFullText: true,
       onSelect: function(resultado){
         var classe="."+resultado.title+"Card";
         $(".card").hide();
