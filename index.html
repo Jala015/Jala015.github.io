@@ -25,7 +25,7 @@
             background: orange;
         }
 
-        ::selection {
+         ::selection {
             color: black;
             background: orange;
         }
@@ -43,7 +43,7 @@
     </header>
 
     <section class="ui container" style="width:80%">
-      <div class="ui divider"></div>
+        <div class="ui divider"></div>
         <p style="text-align:justify;font-size:1.1em">
             Na era dos smartphones, todo mundo carrega consigo uma câmera. Tirar fotos tornou-se banal: apenas apontar para o assunto e clicar um botão. Porém, com alguns conceitos a mais você passa a ter controle total sobre suas fotos.
             <br>Esse site é para você que quer aprender a fotografar e ainda não tem nenhum conceito. Ao contrário da maioria dos sites de fotografia, ele tem páginas leves, minimalistas e <b>sem propagandas</b>.
@@ -101,11 +101,11 @@
                     </div>
                 </a>
 
-                <div class="ui card" style="border-left:solid grey;border-right:solid grey;border-width:2px">
+                <div class="ui card" target="_blank" style="border-left:solid grey;border-right:solid grey;border-width:2px">
                     <div class="content">
-                        <div class="ui center aligned header">Poupe dados</div>
+                        <div class="ui center aligned header">Poupe Dados</div>
                         <div class="description" style="text-align:center;font-size:1.1em">
-                            Em dispositivos <i>mobile</i> o carregamento das imagens é opcional.
+                            Em celulares o carregamento das imagens é opcional.
                         </div>
                     </div>
                     <div class="ui horizontal divider" style="text-align:center;background:none;">
@@ -113,8 +113,32 @@
                     </div>
                 </div>
             </div>
-
             <div class="ui hidden divider"></div>
+            <div class="ui three tiny buttons">
+                <a class="ui button" href="./novidades.html" style="text-align:leftborder-width:2px">
+                    <h3>Novidades</h3>
+                </a>
+
+                <a class="ui button" href="https://www.flickr.com/photos/135602814@N04/" target="_blank" style="text-align:leftborder-width:2px">
+                    <div class="content">
+                        <h3>Flickr</h3>
+                    </div>
+
+                </a>
+
+                <a class="ui button" href="https://jala015.typeform.com/to/EuIIA2" style="border-width:2px">
+                    <div class="content">
+                        <h3>Contato</h3>
+                    </div>
+
+                </a>
+            </div>
+
+
+
+
+
+
             <div class="ui hidden divider"></div>
             <div class="ui horizontal divider">
                 <a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.5em; color:#3A5999; padding: 0 10px"  data-content="compartilhe" data-position="top center" data-variation="inverted" id="btn_face"></i></a>
@@ -133,27 +157,6 @@
 
     </section>
 
-    <footer class="ui container">
-    <a class="typeform-share link" href="https://jala015.typeform.com/to/EuIIA2" data-mode="1" target="_blank" style="color:black;">Contato</a>
-    <script>
-        (function() {
-            var qs, js, q, s, d = document,
-                gi = d.getElementById,
-                ce = d.createElement,
-                gt = d.getElementsByTagName,
-                id = 'typef_orm',
-                b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
-            if (!gi.call(d, id)) {
-                js = ce.call(d, 'script');
-                js.id = id;
-                js.src = b + 'share.js';
-                q = gt.call(d, 'script')[0];
-                q.parentNode.insertBefore(js, q)
-            }
-        })()
-    </script> | <a href="https://www.flickr.com/photos/135602814@N04/" style="color:black" target="_blank">Flickr</a> |
-    <a href="./novidades.html" style="color:black" target="_blank">Novidades</a>
-  </footer>
 
 </body>
 
