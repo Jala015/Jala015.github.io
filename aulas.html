@@ -44,7 +44,12 @@
             </div>
 
             <div class="six wide column" style="padding: 27px 0; text-align:right;">
-                <button class="ui basic button" style="border-radius:10px"><i class="fa fa-search"></i></button>
+              <div class="ui search">
+                <span class="input" id="busca" style="border-radius:20px" onClick="$('.prompt').select();">
+                  <input class="prompt" style="border-radius:20px;text-align:center" type="text" placeholder="BUSCA">
+                </span>
+                <div class="results"></div>
+              </div>
             </div>
         </div>
     </header>
@@ -89,7 +94,7 @@
 
             <div class="ui three stackable cards">
 
-                <a class="card" href="./aulas/o_basico.html" style="border-left:solid grey;border-right:solid grey">
+                <a class="card" href="./aulas/o_basico.html" style="border-left:solid grey;border-right:solid grey" id="o_basico">
                     <div class="content">
                         <h2 class="header">O Básico</h2>
                         <div class="description">
@@ -98,7 +103,7 @@
                     </div>
                 </a>
 
-                <a class="card" href="./aulas/abertura.html" style="border-left:solid grey;border-right:solid grey">
+                <a class="card" href="./aulas/abertura.html" style="border-left:solid grey;border-right:solid grey"id="abertura">
                     <div class="content">
                         <h2 class="header">Abertura</h2>
                         <div class="description">
@@ -107,7 +112,7 @@
                     </div>
                 </a>
 
-                <a class="card" href="./aulas/iso.html" style="border-left:solid grey;border-right:solid grey">
+                <a class="card" href="./aulas/iso.html" style="border-left:solid grey;border-right:solid grey"id="iso">
                     <div class="content">
                         <h2 class="header">ISO</h2>
                         <div class="description">
@@ -141,6 +146,37 @@
         <div class="ui hidden divider"></div>
         <div>
 
+          <script>
+          var aulas = [
+          { title: 'O Básico',
+          ref:"o_basico",
+          palavrasChave:'luz•introducao•introdução•cor•cores'},
+          { title: 'Abertura',
+          ref:"abertura",
+          palavrasChave:'diafragma•dof•sprofundidade•campo•pupila'},
+          { title: 'ISO',
+          ref:"iso",
+          palavrasChave:'ruido•pontilhadas'},
+          ];
+
+          $('.search').bind('input', function() {
+            if ($(".prompt").val()=="") {
+              $(".card").show("fast");
+            }
+            $('.ui.search').search({
+              source: aulas,
+              searchFields:['title','palavrasChave'],
+              transition:'fade down',
+              onSelect: function(resultado){
+                var id="#"+resultado.ref;
+                $(".card").hide()
+                $(id).show();
+
+              }
+            });
+          });
+          </script>
+
             <script>
                 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
                     $('.extra').hide();
@@ -162,6 +198,8 @@
                     $("#back-to-top-btn").blur()
                 });
             </script>
+
+
 
 
 </body>
