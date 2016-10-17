@@ -232,6 +232,11 @@
   { title: 'ruidosas',sinonimos:'granuladas•pontilhadas'},
 ];
   $('.ui.search').bind('input', function() {
+    if ($(".prompt").val()=="") {
+      $(".card").hide("fast");
+      $('#o_que_fazer').hide();
+      $(".back-to-top-btn").hide()
+    }
     $('.ui.search').search({
       source: erros,searchFields:['title','sinonimos'],
       minCharacters:3,
@@ -239,7 +244,7 @@
       onSelect: function(resultado){
         var classe="."+resultado.title+"Card";
         $(".card").hide();
-        $(classe).show();
+        $(classe).show("fast");
         $('#o_que_fazer').show();
         $(".back-to-top-btn").show()
       }
