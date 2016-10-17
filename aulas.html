@@ -44,43 +44,20 @@
             </div>
 
             <div class="six wide column" style="padding: 27px 0; text-align:right;">
-              <div class="ui search" style="widh:90%">
-                <span class="input" id="busca" style="border-radius:20px" onClick="$('.prompt').select();">
-                  <input class="prompt" style="border-radius:20px;text-align:center" type="text" placeholder="BUSCA">
-                </span>
-                <div class="results"></div>
-              </div>
-            </div>
+              <a href="../tira-duvidas.html" style="color:grey">Tira-dúvidas</a>
         </div>
     </header>
 
     <h2 class="ui center aligned header">Aulas</h2>
 
-
-<div class="ui center aligned container">
-    <div class="ui modal">
-      <script>
-  (function() {
-    var cx = '013108389015981437556:mlonwpjyfli';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:search></gcse:search>
+<div class="ui hidden divider"></div>
+    <div class="ui center aligned container fluid search" style="widh:90%">
+      <span class="input" id="busca" style="border-radius:20px" onClick="$('.prompt').select();">
+        <input class="prompt" style="border-radius:20px;text-align:center" type="text" placeholder="BUSCA">
+      </span>
+      <div class="results"></div>
     </div>
-
-  </div>
-  <script>
-      $(".button").click(function() {
-        $('.modal')
-            .modal('show');
-        $(".fluid.button").blur()
-      })
-  </script>
+    </div>
 
   <div class="ui hidden divider"></div>
 
@@ -150,13 +127,16 @@
           var aulas = [
           { title: 'O Básico',
           url:"http://cursofotografia.cf/aulas/o_basico.html",
-          palavrasChave:'luz•introducao•introdução•cor•cores'},
+          palavrasChave:'luz•introducao•introdução•cor•cores',
+          description:"Conceitos básicos para você não se perder daqui a pouco"},
           { title: 'Abertura',
           url:"http://cursofotografia.cf/aulas/abertura.html",
-          palavrasChave:'diafragma•dof•profundidade•campo•pupila'},
+          palavrasChave:'diafragma•dof•profundidade•campo•pupila',
+          description:"Aprenda o que é e para que serve o diafragma de sua câmera"},
           { title: 'ISO',
           url:"http://cursofotografia.cf/aulas/iso.html",
-          palavrasChave:'ruido•pontilhadas'},
+          palavrasChave:'ruido•pontilhadas',
+          description:"Controle a sensibilidade do sensor e previna fotos granuladas"},
           ];
 
           $('.search').bind('input', function() {
