@@ -33,7 +33,7 @@
 
     <header>
         <div class="ui grid container" style="width:90%">
-            <div class="left aligned left floated ten wide column">
+            <div class="left aligned left floated five wide column">
                 <div class="column" style="padding: 15px 0; text-align:left">
                     <div class="ui breadcrumb">
                         <a class="section" href="index.html">Início</a>
@@ -44,7 +44,7 @@
             </div>
 
             <div class="six wide column" style="padding: 27px 0; text-align:right;">
-              <div class="ui search">
+              <div class="ui search" style="widh:90%">
                 <span class="input" id="busca" style="border-radius:20px" onClick="$('.prompt').select();">
                   <input class="prompt" style="border-radius:20px;text-align:center" type="text" placeholder="BUSCA">
                 </span>
@@ -149,29 +149,21 @@
           <script>
           var aulas = [
           { title: 'O Básico',
-          ref:"o_basico",
+          url:"http://cursofotografia.cf/aulas/o_basico.html",
           palavrasChave:'luz•introducao•introdução•cor•cores'},
           { title: 'Abertura',
-          ref:"abertura",
+          url:"http://cursofotografia.cf/aulas/abertura.html",
           palavrasChave:'diafragma•dof•profundidade•campo•pupila'},
           { title: 'ISO',
-          ref:"iso",
+          url:"http://cursofotografia.cf/aulas/iso.html",
           palavrasChave:'ruido•pontilhadas'},
           ];
 
           $('.search').bind('input', function() {
-            if ($(".prompt").val()=="") {
-              $(".card").show("fast");
-            }
             $('.ui.search').search({
               source: aulas,
               searchFields:['title','palavrasChave'],
               transition:'fade down',
-              onSelect: function(resultado){
-                var id="#"+resultado.ref;
-                $(".card").hide()
-                $(id).show();
-
               }
             });
           });
