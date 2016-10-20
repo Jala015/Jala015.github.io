@@ -44,19 +44,20 @@
       </div>
 
       <div class="six wide column" style="padding: 27px 0; text-align:right;">
-        <a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/tira-duvidas.html" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.5em; color:black; padding: 0 10px" data-content="compartilhe" data-position="bottom left" data-variation="inverted" id="btn_face"></i></a><script>$('#btn_face').popup()</script>
-        <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf/tira-duvidas.html&text=Dicas%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter-square" style="font-size: 1.5em; color:black; padding: 0 10px" data-content="tweet" data-position="bottom center" data-variation="inverted" id="btn_tweeter"></i></a><script>$('#btn_tweeter').popup()</script>
-        <a href="https://plusone.google.com/_/+1/confirm?hl=en&url=https://cursofotografia.cf/tira-duvidas.html<?php if(is_home()){echo home_url();}else{the_permalink();} ?>" target="_blank" title="Plus one this page on Google"><i class="fa fa-google-plus-square" style="font-size: 1.5em; color:black; padding: 0 10px" data-content="compartilhe" data-position="bottom right" data-variation="inverted" id="btn_gplus"></i></a><script>$('#btn_gplus').popup()</script>
+        <a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/tira-duvidas.html" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.5em; color:#3A5999; padding: 0 10px" data-content="compartilhe" data-position="bottom left" id="btn_face"></i></a><script>$('#btn_face').popup()</script>
+        <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf/tira-duvidas.html&text=Dicas%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter-square" style="font-size: 1.5em; color:#319CD8; padding: 0 10px" data-content="tweet" data-position="bottom center" id="btn_tweeter"></i></a><script>$('#btn_tweeter').popup()</script>
+        <a href="https://plusone.google.com/_/+1/confirm?hl=en&url=https://cursofotografia.cf/tira-duvidas.html<?php if(is_home()){echo home_url();}else{the_permalink();} ?>" target="_blank" title="Plus one this page on Google"><i class="fa fa-google-plus-square" style="font-size: 1.5em; color:#CF3229; padding: 0 10px" data-content="compartilhe" data-position="bottom right" id="btn_gplus"></i></a><script>$('#btn_gplus').popup()</script>
       </div>
     </div>
   </header>
 
-  <h2 class="ui center aligned header">Tira-dúvidas</h2>
+  <h3 class="ui horizontal divider container">Tira-dúvidas</h3>
   <div class="ui hidden divider"></div>
 
+
   <section class="ui center aligned container">
-    <div class="ui fluid search" id="busca">
-      <h3 style="text-align:left">Minhas fotos estão <span class="ui transparent input"onClick="$('.prompt').select();">
+    <div class="ui fluid search" style="padding-top:20px" id="busca">
+      <h3 style="padding-left:3.5em;font-size:1.3em;font-family:Nunito">Minhas fotos estão <span class="ui transparent input"onClick="$('.prompt').select();">
         <input class="prompt" type="text" placeholder=" (digite aqui)">
       </span></h3>
       <div class="results"></div>
@@ -65,9 +66,9 @@
 
 
   <section class="ui container">
-    <h4 hidden id="o_que_fazer">Nossas sugestões:</h4>
+    <p hidden id="o_que_fazer">Nossas sugestões:</p>
 
-    <div class="ui two doubling cards">
+    <div class="ui two doubling cards" style="font-family:Nunito">
 
       <div class="card clarasCard ruidosasCard" hidden>
         <div class="content">
@@ -83,7 +84,7 @@
         </div>
       </div>
 
-      <div class="card clarasCard" hidden>
+      <div class="card clarasCard desfocadasCard" hidden>
         <div class="content">
           <i class="right floated icon"><i class="fa fa-camera"></i></i>
           <div class="header" style="padding-top:7px">Reduzir <a>tempo do obturador</a></div>
@@ -97,7 +98,7 @@
         </div>
       </div>
 
-      <div class="card clarasCard" hidden>
+      <div class="card clarasCard desfocadasCard" hidden>
         <div class="content">
           <i class="right floated icon"><i class="fa fa-camera"></i></i>
           <div class="header" style="padding-top:7px">Reduzir <a href="aulas/abertura.html">abertura</a></div>
@@ -167,6 +168,22 @@
         </div>
       </div>
 
+      <div class="card desfocadasCard" hidden>
+        <div class="content">
+          <i class="right floated icon"><i class="fa fa-camera"></i></i>
+          <div class="header" style="padding-top:7px">Usar um tripé</div>
+        <div class="ui divider"></div>
+          <div class="description">
+            <div class="ui bulleted list">
+              <div class="item">Fotos menos tremidas</div>
+              <div class="item">Demora mais para enquadrar</div>
+              <div class="item">Limita enquadramentos possíveis</div>
+              <div class="item">Permite longos tempos de exposição</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- PC -->
 
       <div class="card clarasCard escurasCard">
@@ -176,7 +193,7 @@
         <div class="ui divider"></div>
           <div class="description">
             <div class="ui bulleted list">
-              <div class="item">[PESQUISAR]</div>
+              <div class="item">Muda luminosidade dos pixels proporcionalmente</div>
             </div>
           </div>
         </div>
@@ -230,6 +247,7 @@
   { title: 'claras',sinonimos:'brancas•palidas•desbotadas'},
   { title: 'escuras',sinonimos:'pretas•negras•sombreadas'},
   { title: 'ruidosas',sinonimos:'granuladas•pontilhadas'},
+  { title: 'desfocadas',sinonimos:'borradas•tremidas'},
 ];
   $('.ui.search').bind('input', function() {
     if ($(".prompt").val()=="") {
