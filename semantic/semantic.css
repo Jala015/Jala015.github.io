@@ -72,7 +72,7 @@ input[type="password"] {
  */
 
 html {
-  font-family: sans-serif;
+  font-family: "Nunito",sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -4786,7 +4786,7 @@ input::selection {
 /* Text Container */
 
 .ui.text.container {
-  font-family: 'Scope One', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   max-width: 700px !important;
   line-height: 1.5;
 }
@@ -8153,7 +8153,7 @@ img.ui.bordered.image {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   text-align: left;
   line-height: 1.2142em;
-  font-family: 'Scope One', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   padding: 0.67861429em 1em;
   background: #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
@@ -13958,7 +13958,7 @@ ol.ui.horizontal.list li:before,
 .ui.form input[type="text"],
 .ui.form input[type="file"],
 .ui.form input[type="url"] {
-  font-family: 'Scope One', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   margin: 0em;
   outline: none;
   -webkit-appearance: none;
@@ -17382,7 +17382,7 @@ ol.ui.horizontal.list li:before,
   display: -ms-flexbox;
   display: flex;
   margin: 1rem 0em;
-  font-family: 'Scope One', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   background: #FFFFFF;
   font-weight: normal;
   border: 1px solid rgba(34, 36, 38, 0.15);
@@ -24138,7 +24138,7 @@ a.ui.card:hover,
 
 .ui.statistics .statistic > .label,
 .ui.statistic > .label {
-  font-family: 'Scope One', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 1em;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.87);
@@ -28335,7 +28335,7 @@ a.ui.nag {
 
 .ui.popup > .header {
   padding: 0em;
-  font-family: 'Scope One', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 1.14285714em;
   line-height: 1.2;
   font-weight: bold;
@@ -30124,7 +30124,7 @@ a.ui.nag {
 
 .ui.search > .results .result .title {
   margin: -0.14285em 0em 0em;
-  font-family: 'Scope One', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1em;
   color: rgba(0, 0, 0, 0.85);
@@ -30150,7 +30150,7 @@ a.ui.nag {
 }
 
 .ui.search > .results > .message .header {
-  font-family: 'Scope One', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.87);
@@ -30360,7 +30360,7 @@ a.ui.nag {
 .ui.category.search > .results .category > .name {
   width: 100px;
   background: transparent;
-  font-family: 'Scope One', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 1em;
   float: 1em;
   float: left;
