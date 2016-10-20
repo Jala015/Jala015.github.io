@@ -36,6 +36,19 @@ html {
   box-sizing: border-box;
 }
 
+@media print
+{
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+
+@media screen
+{
+    .no-screen, .no-screen * {display:none !important;}
+}
+
 
 p{
   font-size: 1em;

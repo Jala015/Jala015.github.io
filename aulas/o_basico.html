@@ -33,7 +33,7 @@
 <body onload="MostraSoUm();" style="background:#f2eeea">
 
     <header>
-        <div class="ui grid container" style="width:90%">
+        <div class="ui grid container no-print" style="width:90%">
             <div class="left aligned left floated ten wide column">
                 <div class="column" style="padding: 15px 0; text-align:left">
                     <div class="ui breadcrumb">
@@ -66,7 +66,7 @@
         <h1 itemprop="name" class="ui center aligned header">O Básico</h1>
 
 
-        <div class="ui horizontal divider"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/o_basico" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a>
+        <div class="ui horizontal divider no-print"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/o_basico" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a>
             <script>
                 $('#btn_face').popup()
             </script>
@@ -135,7 +135,7 @@
         <div class="ui hidden divider"></div>
 
         <div class="ui hidden divider"></div>
-        <div class="ui buttons">
+        <div class="ui buttons no-print">
             <button class="ui disabled basic button"><i class="fa fa-caret-left" style="font-size:2em;"></i></button>
             <button class="ui basic button" onclick="location.href='../aulas.html'"><div class="sub header">AULAS</div></button>
             <button class="ui basic button" onclick="location.href='./abertura.html'" data-content="Abertura" data-variation="inverted" id="btn_proximo"><i class="fa fa-caret-right" style="font-size:2em;"></i></button>
@@ -146,30 +146,30 @@
     </footer>
 
     <div class="ui two column grid container">
-        <div class="column">
-            <a class="typeform-share link" href="https://jala015.typeform.com/to/EuIIA2" data-mode="1" target="_blank"><i class="fa fa-question-circle" style="color:black;font-size:1.5em" data-content="Enviar dúvida" data-variation="inverted basic" id="duvida"></i></a>
-            <script>
-                (function() {
-                    var qs, js, q, s, d = document,
-                        gi = d.getElementById,
-                        ce = d.createElement,
-                        gt = d.getElementsByTagName,
-                        id = 'typef_orm',
-                        b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
-                    if (!gi.call(d, id)) {
-                        js = ce.call(d, 'script');
-                        js.id = id;
-                        js.src = b + 'share.js';
-                        q = gt.call(d, 'script')[0];
-                        q.parentNode.insertBefore(js, q)
-                    }
-                })()
-            </script>
-            <script>
-                $('#duvida').popup()
-            </script>
-
-        </div>
+      <div class="column">
+          <a class="typeform-share link no-print" href="https://jala015.typeform.com/to/EuIIA2" data-mode="1" target="_blank"><i class="fa fa-question-circle" style="color:black;font-size:1.5em" data-content="Enviar dúvida" data-variation="inverted basic" id="duvida"></i></a>
+          <script>
+              (function() {
+                  var qs, js, q, s, d = document,
+                      gi = d.getElementById,
+                      ce = d.createElement,
+                      gt = d.getElementsByTagName,
+                      id = 'typef_orm',
+                      b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+                  if (!gi.call(d, id)) {
+                      js = ce.call(d, 'script');
+                      js.id = id;
+                      js.src = b + 'share.js';
+                      q = gt.call(d, 'script')[0];
+                      q.parentNode.insertBefore(js, q)
+                  }
+              })()
+          </script>
+          <script>
+              $('#duvida').popup()
+          </script>
+          <footer class="no-screen"><h4 class="ui header">cursofotografia.cf</h4></footer>
+      </div>
         <div class="column">
             <p class="ui right aligned container" style="font-size:0.8em">
                 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img id="creative-commons" data-content="Este texto está licenciado com uma Licença Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional." data-position="top right" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
@@ -210,6 +210,7 @@
             $('#carr-img-container').hide()
         });
     </script>
+
 
 </body>
 

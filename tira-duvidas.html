@@ -32,7 +32,7 @@
 <body style="background: #ededed">
 
   <header>
-    <div class="ui grid container" style="width:90%">
+    <div class="ui grid container no-print" style="width:90%">
       <div class="left aligned left floated ten wide column">
         <div class="column" style="padding: 15px 0; text-align:left">
           <div class="ui breadcrumb">
@@ -57,7 +57,7 @@
 
   <section class="ui center aligned container">
     <div class="ui fluid search" style="padding-top:20px" id="busca">
-      <h3 style="padding-left:3.5em;font-size:1.3em;font-family:Nunito">Minhas fotos estão <span class="ui transparent input"onClick="$('.prompt').select();">
+      <h3 style="padding-left:3.5em;font-size:1.3em;font-family:Nunito"><span class="no-screen">Soluções para fotos</span><span class="no-print">Minhas fotos estão </span><span class="ui transparent input"onClick="$('.prompt').select();">
         <input class="prompt" type="text" placeholder=" (digite aqui)">
       </span></h3>
       <div class="results"></div>
@@ -179,6 +179,7 @@
               <div class="item">Demora mais para enquadrar</div>
               <div class="item">Limita enquadramentos possíveis</div>
               <div class="item">Permite longos tempos de exposição</div>
+              <div class="item">Mais peso para carregar (se não estiver em um estúdio)</div>
             </div>
           </div>
         </div>
@@ -233,8 +234,9 @@
   </section>
 
   <div class="ui container back-to-top-btn">
-  <a class="ui horizontal divider"><i class="fa fa-arrow-up"></i></a>
+  <a class="ui horizontal divider no-print"><i class="fa fa-arrow-up"></i></a>
   </div>
+  <footer class="no-screen"><div class="ui hidden divider"></div><h3 class="ui center aligned header"><b>cursofotografia.cf</b></h3></footer>
 
   <script>
   $('.prompt').focus();

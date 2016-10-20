@@ -33,7 +33,7 @@
 <body onload="MostraSoUm();" style="background:#f2eeea">
 
     <header>
-        <div class="ui grid container" style="width:90%">
+        <div class="ui grid container no-print" style="width:90%">
             <div class="left aligned left floated ten wide column">
                 <div class="column" style="padding: 15px 0; text-align:left">
                     <div class="ui breadcrumb">
@@ -64,7 +64,7 @@
     <section itemscope itemtype="http://schema.org/Article" class="ui container">
         <h1 itemprop="name" class="ui center aligned header">Abertura</h1>
 
-        <div class="ui horizontal divider"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/abertura" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a>
+        <div class="ui horizontal divider no-print"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/abertura" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a>
             <script>
                 $('#btn_face').popup()
             </script>
@@ -121,7 +121,7 @@
             <p><img class="lazy-img" data-src='../img/abertura/escala-abertura.png' alt='escala' style="max-width: 90%;display: block;margin:0 auto;" /></p>
 
 
-            <div class="ui styled fluid accordion" style="background:#ededed">
+            <div class="ui styled fluid accordion no-print" style="background:#ededed">
                 <h2 class="title">Aprofundando um pouco <i class="fa fa-chevron-down"></i></h2>
                 <div class="content">
                     <p>Se você experimentar alterar a abertura da sua lente, vai ver que o número F varia em valores estranhos (ex: f/5.6). Isso acontece porque a abertura costuma variar em intervalos, conhecidos como f-stops. A cada f-stop, a área abertura
@@ -148,6 +148,32 @@
                     </table>
                     <p>Muitas vezes as câmeras não seguem essa escala (sempre o dobro da área), o que pode acarretar em valores que não seguem o padrão da tabela.</p>
                 </div></div>
+                <div class="no-screen">
+                  <h2 class="ui center aligned header">Aprofundando um pouco</h2>
+                  <p>Se você experimentar alterar a abertura da sua lente, vai ver que o número F varia em valores estranhos (ex: f/5.6). Isso acontece porque a abertura costuma variar em intervalos, conhecidos como f-stops. A cada f-stop, a área abertura
+                      aumenta em dobro. Porém, multiplicar a área por dois significa multiplicar o diâmetro por √2 (aproximadamente 1,4):</p>
+                  <table class="ui very basic celled unstackable table" style="padding-bottom:10px;padding-top:10px">
+                      <thead>
+                          <tr>
+                              <th>Area</th>
+                              <th>x</th>
+                              <th>2x</th>
+                              <th>3x</th>
+                              <th>4x</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>F</td>
+                              <td>1.4</td>
+                              <td>2.8</td>
+                              <td>4.2</td>
+                              <td>5.6</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <p>Muitas vezes as câmeras não seguem essa escala (sempre o dobro da área), o que pode acarretar em valores que não seguem o padrão da tabela.</p>
+                </div>
                 <script>
                     $('.ui.accordion')
                         .accordion();
@@ -171,7 +197,7 @@
         <div class="ui hidden divider"></div>
 
         <div class="ui hidden divider"></div>
-        <div class="ui buttons">
+        <div class="ui buttons no-print">
             <button class="ui basic button" id="btn_voltar" onclick="location.href='./o_basico.html'" data-content="O Básico" data-variation="inverted"><i class="fa fa-caret-left" style="font-size:2em;"></i></button>
             <script>
                 $('#btn_voltar').popup()
@@ -187,7 +213,7 @@
 
     <div class="ui two column grid container">
         <div class="column">
-            <a class="typeform-share link" href="https://jala015.typeform.com/to/EuIIA2" data-mode="1" target="_blank"><i class="fa fa-question-circle" style="color:black;font-size:1.5em" data-content="Enviar dúvida" data-variation="inverted basic" id="duvida"></i></a>
+            <a class="typeform-share link no-print" href="https://jala015.typeform.com/to/EuIIA2" data-mode="1" target="_blank"><i class="fa fa-question-circle" style="color:black;font-size:1.5em" data-content="Enviar dúvida" data-variation="inverted basic" id="duvida"></i></a>
             <script>
                 (function() {
                     var qs, js, q, s, d = document,
@@ -208,6 +234,7 @@
             <script>
                 $('#duvida').popup()
             </script>
+            <footer class="no-screen"><h4 class="ui header">cursofotografia.cf</h4></footer>
         </div>
         <div class="column">
             <p class="ui right aligned container" style="font-size:0.8em">

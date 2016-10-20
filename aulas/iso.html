@@ -33,7 +33,7 @@
 <body onload="MostraSoUm();" style="background:#f2eeea">
 
     <header>
-        <div class="ui grid container" style="width:90%">
+        <div class="ui grid container no-print" style="width:90%">
             <div class="left aligned left floated ten wide column">
                 <div class="column" style="padding: 15px 0; text-align:left">
                     <div class="ui breadcrumb">
@@ -64,7 +64,7 @@
     <section itemscope itemtype="http://schema.org/Article" class="ui container">
         <h1 itemprop="name" class="ui center aligned header">ISO</h1>
 
-        <div class="ui horizontal divider"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/iso.html" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a>
+        <div class="ui horizontal divider no-print"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/iso.html" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a>
             <script>
                 $('#btn_face').popup()
             </script>
@@ -95,14 +95,19 @@
                 Alterações no ISO se tornam necessárias. O excesso de ruído pode ser removido depois no computador, mas a qualidade nunca fica a mesma.</p>
             <p>Dispositivos <em>mobile</em> costumam ter a abertura fixa. Assim, são programados para aumentarem o ISO em fotos noturnas.</p><div class="ui hidden divider"></div>
 
-            <div class="ui styled fluid accordion" style="background:#ededed">
+            <div class="ui styled fluid accordion no-print" style="background:#ededed">
                 <h2 class="title">Antigamente <i class="fa fa-chevron-down"></i></h2>
                 <div class="content">
             <p>Antes da fotografia digital, o filme da câmera (que fazia o papel do sensor) era oferecido em várias velocidades. Usar um filme rápido significava usar um filme que precisa de menos luz para gerar uma imagem na luminosidade adequada. A velocidade
                 do filme era medida pela escala ASA (hoje convertida para ISO) e se dava pelo tamanho dos cristais fotosensiveis do filme. Esses cristais escureciam quando expostos à luz. Quanto maiores os cristais, mais sensível o o filme, mas a foto
                 ficava mais granulada.</p>
-              </div>
-            </div>
+              </div></div>
+              <div class="no-screen">
+                <h2 class="ui center aligned header">Antigamente</h2>
+                <p>Antes da fotografia digital, o filme da câmera (que fazia o papel do sensor) era oferecido em várias velocidades. Usar um filme rápido significava usar um filme que precisa de menos luz para gerar uma imagem na luminosidade adequada. A velocidade
+                  do filme era medida pela escala ASA (hoje convertida para ISO) e se dava pelo tamanho dos cristais fotosensiveis do filme. Esses cristais escureciam quando expostos à luz. Quanto maiores os cristais, mais sensível o o filme, mas a foto
+                  ficava mais granulada.</p></div>
+
               <script>
                   $('.ui.accordion')
                       .accordion();
@@ -126,7 +131,7 @@
         <div class="ui hidden divider"></div>
 
         <div class="ui hidden divider"></div>
-        <div class="ui buttons">
+        <div class="ui buttons no-print">
             <button class="ui basic button" id="btn_voltar" onclick="location.href='./abertura.html'" data-content="Abertura" data-variation="inverted"><i class="fa fa-caret-left" style="font-size:2em;"></i></button>
             <script>
                 $('#btn_voltar').popup()
@@ -138,8 +143,8 @@
     </footer>
 
     <div class="ui two column grid container">
-        <div class="column">
-          <a class="typeform-share link" href="https://jala015.typeform.com/to/EuIIA2" data-mode="1" target="_blank"><i class="fa fa-question-circle" style="color:black;font-size:1.5em" data-content="Enviar dúvida" data-variation="inverted basic" id="duvida"></i></a>
+      <div class="column">
+          <a class="typeform-share link no-print" href="https://jala015.typeform.com/to/EuIIA2" data-mode="1" target="_blank"><i class="fa fa-question-circle" style="color:black;font-size:1.5em" data-content="Enviar dúvida" data-variation="inverted basic" id="duvida"></i></a>
           <script>
               (function() {
                   var qs, js, q, s, d = document,
@@ -160,7 +165,8 @@
           <script>
               $('#duvida').popup()
           </script>
-        </div>
+          <footer class="no-screen"><h4 class="ui header">cursofotografia.cf</h4></footer>
+      </div>
         <div class="column">
             <p class="ui right aligned container" style="font-size:0.8em">
                 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img id="creative-commons" data-content="Este texto está licenciado com uma Licença Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional." data-position="top right" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
