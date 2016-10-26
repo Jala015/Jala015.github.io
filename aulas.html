@@ -33,45 +33,43 @@
 
     <header>
         <div class="ui grid container" style="width:90%">
-            <div class="left aligned left floated ten wide column">
+            <div class="left aligned left floated four wide column">
                 <div class="column" style="padding: 15px 0; text-align:left">
-                    <div class="ui breadcrumb">
-                        <a class="section" href="index.html">Início</a>
-                        <div class="divider"> > </div>
-                        <div class="active section">Aulas</div>
-                    </div>
+                  <a class="ui animated fade huge compact button" href="./index.html" style="background:none">
+                    <div class="visible content">[ O ]</div>
+                    <div class="hidden content" style="color:orange">Inicio</div>
+                  </a>
                 </div>
             </div>
 
-            <div class="six wide column" style="padding: 27px 0; text-align:right;">
-              <a href="../tira-duvidas.html" style="color:grey">Tira-dúvidas</a>
-        </div>
+            <div class="eight wide column" style="padding: 27px 0; text-align:right">
+              <div class="ui fluid search" style="widh:90%">
+                <span class="ui input" id="busca" onClick="$('.prompt').select();">
+                  <input class="prompt" style="border-radius: 0.7rem;text-align:center" type="text" placeholder="BUSCA">
+                </span>
+                <div class="results"></div>
+              </div>
+            </div>
+          </div>
     </header>
 
     <h2 class="ui center aligned header">Aulas</h2>
 
 <div class="ui hidden divider"></div>
-    <div class="ui center aligned container fluid search" style="widh:90%">
-      <span class="input" id="busca" style="border-radius:20px" onClick="$('.prompt').select();">
-        <input class="prompt" style="border-radius:20px;text-align:center" type="text" placeholder="BUSCA">
-      </span>
-      <div class="results"></div>
-    </div>
-    </div>
 
-  <div class="ui hidden divider"></div>
+
 
     <div id="aula_cam">
         <section class="ui center aligned container">
             <div class="ui buttons">
-                <a class="ui active black button" style="color:#f2eeea;font-family:Nunito">CÂMERA</a>
-                <a class="ui basic black button" href="#" id="btn_pc" style="font-family:Nunito">EDIÇÃO</a>
+                <a class="ui active orange button" style="color:#f2eeea;font-family:Nunito">CÂMERA</a>
+                <a class="ui basic orange button" href="#" id="btn_pc" style="font-family:Nunito">EDIÇÃO</a>
             </div>
             <div class="ui hidden divider"></div>
 
             <div class="ui three stackable cards">
 
-                <a class="card" href="./aulas/o_basico.html" style="border-left:solid grey;border-right:solid grey" id="o_basico">
+                <a class="card" href="./aulas/o_basico.html"  id="o_basico">
                     <div class="content">
                         <h2 class="header">O Básico</h2>
                         <div class="description">
@@ -80,7 +78,7 @@
                     </div>
                 </a>
 
-                <a class="card" href="./aulas/abertura.html" style="border-left:solid grey;border-right:solid grey"id="abertura">
+                <a class="card" href="./aulas/abertura.html" id="abertura">
                     <div class="content">
                         <h2 class="header">Abertura</h2>
                         <div class="description">
@@ -89,7 +87,7 @@
                     </div>
                 </a>
 
-                <a class="card" href="./aulas/iso.html" style="border-left:solid grey;border-right:solid grey"id="iso">
+                <a class="card" href="./aulas/iso.html" id="iso">
                     <div class="content">
                         <h2 class="header">ISO</h2>
                         <div class="description">
@@ -106,8 +104,8 @@
     <div id="aula_pc" hidden>
         <section class="ui center aligned container">
             <div class="ui buttons">
-                <a class="ui basic black button" href="#" id="btn_cam"style="font-family:Nunito">CÂMERA</a>
-                <a class="ui active black button" style="color:#f2eeea;font-family:Nunito">EDIÇÃO</a>
+                <a class="ui basic orange button" href="#" id="btn_cam"style="font-family:Nunito">CÂMERA</a>
+                <a class="ui active orange button" style="color:#f2eeea;font-family:Nunito">EDIÇÃO</a>
             </div>
 
             <div class="ui divided link items">
@@ -119,7 +117,7 @@
     <div class="ui hidden divider"></div>
 
     <div class="ui container">
-        <a class="ui horizontal divider" id="back-to-top-btn"><i class="fa fa-arrow-up"></i></a>
+        <!-- <a class="ui horizontal divider" id="back-to-top-btn"><i class="fa fa-arrow-up"></i></a> -->
         <div class="ui hidden divider"></div>
         <div>
 
@@ -152,12 +150,6 @@
             });
           });
           </script>
-
-            <script>
-                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                    $('.extra').hide();
-                };
-            </script>
 
             <script>
                 $("#btn_cam").click(function() {
