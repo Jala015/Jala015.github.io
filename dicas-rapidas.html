@@ -240,6 +240,19 @@
   <footer class="no-screen"><div class="ui hidden divider"></div><h3 class="ui center aligned header"><b>cursofotografia.cf</b></h3></footer>
 
   <script>
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    $(".prompt").css({
+  text-align : "center"
+});
+else {
+  $(".prompt").css({
+text-align : "left"
+});
+};
+};
+</script>
+
+<script>
   $('.prompt').focus();
   $(".card").hide();
   $(".back-to-top-btn").hide()
