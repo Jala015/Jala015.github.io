@@ -34,7 +34,7 @@
     <div class="ui grid container no-print" style="width:90%">
       <div class="left aligned left floated ten wide column">
         <div class="column" style="padding: 15px 0; text-align:left">
-          <a class="ui animated fade huge compact button" href="./index.html" style="background:none">
+          <a class="ui animated fade huge compact button no-print" href="./index.html" style="background:none">
             <div class="visible content">[ O ]</div>
             <div class="hidden content" style="color:orange">Inicio</div>
           </a>
@@ -186,6 +186,45 @@
         </div>
       </div>
 
+      <div class="card azuladasCard" hidden>
+        <div class="content">
+          <i class="right floated icon"><i class="fa fa-camera"></i></i>
+          <div class="header" style="padding-top:7px">Aumentar a temperatura no balanço de brancos</div>
+        <div class="ui divider"></div>
+          <div class="description">
+            <div class="ui bulleted list">
+              <div class="item">Cores mais quentes (alaranjadas)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card alaranjadasCard" hidden>
+        <div class="content">
+          <i class="right floated icon"><i class="fa fa-camera"></i></i>
+          <div class="header" style="padding-top:7px">Reduzir a temperatura no balanço de brancos</div>
+        <div class="ui divider"></div>
+          <div class="description">
+            <div class="ui bulleted list">
+              <div class="item">Cores mais frias (azuladas)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card alaranjadasCard azuladasCard" hidden>
+        <div class="content">
+          <i class="right floated icon"><i class="fa fa-camera"></i></i>
+          <div class="header" style="padding-top:7px">Colocar o balanço de brancos no automático</div>
+        <div class="ui divider"></div>
+          <div class="description">
+            <div class="ui bulleted list">
+              <div class="item">Corrige a temperatura da foto (mas erra de vez em quando)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- PC -->
 
       <div class="card clarasCard escurasCard">
@@ -229,6 +268,19 @@
         </div>
       </div>
 
+      <div class="card alaranjadasCard azuladasCard" hidden>
+        <div class="content">
+          <i class="right floated icon"><i class="fa fa-sliders"></i></i>
+          <div class="header" style="padding-top:7px">Alterar ajustes do balanço de brancos</div>
+        <div class="ui divider"></div>
+          <div class="description">
+            <div class="ui bulleted list">
+              <div class="item">Define se a foto será mais fria (azulada) ou quente (alaranjada)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     </div>
     <div class="ui hidden divider"></div>
@@ -265,6 +317,8 @@ text-align : "left"
   { title: 'ruidosas',sinonimos:'granuladas•pontilhadas'},
   { title: 'desfocadas',sinonimos:'borradas'},
   { title: 'tremidas',sinonimos:'borradas'},
+  { title: 'azuladas',sinonimos:'frias•azuis'},
+  { title: 'alaranjadas',sinonimos:'laranjas•vermelhas•quentes'},
 ];
   $('.ui.search').bind('input', function() {
     if ($(".prompt").val()=="") {
