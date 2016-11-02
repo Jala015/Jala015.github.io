@@ -73,7 +73,7 @@
             </div>
             <div class="ui hidden divider"></div>
             <div class="ui hidden divider"></div>
-            <div class="ui five tiny buttons">
+            <div class="ui five tiny buttons no-mobile">
                 <a class="ui vertical animated button vantagens_btn">
                     <div class="visible content">
                         <i class="fa fa-plus" style="padding-top:0.2em;font-size:1.5em"></i>
@@ -121,7 +121,26 @@
                     <a href="https://plusone.google.com/_/+1/confirm?hl=en&url=https://cursofotografia.cf<?php if(is_home()){echo home_url();}else{the_permalink();} ?>" target="_blank"><i class="fa fa-google-plus-square" style="font-size: 2em; color:#CF3229; padding: 0 10px"  id="btn_gplus"></i></a>
                 </div>
             </div>
+            <div class="only-mobile">
             <div class="ui hidden divider"></div>
+
+            <div class="ui vertical basic buttons" style="width:100%;">
+              <a class="ui button" href="https://www.flickr.com/photos/135602814@N04/">
+                 <h3>FLICKR</h3>
+              </a>
+              <a class="ui button" href="./novidades.html">
+                 <h3>NOVIDADES</h3>
+              </a>
+              <a class="ui button" href="https://jala015.typeform.com/to/EuIIA2">
+                 <h3>CONTATO</h3>
+              </a>
+            </div>
+
+            <div class="ui hidden divider"></div>
+            <div class="ui fluid button vantagens_btn"><i class="fa fa-plus" style="padding-top:0.2em;font-size:1.5em"></i></div>
+          </div>
+
+
             <div class="vantagens_menu">
                 <div class="ui center aligned header" style="padding-top:0.7em;padding-bottom:0.7em">Alguns motivos para amar esse site:</div>
                 <div class="ui three stackable cards" style="font-family:Nunito;position:relative">
@@ -189,9 +208,21 @@
                 $('.vantagens_menu').hide();
                 $(".vantagens_btn").click(function() {
                     $('.vantagens_menu').transition("fade down");
+                    window.scrollTo(0,document.body.scrollHeight);;
                 });
             </script>
     </section>
+
+    <script>
+    //detectar mobile
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          $('.no-mobile').hide();
+          $('.only-mobile').show();
+      } else {
+          $('.only-mobile').hide();
+          $('.no-mobile').show();
+      };
+      </script>
 </body>
 
 </html>
