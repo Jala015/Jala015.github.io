@@ -1,0 +1,179 @@
+<html lang="pt-BR">
+
+<head>
+    <title>Regra dos Terços</title>
+    <link rel="shortcut icon" href="../img/camera.ico" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../semantic/semantic.css">
+    <script src="../semantic/jquery.min.js"></script>
+    <script src="../semantic/semantic.min.js "></script>
+    <script src="../jquery-imageloader/jquery.imageloader.js "></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+
+    <style>
+  ::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: orange;
+  }
+
+  ::selection {
+    color: black;
+    background: orange;
+  }
+  </style>
+
+</head>
+
+
+<body onload="MostraSoUm();" style="background: #ededed">
+
+    <header>
+        <div class="ui grid container no-print" style="width:90%">
+            <div class="left aligned left floated ten wide column">
+                <div class="column" style="padding: 15px 0; text-align:left">
+                    <div class="ui breadcrumb">
+                        <a class="section" href="../index.html">Início</a>
+                        <div class="divider"> > </div>
+                        <a class="section" href="../aulas.html">Aulas</a>
+                        <div class="divider"> > </div>
+                        <div class="active section">Regra dos Terços</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="six wide column" style="padding: 27px 0; text-align:right;">
+                <a style="font-size:1.5em;color: black;margin: auto;" id="qr_btn" data-content="Continue no celular" data-variation="inverted basic" data-position="bottom right"><i class="fa fa-qrcode"></i></a>
+                <script>
+                    $('#qr_btn').popup()
+                </script>
+                <div class="ui center aligned container" id="carr-img-container" hidden>
+                    <button class="ui blue button" id="btn-carr-img">CARREGAR IMAGENS</button>
+                    <div class="ui hidden divider"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <section itemscope itemtype="http://schema.org/Article" class="ui text container">
+        <h1 itemprop="name" class="ui center aligned header">Regra dos Terços</h1>
+
+
+        <div class="ui horizontal divider no-print"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/regra_dos_tercos" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a>
+            <script>
+                $('#btn_face').popup()
+            </script>
+            <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf/aulas/regra_dos_tercos&text=Dica%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="tweet" data-position="right center" data-variation="inverted" id="btn_tweeter"></i></a>
+            <script>
+                $('#btn_tweeter').popup()
+            </script>
+        </div>
+
+
+
+        <div class="ui hidden divider"></div>
+
+        <div itemprop="articleBody"  style="font-size:1.1em">
+          <p>Provavelmente a composição é a primeira preocupação de quem começa a se preocupar em melhorar as fotos. Composição é basicamente a decisão do que vai aparecer na foto e do que não vai e a posição dos assuntos na foto.</p>
+          <p>Não existe uma regra certa para a composição. Ela varia de acordo com a impressão que você quer causar com a foto. É possível usar a composição para transmitir a ideia de harmonia, repetição, desequilíbrio, etc.</p>
+          <p>Porém, algumas dicas simples podem facilitar a sua vida se estiver sem ideias. A primeira é uma das mais usadas, inclusive por fotógrafos profissionais: a regra dos terços</p>
+          <h2 class="ui header" style="padding-top:2em">A regra</h2>
+          <p>A composição mais intuitiva é sempre posicionar o assunto principal no centro da foto, como se o centro fosse a região principal. Na realidade, o olho humano tende a focar mais em quatro pontos da foto, definidos pela regra dos terços.</p>
+          <p>A regra é simples: desenhar duas linhas imaginárias horizontais para dividir a foto em três partes iguais e fazer o mesmo com três linhas verticais. Você vai conseguir algo parecido com isso:</p>
+          <img class="lazy-img" data-src="../img/regra_dos_tercos/tercos.png" style="max-width: 60%;display: block;margin:0 auto;" /><br>
+          <p>As linhas se cruzam em quatro pontos, os chamados pontos de interesse. São esses pontos que recebem mais atenção do expectador. É interessante colocar o assunto próximo a esses pontos.</p>
+          <img class="lazy-img" data-src="../img/regra_dos_tercos/tercos2.png" style="max-width: 60%;display: block;margin:0 auto;" /><br>
+          <p>Além dos pontos, as linhas horizontais e verticais também são interessantes para orientar sua composição. Posicionar o a linha do horizonte em uma das linhas horizontais é muitas vezes mais interessante do que posicioná-la no meio. Você pode posicionar na linha de cima quando o assunto principal estiver no solo (ou for o solo) e posicionar na linha de baixo quando o quiser destacar o céu.</p>
+          <p>Segue abaixo um exemplo de foto usando a regra dos terços. Note como o céu ocupa dois terços e como a estrutura da ponte está alinhada com uma das retas verticais.</p>
+          <img class="lazy-img" data-src="https://c3.staticflickr.com/1/735/22993387930_e961a482b7.jpg" style="max-width: 80%;display: block;margin:0 auto;" /><br>
+          <p>Você também pode usar os terços para dar a indeia de movimento. Por exemplo: dois terços vazios à direita e um cavalo trotando à esquerda.</p>
+        </div>
+    </section>
+
+    <script>
+        //detectar mobile
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $('#qr_btn').hide()
+            $('#carr-img-container').show()
+        } else {
+            $('.lazy-img').imageloader();
+            $('#carr-img-container').hide()
+        };
+    </script>
+
+    <div class="ui hidden divider"></div>
+
+    <div class="ui two column grid container">
+      <div class="column">
+        <a class="no-print" href="https://jala015.typeform.com/to/EuIIA2" target="_blank"><i class="fa fa-question-circle" style="color:black;font-size:1.5em" data-content="Enviar dúvida" data-variation="inverted basic" id="duvida"></i></a>
+        <script>
+            $('#duvida').popup()
+        </script>
+          <script>
+              $('#duvida').popup()
+          </script>
+          <footer class="no-screen"><h4 class="ui header">cursofotografia.cf</h4></footer>
+      </div>
+        <div class="column">
+            <p class="ui right aligned container" style="font-size:0.8em">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img id="creative-commons" data-content="Este texto está licenciado com uma Licença Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional." data-position="top right" data-variation="inverted" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+                    /></a>
+            </p>
+            <script>
+                $('#creative-commons').popup()
+            </script>
+        </div>
+    </div>
+
+    <footer class="ui center aligned container">
+        <div class="ui hidden divider"></div>
+        <div class="ui buttons no-print">
+            <button class="ui basic button" onclick="location.href='iso.html'" data-content="ISO" data-variation="inverted" id="btn_voltar"><i class="fa fa-caret-left" style="font-size:2em;"></i></button>
+            <button class="ui basic button" onclick="location.href='../aulas.html'"><div class="sub header">AULAS</div></button>
+            <button class="ui disabled basic button" onclick="location.href='###'"><i class="fa fa-caret-right" style="font-size:2em;"></i></button>
+            <script>
+                $('#btn_voltar').popup()
+            </script>
+        </div>
+    </footer>
+
+    <div class="ui basic modal">
+        <img class="ui centar aligned container" style="width:30%" src="../img/regra_dos_tercos/qr_regra_dos_tercos.gif"></i>
+        <h1 class="ui center aligned header">http://bit.ly/2erDmiE</h1>
+    </div>
+
+    <script>
+        $("#btn_cam").click(function() {
+            $("#aula_pc").hide();
+            $("#aula_cam").show();
+        });
+        $("#btn_pc").click(function() {
+            $("#aula_cam").hide();
+            $("#aula_pc").show();
+        });
+
+        $("#back-to-top-btn").click(function() {
+            $('html, body').scrollTop(0);
+        });
+
+        $("#qr_btn").click(function() {
+            $('.ui.basic.modal')
+                .modal('show');
+        });
+
+        $('#btn-carr-img').click(function() {
+            $('.lazy-img').imageloader();
+            $('#carr-img-container').hide()
+        });
+    </script>
+
+
+</body>
+
+</html>
