@@ -84,11 +84,11 @@
           <p>Na aula <a href='./o_basico'>O Básico</a> vimos que os raios que atravessam a lente da câmera passam pelo <a href='./abertura'>diafragma</a> e atingem o sensor. O sensor converte esses raios de luz em sinais elétricos que podem ser usados pelo &quot;cérebro&quot; da câmera para formar a imagem digital.</p>
           <p>Raios de luz chegam o tempo todo na lente, mas só queremos que atinjam o sensor na hora da foto. É para isso que existe o obturador. Ele funciona como uma cortina, que bloqueia os raios de luz e só abre durante a foto.</p><br>
 
-          <p style="text-align:center">OBTURADOR FECHADO:</p>
+          <p class="texto_cel" style="text-align:center">OBTURADOR FECHADO:</p>
           <p>
               <img class="lazy-img" data-src="../img/tempo_de_exposicao/obturador_fechado.png" style="max-width: 80%;display: block;margin:0 auto;" />
           </p><br>
-          <p style="text-align:center">DURANTE A FOTO:</p>
+          <p class="texto_cel" style="text-align:center">DURANTE A FOTO:</p>
           <p>
               <img class="lazy-img" data-src="../img/tempo_de_exposicao/obturador_aberto.png" style="max-width: 80%;display: block;margin:0 auto;" />
           </p><br>
@@ -126,6 +126,7 @@
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             $('#qr_btn').hide()
             $('#carr-img-container').show()
+            $('.texto_cel').hide()
         } else {
             $('.lazy-img').imageloader();
             $('#carr-img-container').hide()
@@ -198,6 +199,7 @@
         $('#btn-carr-img').click(function() {
             $('.lazy-img').imageloader();
             $('#carr-img-container').hide()
+            $('.texto_cel').show()
         });
     </script>
 
