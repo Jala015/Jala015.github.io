@@ -123,7 +123,7 @@
             </a>
         </div>
 
-        <div class="ui right aligned container">
+        <div class="ui right aligned container no-mobile">
             <div class="ui hidden divider"></div>
             <p style="font-family:Nunito;font-size:1.2em">
 
@@ -157,9 +157,6 @@
           </div>
 
 
-        <div class="ui fluid button vantagens_btn only-mobile"><i class="fa fa-plus" style="padding-top:0.2em;font-size:1.5em"></i></div>
-
-
         <script>
           $(".vantagem").hide()
           $("#1").show()
@@ -190,8 +187,9 @@
 
 
 
-        <div class="vantagens_menu">
+
             <div class="only-mobile">
+              <div class="ui hidden divider"></div>
 
                 <div class="ui vertical basic buttons" style="width:100%;">
                     <a class="ui button" href="https://www.flickr.com/photos/135602814@N04/" target="_blank">
@@ -205,16 +203,9 @@
                     </a>
                 </div>
 
-                <div class="ui hidden divider"></div>
-
             </div>
             <div class="ui hidden divider"></div>
-            <script>
-                $('.vantagens_menu').hide();
-                $(".vantagens_btn").click(function() {
-                    $('.vantagens_menu').transition("fade down");
-                });
-            </script>
+
     </section>
 
     <script>
