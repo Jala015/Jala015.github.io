@@ -1,6 +1,34 @@
 <!-- Página inicial de aulas -->
 <html lang="pt-BR">
-<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40664679 = new Ya.Metrika({ id:40664679, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40664679" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter40664679 = new Ya.Metrika({
+                    id: 40664679,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true
+                });
+            } catch (e) {}
+        });
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function() {
+                n.parentNode.insertBefore(s, n);
+            };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks");
+</script> <noscript><div><img src="https://mc.yandex.ru/watch/40664679" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
 <head>
     <title>Aulas</title>
@@ -21,7 +49,7 @@
             color: black background: orange;
         }
 
-        ::selection {
+         ::selection {
             color: black;
             background: orange;
         }
@@ -36,22 +64,19 @@
         <div class="ui two column grid container" style="width:90%">
             <div class="left aligned column">
                 <div class="column" style="padding: 15px 0; text-align:left">
-                    <a class="ui animated fade huge compact button no-print" href="./index.html" style="background:none">
-                        <div class="visible content">[ O ]</div>
-                        <div class="hidden content" style="color:orange">Inicio</div>
+                    <a class="ui animated fade large compact button no-print" href="./index.html">
+                        <div class="visible content">Inicio</div>
+                        <div class="hidden content">[ O ]</div>
                     </a>
                 </div>
             </div>
 
             <div class="right aligned column">
-              <!--  <div class="ui buttons aula_cam" style="padding-top:15px">
-                    <a class="ui active positive button" style="color:#f2eeea;font-family:Nunito">CÂMERA</a>
-                    <a class="ui button" href="#" id="btn_pc" style="font-family:Nunito">EDIÇÃO</a>
+                <div class="column" style="padding: 15px 0; text-align:right">
+                    <a class="ui large compact button no-print" href="./dicas-rapidas.html">
+                        <i class="fa fa-lightbulb-o"></i>
+                    </a>
                 </div>
-                <div class="ui buttons aula_pc" style="padding-top:15px">
-                    <a class="ui button" href="#" id="btn_cam" style="font-family:Nunito">CÂMERA</a>
-                    <a class="ui active positive button" style="color:#f2eeea;font-family:Nunito">EDIÇÃO</a>
-                </div> -->
             </div>
         </div>
 
@@ -71,102 +96,77 @@
     </div>
 
     <div class="ui hidden divider"></div>
-
-
-    <div class="aula_cam">
-        <section class="ui center aligned container">
-
-            <div class="ui hidden divider"></div>
-
-            <div class="ui three stackable cards">
-
-                <a class="card" href="./aulas/o_basico.html" id="o_basico">
-                  <div class="content">
-                      <h2 class="header">O Básico</h2>
-                      <div class="description">
-                          <p>Conceitos básicos para você não se perder daqui a pouco</p>
-                      </div>
-                  </div>
-                </a>
-
-                <a class="card" href="./aulas/abertura.html" id="abertura">
-                  <div class="content">
-                      <h2 class="header">Abertura</h2>
-                      <div class="description">
-                          <p>Aprenda o que é e para que serve o diafragma de sua câmera</p>
-                      </div>
-                  </div>
-                </a>
-
-                <a class="card" href="./aulas/iso.html" id="iso">
-                  <div class="content">
-                      <h2 class="header">ISO</h2>
-                      <div class="description">
-                          <p>Controle a sensibilidade do sensor e previna fotos granuladas</p>
-                      </div>
-                  </div>
-                </a>
-
-                <a class="card" href="./aulas/regra_dos_tercos.html" id="regra_dos_tercos">
-                  <div class="content">
-                      <h2 class="header">Regra dos Terços</h2>
-                      <div class="description">
-                          <p>Um jeito simples para melhorar o enquadramento</p>
-                      </div>
-                  </div>
-                </a>
-
-                <a class="card" href="./aulas/tempo_de_exposicao.html" id="regra_dos_tercos">
-                  <div class="content">
-                      <h2 class="header">Tempo de Exposição</h2>
-                      <div class="description">
-                          <p>Aprenda mais sobre a velocidade do obturador</p>
-                      </div>
-                  </div>
-                </a>
-
-                <a class="card" href="./aulas/balanco_de_brancos.html" id="regra_dos_tercos">
-                  <div class="content">
-                      <h2 class="header">Balanço de brancos</h2>
-                      <div class="description">
-                          <p>Tire fotos com cores mais precisas</p>
-                      </div>
-                  </div>
-                </a>
-
-              <div class="ui card" href="./aulas/regra_dos_tercos.html" id="regra_dos_tercos" style="opacity:0.5">
-                  <div class="content">
-                      <h2 class="header">Novas aulas em breve</h2>
-                      <div class="description">
-                        <a href="http://twitter.com/cursofotocf" target="_blank"><b>Acompanhe no Twitter</b></a><br>
-                        <a href="http://facebook.com/cursofotocf" target="_blank"><b>Acompanhe no Facebook</</a>
-                      </div>
-                  </div>
-                </div>
-
-            </div>
-        </section>
-    </div>
-
-    <div class="aula_pc" hidden>
-        <section class="ui center aligned container">
-
-            <div class="ui divided link items">
-                Em breve...
-            </div>
-        </section>
-    </div>
-
     <div class="ui hidden divider"></div>
 
-    <div class="ui container">
-        <!-- <a class="ui horizontal divider" id="back-to-top-btn"><i class="fa fa-arrow-up"></i></a> -->
-        <div class="ui hidden divider"></div>
-        <div>
 
+
+    <section class="ui center aligned container">
+
+
+        <div class="ui three stackable cards">
+
+            <a class="card" href="./aulas/o_basico.html" id="o_basico">
+                <div class="content">
+                    <h2 class="header">O Básico</h2>
+                    <div class="description">
+                        <p>Conceitos básicos para você não se perder daqui a pouco</p>
+                    </div>
+                </div>
+            </a>
+
+            <a class="card" href="./aulas/abertura.html" id="abertura">
+                <div class="content">
+                    <h2 class="header">Abertura</h2>
+                    <div class="description">
+                        <p>Aprenda o que é e para que serve o diafragma de sua câmera</p>
+                    </div>
+                </div>
+            </a>
+
+            <a class="card" href="./aulas/iso.html" id="iso">
+                <div class="content">
+                    <h2 class="header">ISO</h2>
+                    <div class="description">
+                        <p>Controle a sensibilidade do sensor e previna fotos granuladas</p>
+                    </div>
+                </div>
+            </a>
+
+            <a class="card" href="./aulas/regra_dos_tercos.html" id="regra_dos_tercos">
+                <div class="content">
+                    <h2 class="header">Regra dos Terços</h2>
+                    <div class="description">
+                        <p>Um jeito simples para melhorar o enquadramento</p>
+                    </div>
+                </div>
+            </a>
+
+            <a class="card" href="./aulas/tempo_de_exposicao.html" id="regra_dos_tercos">
+                <div class="content">
+                    <h2 class="header">Tempo de Exposição</h2>
+                    <div class="description">
+                        <p>Aprenda mais sobre a velocidade do obturador</p>
+                    </div>
+                </div>
+            </a>
+
+            <a class="card" href="./aulas/balanco_de_brancos.html" id="regra_dos_tercos">
+                <div class="content">
+                    <h2 class="header">Balanço de brancos</h2>
+                    <div class="description">
+                        <p>Tire fotos com cores mais precisas</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <div class="ui hidden divider"></div>
+    <div class="ui hidden divider"></div>
             <script>
-                $(".aula_pc").hide();
-                $(".ui.buttons").hide();
                 var aulas = [{
                     title: 'O Básico',
                     url: "http://cursofotografia.cf/aulas/o_basico.html",
@@ -183,16 +183,16 @@
                     palavrasChave: 'ruido•pontilhadas',
                     description: "Controle a sensibilidade do sensor e previna fotos granuladas"
                 }, {
-                  title: 'Tempo de Exposição',
-                  url: "http://cursofotografia.cf/aulas/tempo_de_exposicao.html",
-                  palavrasChave: 'obturador•exposicao•exposiçao•exposicão•exposição•congelar',
-                  description: "Aprenda mais sobre a velocidade do obturador"
-              }, {
-                  title: 'Balanço de Brancos',
-                  url: "http://cursofotografia.cf/aulas/balanco_de_brancos.html",
-                  palavrasChave: 'temperatura•da•cor•equilibrio•equilíbrio•balanco•de•brancos',
-                  description: "Tire fotos com cores mais precisas"
-              }, {
+                    title: 'Tempo de Exposição',
+                    url: "http://cursofotografia.cf/aulas/tempo_de_exposicao.html",
+                    palavrasChave: 'obturador•exposicao•exposiçao•exposicão•exposição•congelar',
+                    description: "Aprenda mais sobre a velocidade do obturador"
+                }, {
+                    title: 'Balanço de Brancos',
+                    url: "http://cursofotografia.cf/aulas/balanco_de_brancos.html",
+                    palavrasChave: 'temperatura•da•cor•equilibrio•equilíbrio•balanco•de•brancos',
+                    description: "Tire fotos com cores mais precisas"
+                }, {
                     title: 'Regra dos Terços',
                     url: "http://cursofotografia.cf/aulas/regra_dos_tercos.html",
                     palavrasChave: 'enquadramento•composição•composicao•regra•dos•tercos',
@@ -212,23 +212,6 @@
                     });
                 });
             </script>
-
-            <script>
-                $("#btn_cam").click(function() {
-                    $(".aula_pc").hide();
-                    $(".aula_cam").show();
-                });
-                $("#btn_pc").click(function() {
-                    $(".aula_cam").hide();
-                    $(".aula_pc").show();
-                });
-
-                $("#back-to-top-btn").click(function() {
-                    $('html, body').scrollTop(0);
-                    $("#back-to-top-btn").blur()
-                });
-            </script>
-
 
 
 

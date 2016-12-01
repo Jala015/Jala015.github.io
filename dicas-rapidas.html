@@ -31,35 +31,25 @@
 <body style="background: #ededed">
 
   <header>
-    <div class="ui grid container no-print" style="width:90%">
-      <div class="left aligned left floated eight wide column">
-        <div class="column" style="padding: 15px 0; text-align:left">
-          <a class="ui animated fade huge compact button no-print" href="./index.html" style="background:none">
-            <div class="visible content">[ O ]</div>
-            <div class="hidden content" style="color:orange">Inicio</div>
-          </a>
-    </h1>
-        </div>
+      <div class="ui two column grid container" style="width:90%">
+          <div class="left aligned column">
+              <div class="column" style="padding: 15px 0; text-align:left">
+                  <a class="ui animated fade large compact button no-print" href="./index.html">
+                      <div class="visible content">Inicio</div>
+                      <div class="hidden content">[ O ]</div>
+                  </a>
+              </div>
+          </div>
+
+          <div class="right aligned column">
+            <div class="column" style="padding: 15px 0; text-align:right">
+                <a class="ui large compact button no-print" href="./aulas.html">
+                    <i class="fa fa-graduation-cap"></i>
+                </a>
+            </div>
+          </div>
       </div>
 
-      <div class="eight wide column" style="padding: 27px 0; text-align:right">
-        <div class="ui large compact button no-print share_btn" href="" style="background:none">
-          <i class="fa fa-share-alt"></i>
-        </div>
-        <div class="share_menu">
-        <a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/dicas-simples.html" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.7em; color:#3A5999; padding: 0 10px" data-content="compartilhe" data-position="bottom left" id="btn_face"></i></a><script>$('#btn_face').popup()</script>
-        <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf/dicas-simples.html&text=Dicas%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter-square" style="font-size: 1.7em; color:#319CD8; padding: 0 10px" data-content="tweet" data-position="bottom center" id="btn_tweeter"></i></a><script>$('#btn_tweeter').popup()</script>
-        <a href="https://plusone.google.com/_/+1/confirm?hl=en&url=https://cursofotografia.cf/dicas-simples.html<?php if(is_home()){echo home_url();}else{the_permalink();} ?>" target="_blank" title="Plus one this page on Google"><i class="fa fa-google-plus-square" style="font-size: 1.7em; color:#CF3229; padding: 0 10px" data-content="compartilhe" data-position="bottom right" id="btn_gplus"></i></a><script>$('#btn_gplus').popup()</script>
-        </div>
-      </div>
-    </div>
-    <script>
-        $('.share_menu').hide();
-        $(".share_btn").click(function() {
-            $('.share_btn').hide();
-            $('.share_menu').transition("fade down");
-        });
-    </script>
   </header>
 
 
@@ -305,7 +295,7 @@
   <footer class="no-screen"><div class="ui hidden divider"></div><h3 class="ui center aligned header"><b>cursofotografia.cf</b></h3></footer>
 
 <script>
-$(".card").hide();
+  $(".card").hide();
   $('.prompt').focus();
   $(".card").hide();
   $(".back-to-top-btn").hide()
