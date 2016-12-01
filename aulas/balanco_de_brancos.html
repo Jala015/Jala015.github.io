@@ -1,5 +1,33 @@
 <html lang="pt-BR">
-<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40664679 = new Ya.Metrika({ id:40664679, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40664679" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter40664679 = new Ya.Metrika({
+                    id: 40664679,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true
+                });
+            } catch (e) {}
+        });
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function() {
+                n.parentNode.insertBefore(s, n);
+            };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks");
+</script> <noscript><div><img src="https://mc.yandex.ru/watch/40664679" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
 <head>
     <title>Balanço de Brancos</title>
@@ -16,23 +44,26 @@
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
 
     <style>
-  ::-moz-selection { /* Code for Firefox */
-    color: black;
-    background: orange;
-  }
+         ::-moz-selection {
+            /* Code for Firefox */
+            color: black;
+            background: orange;
+        }
 
-  ::selection {
-    color: black;
-    background: orange;
-  }
-  </style>
+         ::selection {
+            color: black;
+            background: orange;
+        }
+    </style>
 
 </head>
 
 
-<body onload="MostraSoUm();" style="background: #ededed">
+<body style="background: #ededed">
+  <div style="display:none" id="antiflash">
 
-    <header>
+    <header class="no-mobile">
+
         <div class="ui grid container no-print" style="width:90%">
             <div class="left aligned left floated ten wide column">
                 <div class="column" style="padding: 15px 0; text-align:left">
@@ -51,11 +82,16 @@
                 <script>
                     $('#qr_btn').popup()
                 </script>
-                <div class="ui center aligned container" id="carr-img-container" hidden>
-                    <button class="ui orange button" id="btn-carr-img">CARREGAR IMAGENS</button>
-                    <div class="ui hidden divider"></div>
-                </div>
             </div>
+
+        </div>
+    </header>
+
+    <header class="only-mobile">
+        <div class="ui three fluid large buttons" style="position: fixed; top: 0; left: 0;z-index: 999;">
+            <a class="ui button" href="../index.html">Início</a>
+            <a class="ui button" href="../aulas.html">Aulas</a>
+            <a class="ui active button">Balanço de Brancos</a>
         </div>
     </header>
 
@@ -80,9 +116,10 @@
 
         <div class="ui hidden divider"></div>
 
-        <div itemprop="articleBody"  style="font-size:1.1em">
+        <div itemprop="articleBody" style="font-size:1.1em">
             <p>Já passou por dias em que suas fotos ficavam extremamente azuladas ou extremamente alaranjadas? Isso acontece por causa de um ajuste inadequado na configuração do balanço de brancos. Não está entendendo nada? Vamos explicar com calma.</p>
-            <p></p><div class="ui hidden divider"></div>
+            <p></p>
+            <div class="ui hidden divider"></div>
             <h2 class="ui header" style="padding-top:2em">A temperatura das cores</h2>
             <p>Considere que em um gradiente que varie do azul para o laranja, cores mais azuladas são consideradas mais frias e cores mais alaranjadas são consideradas mais quentes.</p>
 
@@ -91,83 +128,78 @@
             </p>
 
             <p>Geralmente, medimos temperaturas em <em>graus Celsius</em> (ºC). Na fotografia usamos outra unidade de medida: o <em>Kelvin</em> (K). Cores quentes chegam perto dos 10.000K, enquanto cores frias ficam na faixa dos 2000K.</p>
-            <p>Cada tipo de fonte luminosa emite luz em uma temperatura diferente. Lâmpadas incandescentes (aquelas antigas, de desenho animado) emitem luz com temperaturas quentes. Lâmpadas fluorescentes brancas emitem luz em temperaturas mais frias. Geralmente a temperaturada cor da lâmpada está escrita nela ou na embalagem.</p>
+            <p>Cada tipo de fonte luminosa emite luz em uma temperatura diferente. Lâmpadas incandescentes (aquelas antigas, de desenho animado) emitem luz com temperaturas quentes. Lâmpadas fluorescentes brancas emitem luz em temperaturas mais frias. Geralmente
+                a temperaturada cor da lâmpada está escrita nela ou na embalagem.</p>
 
-            <p></p><div class="ui hidden divider"></div>
+            <p></p>
+            <div class="ui hidden divider"></div>
             <h2 class="ui header" style="padding-top:2em">Deixando o branco sempre branco</h2>
-          <p>Imagine uma folha de papel extremamente branca:</p>
+            <p>Imagine uma folha de papel extremamente branca:</p>
             <ul class="ui list" style="font-family:Nunito">
-              <li>
-              Se você estiver em um ambiente iluminado por uma lâmpada fluorescente, vai enxergar o papel com uma cor branca.</li>
-              <li>
-              Se estiver ao ar livre em um dia nublado, vai enxergar o papel com uma cor branca.</li>
-              <li>
-              Se estiver em um escritório iluminado por LEDs brancos, vai enxergar o papel com uma cor branca.</li>
+                <li>
+                    Se você estiver em um ambiente iluminado por uma lâmpada fluorescente, vai enxergar o papel com uma cor branca.</li>
+                <li>
+                    Se estiver ao ar livre em um dia nublado, vai enxergar o papel com uma cor branca.</li>
+                <li>
+                    Se estiver em um escritório iluminado por LEDs brancos, vai enxergar o papel com uma cor branca.</li>
             </ul>
             <p>Não importa a temperatura da fonte de luz, nosso cérebro faz um ajuste automático para percebermos objetos na cor certa.</p>
 
-            <p></p><div class="ui hidden divider"></div>
+            <p></p>
+            <div class="ui hidden divider"></div>
             <h2 class="ui header" style="padding-top:2em">Nas câmeras</h2>
             <p>Da mesma forma, câmeras também podem fazer esse ajuste. Isso pode ser feito automaticamente ou de forma manual.</p>
             <p>No modo automático, a câmera busca uma cor predominante na imagem e ajusta as cores com base nisso. É o ajuste mais conveniente na maioria das vezes, pois não perdemos tempo na hora da foto.</p>
             <p>No modo manual, podemos inserir manualmente a temperatura da fonte de luz. A maioria das câmeras tem uma lista dos tipos de fonte, como sol, lâmpadas fluorescentes, dias nublados, etc.</p>
-            <p>Também podemos dar uma referência para a câmera tirando uma foto de um cartão preto, branco ou cinza que pode ser encontrado em lojas de material fotográfico.  Esse método é o mais preciso e costuma ser usado por fotógrafos profissionais.</p>
+            <p>Também podemos dar uma referência para a câmera tirando uma foto de um cartão preto, branco ou cinza que pode ser encontrado em lojas de material fotográfico. Esse método é o mais preciso e costuma ser usado por fotógrafos profissionais.</p>
             <p>
                 <img class="lazy-img" data-src="../img/balanco_de_brancos/cartoes.png" style="max-width: 60%;display: block;margin:0 auto;" />
             </p>
-            <p>Muitas vezes fotógrafos usam o ajuste manual para forçar um balanço de brancos inadequado. Às vezes isso pode dar um tom artístico à foto. Geralmente cores quentes remetem ao romance.  Cores frias podem ser usadas para indicar solidão ou sofrimento, etc.</p>
+            <p>Muitas vezes fotógrafos usam o ajuste manual para forçar um balanço de brancos inadequado. Às vezes isso pode dar um tom artístico à foto. Geralmente cores quentes remetem ao romance. Cores frias podem ser usadas para indicar solidão ou sofrimento,
+                etc.</p>
 
-            <p></p><div class="ui hidden divider"></div>
+            <p></p>
+            <div class="ui hidden divider"></div>
             <h2 class="ui header" style="padding-top:2em">No computador</h2>
-            <p>Se a foto foi tirada com ajuste inadequado, ainda é possível consertar isso no computador (ou até mesmo no celular). Mesmo os programas de edição mais simples costumam vir com a opção do ajuste de brancos (às vezes chamado de temperatura da cor).</p>
+            <p>Se a foto foi tirada com ajuste inadequado, ainda é possível consertar isso no computador (ou até mesmo no celular). Mesmo os programas de edição mais simples costumam vir com a opção do ajuste de brancos (às vezes chamado de temperatura da
+                cor).</p>
         </div>
     </section>
 
-    <script>
-        //detectar mobile
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            $('#qr_btn').hide()
-            $('#carr-img-container').show()
-        } else {
-            $('.lazy-img').imageloader();
-            $('#carr-img-container').hide()
-        };
-    </script>
+    <footer class="ui center aligned container no-print">
+      <div class="ui hidden divider"></div>
+      <div class="ui hidden divider"></div>
+      <a rel="license" href="../creativecommons.html"><img id="creative-commons" data-content="Como reutilizar esse texto" data-position="top center" data-variation="inverted basic" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+      <div class="ui hidden divider"></div>
 
-    <div class="ui hidden divider"></div>
-
-    <div class="ui two column grid container">
-      <div class="column">
-        <a class="no-print" href="https://jala015.typeform.com/to/EuIIA2" target="_blank"><i class="fa fa-question-circle" style="color:black;font-size:1.5em" data-content="Enviar dúvida" data-variation="inverted basic" id="duvida"></i></a>
-        <script>
-            $('#duvida').popup()
-        </script>
-          <script>
-              $('#duvida').popup()
-          </script>
-          <footer class="no-screen"><h4 class="ui header">cursofotografia.cf</h4></footer>
+      <div class="ui three fluid large buttons only-mobile" style="width:100%">
+          <a class="ui button" href='./o_basico.html'><i class="fa fa-caret-left" style="font-size:2em;"></i></a>
+          <a class="ui button" href="https://jala015.typeform.com/to/EuIIA2" target="_blank"><i class="fa fa-question" style="font-size:2em;"></i></a>
+          <a class="ui button" href='./iso.html'><i class="fa fa-caret-right" style="font-size:2em;"></i></a>
       </div>
-        <div class="column">
-            <p class="ui right aligned container" style="font-size:0.8em">
-                <a rel="license" href="../creativecommons.html"><img id="creative-commons" data-content="Como reutilizar esse texto" data-position="top right" data-variation="inverted" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
-                    /></a>
-            </p>
-            <script>
-                $('#creative-commons').popup()
-            </script>
-        </div>
-    </div>
+      <script>
+          $('#creative-commons').popup()
+      </script>
+    </footer>
 
-    <footer class="ui center aligned container">
-        <div class="ui hidden divider"></div>
+    <footer class="ui center aligned container no-mobile">
         <div class="ui buttons no-print">
-            <button class="ui basic button" onclick="location.href='tempo_de_exposicao.html'" data-content="Tempo de Exposição" data-variation="inverted" id="btn_voltar"><i class="fa fa-caret-left" style="font-size:2em;"></i></button>
-            <button class="ui basic button" onclick="location.href='../aulas.html'"><div class="sub header">AULAS</div></button>
-            <button class="ui disabled basic button" onclick="location.href='###'"><i class="fa fa-caret-right" style="font-size:2em;"></i></button>
+            <button class="ui basic button" id="btn_voltar" onclick="location.href='tempo_de_exposicao.html'" data-content="Tempo de Exposição" data-variation="inverted"><i class="fa fa-caret-left" style="font-size:2em;"></i></button>
             <script>
                 $('#btn_voltar').popup()
             </script>
+            <button class="ui basic button" onclick="location.href='../aulas.html'"><div class="sub header">AULAS</div></button>
+            <button class="ui disabled basic button" onclick="location.href='###.html'" data-content="###" data-variation="inverted" id="btn_proximo"><i class="fa fa-caret-right" style="font-size:2em;"></i></button>
+            <!--<script>
+                $('#btn_proximo').popup()
+            </script>-->
         </div>
+
+        <footer class="no-screen center aligned container">
+          <div class="ui hidden divider">
+          <h4 class="ui header">cursofotografia.cf</h4>
+          <div class="ui hidden divider">
+        </footer>
     </footer>
 
     <div class="ui basic modal">
@@ -200,7 +232,25 @@
         });
     </script>
 
+    <script>
+        //detectar mobile
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            $('.no-mobile').hide();
+            $('.only-mobile').show();
+            $('#titulo').css("padding-top","3em");
+        } else {
+            $('.lazy-img').imageloader();
+            $('.only-mobile').hide();
+            $('.no-mobile').show();
+        };
+    </script>
 
+  </div>
+  <script>
+    $(document).ready(function() {
+      $('#antiflash').transition('fade',400);
+    });
+  </script>
 </body>
 
 </html>
