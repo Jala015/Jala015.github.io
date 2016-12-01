@@ -125,7 +125,7 @@
 
         <div class="ui right aligned container">
             <div class="ui hidden divider"></div>
-            <p style="font-family:Nunito;font-size:1.2em">
+            <p class="frases_vantagens" style="font-family:Nunito;font-size:1.2em;height:1.5em">
 
                     <span class="vantagem" id="1">
 
@@ -198,6 +198,7 @@
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             $('.no-mobile').hide();
             $('.only-mobile').show();
+            $('.frases_vantagens')style.text-align = "center";
         } else {
             $('.only-mobile').hide();
             $('.no-mobile').show();
