@@ -72,19 +72,14 @@
 
 <div class="ui hidden divider"></div>
 
-
-  <section class="ui center aligned container">
-    <h3 class="no-mobile">Dicas Rápidas</h3>
-    <div class="ui fluid search" style="padding-top:20px" id="busca">
-      <h2 style="font-size:1.7em;font-family:Nunito;text-align:center">
-        <span class="no-screen">Soluções para fotos </span>
-        <span class="only-mobile no-print">Minhas fotos estão:</span>
-        <span class="ui labeled transparent input" onClick="$('.prompt').select();">
-        <div class="ui basic label no-mobile no-print" style="background:none;border:none;">Minhas fotos estão</div><input class="prompt" type="text" placeholder="DIGITE AQUI">
-      </span></h2>
-      <div class="results"></div>
-    </div>
-  </section>
+  <div class="ui center aligned container">
+      <div class="ui fluid search">
+          <span class="ui input" id="busca" onClick="$('.prompt').select();" style="width:50%">
+        <input class="prompt" style="border-radius: 0.7rem;text-align:center;font-size:1.2em" type="text" placeholder="Minhas fotos estão...">
+      </span>
+          <div class="results"></div>
+      </div>
+  </div>
 
 
   <section class="ui container">
