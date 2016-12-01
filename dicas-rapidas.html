@@ -80,6 +80,7 @@
           <div class="results"></div>
       </div>
   </div>
+  <p id="exemplo" style="text-align:center;padding-top:5px"><span style="color:orange">exemplo: </span>claras</p>
 
 
   <section class="ui container">
@@ -339,6 +340,7 @@
       $(".card").hide("fast");
       $('#o_que_fazer').hide();
       $(".back-to-top-btn").hide()
+      $("#exemplo").show()
     }
     $('.ui.search').search({
       source: erros,searchFields:['title','sinonimos'],
@@ -350,6 +352,7 @@
         $(classe).show("fast");
         $('#o_que_fazer').show();
         $(".back-to-top-btn").show()
+        $("#exemplo").hide()
       }
 
     });
