@@ -60,8 +60,8 @@
 
 <body onload="MostraSoUm();" style="background: #ededed">
 
-    <header>
-        <div class="ui two column grid container" style="width:90%">
+    <header class="no-mobile">
+        <div class="ui three column grid container" style="width:90%">
             <div class="left aligned column">
                 <div class="column" style="padding: 15px 0; text-align:left">
                     <a class="ui animated fade large compact button no-print" href="./index.html">
@@ -71,18 +71,32 @@
                 </div>
             </div>
 
+            <div class="center aligned column">
+                <div class="column" style="padding: 15px 0; text-align:center;padding-top:2em">
+                    <h2 class="ui center aligned header">Aulas</h2>
+                </div>
+            </div>
+
             <div class="right aligned column">
                 <div class="column" style="padding: 15px 0; text-align:right">
-                    <a class="ui large compact button no-print" href="./dicas-rapidas.html">
-                        <i class="fa fa-lightbulb-o"></i>
-                    </a>
+                  <div class="ui buttons">
+                      <a class="ui large compact active button no-print"><i class="fa fa-graduation-cap"></i></a>
+                      <a class="ui large compact button no-print" href="./dicas-rapidas.html"><i class="fa fa-lightbulb-o"></i></a>
+                  </div>
                 </div>
             </div>
         </div>
-
     </header>
 
-    <h2 class="ui center aligned header">Aulas</h2>
+    <header class="only-mobile">
+        <div class="ui three fluid large buttons">
+          <a class="ui button" href="./index.html">Início</a>
+          <a class="ui active button">Aulas</a>
+          <a class="ui button" href="./dicas-rapidas.html">Dicas</a>
+        </div>
+    </header>
+
+
 
     <div class="ui hidden divider"></div>
 
@@ -212,6 +226,17 @@
                     });
                 });
             </script>
+
+            <script>
+              if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                  $('.no-mobile').hide();
+                  $('.only-mobile').show();
+              } else {
+                  $('.only-mobile').hide();
+                  $('.no-mobile').show();
+              };
+              </script>
+
 
 
 
