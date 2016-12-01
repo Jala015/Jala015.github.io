@@ -29,6 +29,7 @@
 </head>
 
 <body style="background: #ededed">
+  <div style="display:none" id="antiflash">
 
   <header class="no-mobile">
       <div class="ui three column grid container" style="width:90%">
@@ -62,7 +63,7 @@
       </div>
   </header>
 
-  <header class="only-mobile">
+  <header class="only-mobile" style="display:none">
       <div class="ui three fluid large buttons" style="position: fixed; top: 0; left: 0;z-index: 999;">
         <a class="ui button" href="./index.html">Início</a>
         <a class="ui button" href="./aulas.html">Aulas</a>
@@ -85,11 +86,11 @@
 
   <section class="ui container">
     <div class="ui hidden divider"></div>
-    <p hidden id="o_que_fazer">Nossas sugestões:</p>
+    <p style="display:none" id="o_que_fazer">Nossas sugestões:</p>
 
     <div class="ui two doubling cards" style="font-family:Nunito">
 
-      <div class="card clarasCard ruidosasCard" hidden>
+      <div class="card clarasCard ruidosasCard">
         <div class="content">
           <i class="right floated icon"><i class="fa fa-camera"></i></i>
           <div class="header" style="padding-top:7px">Reduzir <a href="aulas/iso.html">ISO</a></div>
@@ -103,7 +104,7 @@
         </div>
       </div>
 
-      <div class="card clarasCard tremidasCard" hidden>
+      <div class="card clarasCard tremidasCard">
         <div class="content">
           <i class="right floated icon"><i class="fa fa-camera"></i></i>
           <div class="header" style="padding-top:7px">Reduzir <a href="aulas/tempo_de_exposicao.html">tempo do obturador</a></div>
@@ -117,7 +118,7 @@
         </div>
       </div>
 
-      <div class="card clarasCard desfocadasCard" hidden>
+      <div class="card clarasCard desfocadasCard">
         <div class="content">
           <i class="right floated icon"><i class="fa fa-camera"></i></i>
           <div class="header" style="padding-top:7px">Reduzir <a href="aulas/abertura.html">abertura</a></div>
@@ -131,7 +132,7 @@
         </div>
       </div>
 
-      <div class="card clarasCard" hidden>
+      <div class="card clarasCard">
         <div class="content">
           <i class="right floated icon"><i class="fa fa-desktop"></i></i>
           <div class="header" style="padding-top:7px">Reduzir brilho</div>
@@ -145,7 +146,7 @@
         </div>
       </div>
 
-      <div class="card escurasCard" hidden>
+      <div class="card escurasCard">
         <div class="content">
           <i class="right floated icon"><i class="fa fa-camera"></i></i>
           <div class="header" style="padding-top:7px">Aumentar <a href="aulas/iso.html">ISO</a></div>
@@ -159,7 +160,7 @@
         </div>
       </div>
 
-      <div class="card escurasCard" hidden>
+      <div class="card escurasCard">
         <div class="content">
           <i class="right floated icon"><i class="fa fa-camera"></i></i>
           <div class="header" style="padding-top:7px">Aumentar <a href="aulas/tempo_de_exposicao.html">tempo do obturador</a></div>
@@ -173,7 +174,7 @@
         </div>
       </div>
 
-      <div class="card escurasCard" hidden>
+      <div class="card escurasCard">
         <div class="content">
           <i class="right floated icon"><i class="fa fa-camera"></i></i>
           <div class="header" style="padding-top:7px">Aumentar <a href="aulas/abertura.html">abertura</a></div>
@@ -187,7 +188,7 @@
         </div>
       </div>
 
-      <div class="card tremidasCard" hidden>
+      <div class="card tremidasCard">
         <div class="content">
           <i class="right floated icon"><i class="fa fa-camera"></i></i>
           <div class="header" style="padding-top:7px">Usar um tripé</div>
@@ -204,7 +205,7 @@
         </div>
       </div>
 
-      <div class="card azuladasCard" hidden>
+      <div class="card azuladasCard">
         <div class="content">
           <i class="right floated icon"><i class="fa fa-camera"></i></i>
           <div class="header" style="padding-top:7px">Aumentar a temperatura no <a href="aulas/balanco_de_brancos.html">balanço de brancos</a></div>
@@ -217,7 +218,7 @@
         </div>
       </div>
 
-      <div class="card alaranjadasCard" hidden>
+      <div class="card alaranjadasCard">
         <div class="content">
           <i class="right floated icon"><i class="fa fa-camera"></i></i>
           <div class="header" style="padding-top:7px">Reduzir a temperatura no <a href="aulas/balanco_de_brancos.html">balanço de brancos</a></div>
@@ -230,7 +231,7 @@
         </div>
       </div>
 
-      <div class="card alaranjadasCard azuladasCard" hidden>
+      <div class="card alaranjadasCard azuladasCard">
         <div class="content">
           <i class="right floated icon"><i class="fa fa-camera"></i></i>
           <div class="header" style="padding-top:7px">Colocar o <a href="aulas/balanco_de_brancos.html">balanço de brancos</a> no automático</div>
@@ -258,7 +259,7 @@
         </div>
       </div>
 
-      <div class="card escurasCard" hidden>
+      <div class="card escurasCard">
         <div class="content">
           <i class="right floated icon"><i class="fa fa-desktop"></i></i>
           <div class="header" style="padding-top:7px">Aumentar brilho</div>
@@ -272,7 +273,7 @@
         </div>
       </div>
 
-      <div class="card ruidosasCard" hidden>
+      <div class="card ruidosasCard">
         <div class="content">
           <i class="right floated icon"><i class="fa fa-desktop"></i></i>
           <div class="header" style="padding-top:7px">Aplicar filtro denoise</div>
@@ -286,7 +287,7 @@
         </div>
       </div>
 
-      <div class="card alaranjadasCard azuladasCard" hidden>
+      <div class="card alaranjadasCard azuladasCard">
         <div class="content">
           <i class="right floated icon"><i class="fa fa-desktop"></i></i>
           <div class="header" style="padding-top:7px">Alterar ajustes do <a href="aulas/balanco_de_brancos.html">balanço de brancos</a></div>
@@ -368,6 +369,13 @@
     });
   </script>
 
+</div>
+
+<script>
+  $(document).ready(function() {
+    $('#antiflash').transition('fade');
+  });
+</script>
 </body>
 
 </html>

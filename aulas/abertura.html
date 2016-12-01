@@ -59,10 +59,11 @@
 
 
 <body style="background: #ededed">
+  <div style="display:none" id="antiflash">
 
     <header class="no-mobile">
 
-        <div class="ui grid container no-print" style="width:90%">
+        <div class="ui grid container no-print no-mobile" style="width:90%">
             <div class="left aligned left floated ten wide column">
                 <div class="column" style="padding: 15px 0; text-align:left">
                     <div class="ui breadcrumb">
@@ -85,7 +86,7 @@
         </div>
     </header>
 
-    <header class="only-mobile">
+    <header class="only-mobile" style="display:none">
         <div class="ui three fluid large buttons" style="position: fixed; top: 0; left: 0;z-index: 999;">
             <a class="ui button" href="../index.html">Início</a>
             <a class="ui button" href="../aulas.html">Aulas</a>
@@ -110,7 +111,7 @@
 
         <div class="ui hidden divider"></div>
 
-        <div class="ui center aligned container" id="carr-img-container" hidden>
+        <div class="ui center aligned container" id="carr-img-container">
             <button class="ui orange fluid button only-mobile" id="btn-carr-img">CARREGAR IMAGENS</button>
             <div class="ui hidden divider"></div>
         </div>
@@ -227,7 +228,7 @@
 
 
 
-    <div class="ui center aligned container no-print">
+    <footer class="ui center aligned container no-print">
       <div class="ui hidden divider"></div>
       <div class="ui hidden divider"></div>
       <a rel="license" href="../creativecommons.html"><img id="creative-commons" data-content="Como reutilizar esse texto" data-position="top center" data-variation="inverted basic" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
@@ -241,7 +242,7 @@
       <script>
           $('#creative-commons').popup()
       </script>
-    </div>
+    </footer>
 
     <footer class="ui center aligned container no-mobile">
         <div class="ui buttons no-print">
@@ -306,6 +307,12 @@
         };
     </script>
 
+  </div>
+  <script>
+    $(document).ready(function() {
+      $('#antiflash').transition('fade',400);
+    });
+  </script>
 </body>
 
 </html>

@@ -59,6 +59,7 @@
 
 
 <body onload="MostraSoUm();" style="background: #ededed">
+  <div style="display:none" id="antiflash">
 
     <header class="no-mobile">
         <div class="ui three column grid container" style="width:90%">
@@ -88,7 +89,7 @@
         </div>
     </header>
 
-    <header class="only-mobile">
+    <header class="only-mobile" style="display:none">
         <div class="ui three fluid large buttons" style="position: fixed; top: 0; left: 0;z-index: 999;">
           <a class="ui button" href="./index.html">Início</a>
           <a class="ui active button">Aulas</a>
@@ -241,7 +242,12 @@
 
 
 
-
+</div>
+<script>
+  $(document).ready(function() {
+    $('#antiflash').transition('fade',400);
+  });
+</script>
 </body>
 
 </html>
