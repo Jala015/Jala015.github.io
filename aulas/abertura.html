@@ -96,7 +96,7 @@
 
     <section itemscope itemtype="http://schema.org/Article" class="ui text container">
 
-        <h1 itemprop="name" class="ui center aligned header" style="padding-top:2em">Abertura</h1>
+        <h1 itemprop="name" class="ui center aligned header" style="padding-top:2em" id="titulo">Abertura</h1>
 
         <div class="ui horizontal divider no-print no-mobile"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/abertura" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a>
             <script>
@@ -298,6 +298,7 @@
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             $('.no-mobile').hide();
             $('.only-mobile').show();
+            $('#titulo').css("padding-top","4em");
         } else {
             $('.lazy-img').imageloader();
             $('.only-mobile').hide();
