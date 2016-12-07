@@ -63,7 +63,6 @@
   <div style="display:none" id="antiflash">
 
     <header class="no-mobile">
-
         <div class="ui grid container no-print" style="width:90%">
             <div class="left aligned left floated ten wide column">
                 <div class="column" style="padding: 15px 0; text-align:left">
@@ -83,38 +82,38 @@
                     $('#qr_btn').popup()
                 </script>
             </div>
-
         </div>
     </header>
 
-    <header class="only-mobile">
+    <header class="only-mobile" style="display:none">
         <div class="ui three fluid large buttons" style="position: fixed; top: 0; left: 0;z-index: 999;">
             <a class="ui button" href="../index.html">Início</a>
             <a class="ui button" href="../aulas.html">Aulas</a>
-            <a class="ui active button">Balanço de Brancos</a>
+            <a class="ui active button">BB</a>
         </div>
     </header>
 
 
-
-
     <section itemscope itemtype="http://schema.org/Article" class="ui text container">
-        <h1 itemprop="name" class="ui center aligned header">Balanço de brancos</h1>
+        <h1 itemprop="name" class="ui center aligned header" style="padding-top:2em" id="titulo">Balanço de brancos</h1>
 
 
-        <div class="ui horizontal divider no-print"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/balanco_de_brancos" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a>
+        <div class="ui horizontal divider no-print no-mobile"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/balanco_de_brancos" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a>
             <script>
                 $('#btn_face').popup()
             </script>
-            <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf/aulas/balanco_de_brancos&text=Dica%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="tweet" data-position="right center" data-variation="inverted" id="btn_tweeter"></i></a>
+            <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf/aulas/balanco_de_brancos&text=Dica%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="tweet" data-position="right center" data-variation="inverted" id="btn_twitter"></i></a>
             <script>
-                $('#btn_tweeter').popup()
+                $('#btn_twitter').popup()
             </script>
         </div>
 
-
-
         <div class="ui hidden divider"></div>
+
+        <div class="ui center aligned container" id="carr-img-container">
+            <button class="ui orange fluid button only-mobile" id="btn-carr-img">CARREGAR IMAGENS</button>
+            <div class="ui hidden divider"></div>
+        </div>
 
         <div itemprop="articleBody" style="font-size:1.1em">
             <p>Já passou por dias em que suas fotos ficavam extremamente azuladas ou extremamente alaranjadas? Isso acontece por causa de um ajuste inadequado na configuração do balanço de brancos. Não está entendendo nada? Vamos explicar com calma.</p>
@@ -166,6 +165,8 @@
         </div>
     </section>
 
+
+
     <footer class="ui center aligned container no-print">
       <div class="ui hidden divider"></div>
       <div class="ui hidden divider"></div>
@@ -173,9 +174,9 @@
       <div class="ui hidden divider"></div>
 
       <div class="ui three fluid large buttons only-mobile" style="width:100%">
-          <a class="ui button" href='./o_basico.html'><i class="fa fa-caret-left" style="font-size:2em;"></i></a>
+          <a class="ui button" href='./tempo_de_exposicao.html.html'><i class="fa fa-caret-left" style="font-size:2em;"></i></a>
           <a class="ui button" href="https://jala015.typeform.com/to/EuIIA2" target="_blank"><i class="fa fa-question" style="font-size:2em;"></i></a>
-          <a class="ui button" href='./iso.html'><i class="fa fa-caret-right" style="font-size:2em;"></i></a>
+          <a class="ui disabled button"><i class="fa fa-caret-right" style="font-size:2em;"></i></a>
       </div>
       <script>
           $('#creative-commons').popup()
@@ -184,12 +185,12 @@
 
     <footer class="ui center aligned container no-mobile">
         <div class="ui buttons no-print">
-            <button class="ui basic button" id="btn_voltar" onclick="location.href='tempo_de_exposicao.html'" data-content="Tempo de Exposição" data-variation="inverted"><i class="fa fa-caret-left" style="font-size:2em;"></i></button>
+            <a class="ui basic button" id="btn_voltar" href='tempo_de_exposicao.html' data-content="Tempo de Exposição" data-variation="inverted"><i class="fa fa-caret-left" style="font-size:2em;"></i></a>
             <script>
                 $('#btn_voltar').popup()
             </script>
-            <button class="ui basic button" onclick="location.href='../aulas.html'"><div class="sub header">AULAS</div></button>
-            <button class="ui disabled basic button" onclick="location.href='###.html'" data-content="###" data-variation="inverted" id="btn_proximo"><i class="fa fa-caret-right" style="font-size:2em;"></i></button>
+            <a class="ui basic button" href='../aulas.html'><div class="sub header">AULAS</div></a>
+            <a class="ui disabled basic button" data-content="###" data-variation="inverted" id="btn_proximo"><i class="fa fa-caret-right" style="font-size:2em;"></i></a>
             <!--<script>
                 $('#btn_proximo').popup()
             </script>-->
@@ -208,41 +209,28 @@
     </div>
 
     <script>
-        $("#btn_cam").click(function() {
-            $("#aula_pc").hide();
-            $("#aula_cam").show();
-        });
-        $("#btn_pc").click(function() {
-            $("#aula_cam").hide();
-            $("#aula_pc").show();
-        });
+      $("#qr_btn").click(function() {
+          $('.ui.basic.modal')
+              .modal('show');
+      });
 
-        $("#back-to-top-btn").click(function() {
-            $('html, body').scrollTop(0);
-        });
-
-        $("#qr_btn").click(function() {
-            $('.ui.basic.modal')
-                .modal('show');
-        });
-
-        $('#btn-carr-img').click(function() {
-            $('.lazy-img').imageloader();
-            $('#carr-img-container').hide()
-        });
+      $('#btn-carr-img').click(function() {
+          $('.lazy-img').imageloader();
+          $('#carr-img-container').hide()
+      });
     </script>
 
     <script>
-        //detectar mobile
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            $('.no-mobile').hide();
-            $('.only-mobile').show();
-            $('#titulo').css("padding-top","3em");
-        } else {
-            $('.lazy-img').imageloader();
-            $('.only-mobile').hide();
-            $('.no-mobile').show();
-        };
+      //detectar mobile
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          $('.no-mobile').hide();
+          $('.only-mobile').show();
+          $('#titulo').css("padding-top","3em");
+      } else {
+          $('.lazy-img').imageloader();
+          $('.only-mobile').hide();
+          $('.no-mobile').show();
+      };
     </script>
 
   </div>

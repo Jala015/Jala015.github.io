@@ -1,5 +1,33 @@
 <html lang="pt-BR">
-<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40664679 = new Ya.Metrika({ id:40664679, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40664679" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter40664679 = new Ya.Metrika({
+                    id: 40664679,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true
+                });
+            } catch (e) {}
+        });
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function() {
+                n.parentNode.insertBefore(s, n);
+            };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks");
+</script> <noscript><div><img src="https://mc.yandex.ru/watch/40664679" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
 <head>
     <title>O Básico</title>
@@ -16,23 +44,24 @@
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
 
     <style>
-  ::-moz-selection { /* Code for Firefox */
-    color: black;
-    background: orange;
-  }
+         ::-moz-selection {
+            /* Code for Firefox */
+            color: black;
+            background: orange;
+        }
 
-  ::selection {
-    color: black;
-    background: orange;
-  }
-  </style>
-
+         ::selection {
+            color: black;
+            background: orange;
+        }
+    </style>
 </head>
 
 
-<body onload="MostraSoUm();" style="background: #ededed">
+<body style="background: #ededed">
+  <div style="display:none" id="antiflash">
 
-    <header>
+    <header class="no-mobile">
         <div class="ui grid container no-print" style="width:90%">
             <div class="left aligned left floated ten wide column">
                 <div class="column" style="padding: 15px 0; text-align:left">
@@ -51,40 +80,46 @@
                 <script>
                     $('#qr_btn').popup()
                 </script>
-                <div class="ui center aligned container" id="carr-img-container" hidden>
-                    <button class="ui orange button" id="btn-carr-img">CARREGAR IMAGENS</button>
-                    <div class="ui hidden divider"></div>
-                </div>
             </div>
         </div>
     </header>
 
-
+    <header class="only-mobile" style="display:none">
+        <div class="ui three fluid large buttons" style="position: fixed; top: 0; left: 0;z-index: 999;">
+            <a class="ui button" href="../index.html">Início</a>
+            <a class="ui button" href="../aulas.html">Aulas</a>
+            <a class="ui active button">O Básico</a>
+        </div>
+    </header>
 
 
     <section itemscope itemtype="http://schema.org/Article" class="ui text container">
-        <h1 itemprop="name" class="ui center aligned header">O Básico</h1>
 
+        <h1 itemprop="name" class="ui center aligned header" style="padding-top:2em" id="titulo">O Básico</h1>
 
-        <div class="ui horizontal divider no-print"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/o_basico" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a>
+        <div class="ui horizontal divider no-print no-mobile"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/o_basico" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a>
             <script>
                 $('#btn_face').popup()
             </script>
-            <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf/aulas/o_basico&text=Dica%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="tweet" data-position="right center" data-variation="inverted" id="btn_tweeter"></i></a>
+            <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf/aulas/o_basico&text=Dica%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="tweet" data-position="right center" data-variation="inverted" id="btn_twitter"></i></a>
             <script>
-                $('#btn_tweeter').popup()
+                $('#btn_twitter').popup()
             </script>
         </div>
 
-
-
         <div class="ui hidden divider"></div>
 
-        <div itemprop="articleBody"  style="font-size:1.1em">
+        <div class="ui center aligned container" id="carr-img-container">
+            <button class="ui orange fluid button only-mobile" id="btn-carr-img">CARREGAR IMAGENS</button>
+            <div class="ui hidden divider"></div>
+        </div>
+
+        <div itemprop="articleBody" style="font-size:1.1em">
             <p>Com certeza você já olhou para um cenário e imaginou a foto perfeita, mas ao tentar clicá-la não conseguiu o resultado que queria. Existem uma série de processos que ocorrem entre a sua decisão de tirar a foto e a criação do arquivo.</p>
             <p>Não pretendo trazer muitos conceitos de física para cá. A ideia é te ensinar a tirar fotos melhores, não te dar um susto! Porém, antes de começar qualquer conversa, precisamos resolver aqui o conceito de luz que vamos usar. Se você já está
                 pensando pular essa parte, peço que dê uma chance. Tentei deixar o mais simples possível.</p>
-            <p></p><div class="ui hidden divider"></div>
+            <p></p>
+            <div class="ui hidden divider"></div>
             <h2 class="ui header" style="padding-top:2em">A luz</h2>
             <p>De modo simplificado, podemos estudar a luz como um raio que sai de um emissor (uma lâmpada, por exemplo) e segue pelo ambiente em linha reta. Os raios saem do emissor em todas as direções até encontrar um obstáculo.</p>
 
@@ -100,7 +135,8 @@
             </p>
 
             <p>Na verdade, tudo o que você enxerga é uma interpretação dos raios de luz de diversas cores que chegam no seu olho. No escuro, não temos uma fonte de luz, então não há raios no ambiente. Por isso não enxergamos nada.</p>
-            <p></p><div class="ui hidden divider"></div>
+            <p></p>
+            <div class="ui hidden divider"></div>
             <h2 class="ui header" style="padding-top:2em">O caminho da luz na fotografia</h2>
             <p>Pronto, agora que alguns conceitos-chave já foram definidos, podemos começar a entender um panorama geral dos processos que geram uma fotografia. Vou simplificar aqui em uma lista:</p>
             <ol class="ui list" style="font-family:Nunito">
@@ -119,51 +155,39 @@
         </div>
     </section>
 
-    <script>
-        //detectar mobile
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            $('#qr_btn').hide()
-            $('#carr-img-container').show()
-        } else {
-            $('.lazy-img').imageloader();
-            $('#carr-img-container').hide()
-        };
-    </script>
 
-    <div class="ui hidden divider"></div>
 
-    <div class="ui two column grid container">
-      <div class="column">
-        <a class="no-print" href="https://jala015.typeform.com/to/EuIIA2" target="_blank"><i class="fa fa-question-circle" style="color:black;font-size:1.5em" data-content="Enviar dúvida" data-variation="inverted basic" id="duvida"></i></a>
-        <script>
-            $('#duvida').popup()
-        </script>
-          <script>
-              $('#duvida').popup()
-          </script>
-          <footer class="no-screen"><h4 class="ui header">cursofotografia.cf</h4></footer>
+    <footer class="ui center aligned container no-print">
+      <div class="ui hidden divider"></div>
+      <div class="ui hidden divider"></div>
+      <a rel="license" href="../creativecommons.html"><img id="creative-commons" data-content="Como reutilizar esse texto" data-position="top center" data-variation="inverted basic" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+      <div class="ui hidden divider"></div>
+
+      <div class="ui three fluid large buttons only-mobile" style="width:100%">
+          <a class="ui disabled button"><i class="fa fa-caret-left" style="font-size:2em;"></i></a>
+          <a class="ui button" href="https://jala015.typeform.com/to/EuIIA2" target="_blank"><i class="fa fa-question" style="font-size:2em;"></i></a>
+          <a class="ui button" href='./abertura.html'><i class="fa fa-caret-right" style="font-size:2em;"></i></a>
       </div>
-        <div class="column">
-            <p class="ui right aligned container" style="font-size:0.8em">
-                <a rel="license" href="../creativecommons.html"><img id="creative-commons" data-content="Como reutilizar esse texto" data-position="top right" data-variation="inverted" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
-                    /></a>
-            </p>
-            <script>
-                $('#creative-commons').popup()
-            </script>
-        </div>
-    </div>
+      <script>
+          $('#creative-commons').popup()
+      </script>
+    </footer>
 
-    <footer class="ui center aligned container">
-        <div class="ui hidden divider"></div>
+    <footer class="ui center aligned container no-mobile">
         <div class="ui buttons no-print">
-            <button class="ui disabled basic button"><i class="fa fa-caret-left" style="font-size:2em;"></i></button>
-            <button class="ui basic button" onclick="location.href='../aulas.html'"><div class="sub header">AULAS</div></button>
-            <button class="ui basic button" onclick="location.href='./abertura.html'" data-content="Abertura" data-variation="inverted" id="btn_proximo"><i class="fa fa-caret-right" style="font-size:2em;"></i></button>
+            <a class="ui disabled basic button"><i class="fa fa-caret-left" style="font-size:2em;"></i></a>
+            <a class="ui basic button" href='../aulas.html'><div class="sub header">AULAS</div></a>
+            <a class="ui basic button" href='./abertura.html' data-content="Abertura" data-variation="inverted" id="btn_proximo"><i class="fa fa-caret-right" style="font-size:2em;"></i></a>
             <script>
                 $('#btn_proximo').popup()
             </script>
         </div>
+
+        <footer class="no-screen center aligned container">
+          <div class="ui hidden divider">
+          <h4 class="ui header">cursofotografia.cf</h4>
+          <div class="ui hidden divider">
+        </footer>
     </footer>
 
     <div class="ui basic modal">
@@ -172,31 +196,36 @@
     </div>
 
     <script>
-        $("#btn_cam").click(function() {
-            $("#aula_pc").hide();
-            $("#aula_cam").show();
-        });
-        $("#btn_pc").click(function() {
-            $("#aula_cam").hide();
-            $("#aula_pc").show();
-        });
+      $("#qr_btn").click(function() {
+          $('.ui.basic.modal')
+              .modal('show');
+      });
 
-        $("#back-to-top-btn").click(function() {
-            $('html, body').scrollTop(0);
-        });
-
-        $("#qr_btn").click(function() {
-            $('.ui.basic.modal')
-                .modal('show');
-        });
-
-        $('#btn-carr-img').click(function() {
-            $('.lazy-img').imageloader();
-            $('#carr-img-container').hide()
-        });
+      $('#btn-carr-img').click(function() {
+          $('.lazy-img').imageloader();
+          $('#carr-img-container').hide()
+      });
     </script>
 
+    <script>
+      //detectar mobile
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          $('.no-mobile').hide();
+          $('.only-mobile').show();
+          $('#titulo').css("padding-top","3em");
+      } else {
+          $('.lazy-img').imageloader();
+          $('.only-mobile').hide();
+          $('.no-mobile').show();
+      };
+    </script>
 
+  </div>
+  <script>
+    $(document).ready(function() {
+      $('#antiflash').transition('fade',400);
+    });
+  </script>
 </body>
 
 </html>

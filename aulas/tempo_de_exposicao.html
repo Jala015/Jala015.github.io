@@ -1,5 +1,33 @@
 <html lang="pt-BR">
-<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40664679 = new Ya.Metrika({ id:40664679, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40664679" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter40664679 = new Ya.Metrika({
+                    id: 40664679,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true
+                });
+            } catch (e) {}
+        });
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function() {
+                n.parentNode.insertBefore(s, n);
+            };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks");
+</script> <noscript><div><img src="https://mc.yandex.ru/watch/40664679" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
 <head>
     <title>Tempo de Exposição</title>
@@ -16,23 +44,24 @@
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
 
     <style>
-  ::-moz-selection { /* Code for Firefox */
-    color: black;
-    background: orange;
-  }
+         ::-moz-selection {
+            /* Code for Firefox */
+            color: black;
+            background: orange;
+        }
 
-  ::selection {
-    color: black;
-    background: orange;
-  }
-  </style>
-
+         ::selection {
+            color: black;
+            background: orange;
+        }
+    </style>
 </head>
 
 
-<body onload="MostraSoUm();" style="background: #ededed">
+<body style="background: #ededed">
+  <div style="display:none" id="antiflash">
 
-    <header>
+    <header class="no-mobile">
         <div class="ui grid container no-print" style="width:90%">
             <div class="left aligned left floated ten wide column">
                 <div class="column" style="padding: 15px 0; text-align:left">
@@ -51,57 +80,67 @@
                 <script>
                     $('#qr_btn').popup()
                 </script>
-                <div class="ui center aligned container" id="carr-img-container" hidden>
-                    <button class="ui orange button" id="btn-carr-img">CARREGAR IMAGENS</button>
-                    <div class="ui hidden divider"></div>
-                </div>
             </div>
         </div>
     </header>
 
-
+    <header class="only-mobile" style="display:none">
+        <div class="ui three fluid large buttons" style="position: fixed; top: 0; left: 0;z-index: 999;">
+            <a class="ui button" href="../index.html">Início</a>
+            <a class="ui button" href="../aulas.html">Aulas</a>
+            <a class="ui active button">T. Exp.</a>
+        </div>
+    </header>
 
 
     <section itemscope itemtype="http://schema.org/Article" class="ui text container">
-        <h1 itemprop="name" class="ui center aligned header">Tempo de Exposição</h1>
+
+        <h1 itemprop="name" class="ui center aligned header" style="padding-top:2em" id="titulo">Tempo de Exposição</h1>
 
 
-        <div class="ui horizontal divider no-print"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/tempo_de_exposicao" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a>
+        <div class="ui horizontal divider no-print no-mobile"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/tempo_de_exposicao" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a>
             <script>
                 $('#btn_face').popup()
             </script>
-            <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf/aulas/tempo_de_exposicao&text=Dica%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="tweet" data-position="right center" data-variation="inverted" id="btn_tweeter"></i></a>
+            <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf/aulas/tempo_de_exposicao&text=Dica%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="tweet" data-position="right center" data-variation="inverted" id="btn_twitter"></i></a>
             <script>
-                $('#btn_tweeter').popup()
+                $('#btn_twitter').popup()
             </script>
         </div>
 
-
-
         <div class="ui hidden divider"></div>
 
-        <div itemprop="articleBody"  style="font-size:1.1em">
-          <p>Na aula <a href='./o_basico'>O Básico</a> vimos que os raios que atravessam a lente da câmera passam pelo <a href='./abertura'>diafragma</a> e atingem o sensor. O sensor converte esses raios de luz em sinais elétricos que podem ser usados pelo &quot;cérebro&quot; da câmera para formar a imagem digital.</p>
-          <p>Raios de luz chegam o tempo todo na lente, mas só queremos que atinjam o sensor na hora da foto. É para isso que existe o obturador. Ele funciona como uma cortina, que bloqueia os raios de luz e só abre durante a foto.</p><br>
+        <div class="ui center aligned container" id="carr-img-container">
+            <button class="ui orange fluid button only-mobile" id="btn-carr-img">CARREGAR IMAGENS</button>
+            <div class="ui hidden divider"></div>
+        </div>
 
-          <p class="texto_cel" style="text-align:center">OBTURADOR FECHADO:</p>
-          <p>
-              <img class="lazy-img" data-src="../img/tempo_de_exposicao/obturador_fechado.png" style="max-width: 80%;display: block;margin:0 auto;" />
-          </p><br>
-          <p class="texto_cel" style="text-align:center">DURANTE A FOTO:</p>
-          <p>
-              <img class="lazy-img" data-src="../img/tempo_de_exposicao/obturador_aberto.png" style="max-width: 80%;display: block;margin:0 auto;" />
-          </p><br>
+        <div itemprop="articleBody" style="font-size:1.1em">
+            <p>Na aula <a href='./o_basico'>O Básico</a> vimos que os raios que atravessam a lente da câmera passam pelo <a href='./abertura'>diafragma</a> e atingem o sensor. O sensor converte esses raios de luz em sinais elétricos que podem ser usados
+                pelo &quot;cérebro&quot; da câmera para formar a imagem digital.</p>
+            <p>Raios de luz chegam o tempo todo na lente, mas só queremos que atinjam o sensor na hora da foto. É para isso que existe o obturador. Ele funciona como uma cortina, que bloqueia os raios de luz e só abre durante a foto.</p><br>
 
+            <p class="texto_cel" style="text-align:center">OBTURADOR FECHADO:</p>
+            <p>
+                <img class="lazy-img" data-src="../img/tempo_de_exposicao/obturador_fechado.png" style="max-width: 80%;display: block;margin:0 auto;" />
+            </p><br>
+            <p class="texto_cel" style="text-align:center">DURANTE A FOTO:</p>
+            <p>
+                <img class="lazy-img" data-src="../img/tempo_de_exposicao/obturador_aberto.png" style="max-width: 80%;display: block;margin:0 auto;" />
+            </p><br>
 
-            <p></p><div class="ui hidden divider"></div>
+            <p></p>
+            <div class="ui hidden divider"></div>
             <h2 class="ui header" style="padding-top:2em">Tempo de exposição</h2>
             <p>Quando clicamos o botão para tirar a foto, o obturador abre, e luz fica atingindo o sensor até o obturador fechar novamente. Chamamos de <strong>tempo de exposição</strong> o tempo em que o obturador fica aberto.</p>
-            <p>Enquanto o obturador está aberto, cada pontinho da foto (ou seja, cada pixel do sensor) vai ficando mais claro conforme a luz vai atingindo ele. Assim, quanto maior o tempo de exposição, mais clara vai ficando a foto, pois mais luz atinge os pixels do sensor.</p>
-            <br><p style="text-align:center"><i class="fa fa-quote-left"  style="font-size:1.5em"></i> <b>Quanto maior o tempo de exposição, mais clara a foto! </b><i class="fa fa-quote-right"  style="font-size:1.5em"></i></p><br>
+            <p>Enquanto o obturador está aberto, cada pontinho da foto (ou seja, cada pixel do sensor) vai ficando mais claro conforme a luz vai atingindo ele. Assim, quanto maior o tempo de exposição, mais clara vai ficando a foto, pois mais luz atinge
+                os pixels do sensor.</p>
+            <br>
+            <p style="text-align:center"><i class="fa fa-quote-left" style="font-size:1.5em"></i> <b>Quanto maior o tempo de exposição, mais clara a foto! </b><i class="fa fa-quote-right" style="font-size:1.5em"></i></p><br>
             <p>Câmeras que não têm obturador (ex.: celulares, compactas e mirrorless) permitem controle do tempo de exposição pelo tempo em que o sensor fica ligado.</p>
 
-            <p></p><div class="ui hidden divider"></div>
+            <p></p>
+            <div class="ui hidden divider"></div>
             <h2 class="ui header" style="padding-top:2em">Congelando o movimento</h2>
             <p>Mudar o tempo de exposição não é útil apenas para controlar a claridade da imagem. Também podemos <strong>congelar</strong> ou <strong>borrar</strong> o movimento. Imagine-se fotografando um pássaro batendo as asas.</p>
             <p>Fotos com exposições curtas vão mostrar as asas nitidamente na posição em que estavam na hora da foto:</p>
@@ -112,74 +151,63 @@
             <p>
                 <img class="lazy-img" data-src="../img/tempo_de_exposicao/asa_tremida.png" style="max-width: 60%;display: block;margin:0 auto;" />
             </p>
-            <p></p><div class="ui hidden divider"></div>
+            <p></p>
+            <div class="ui hidden divider"></div>
             <h2 class="ui header" style="padding-top:2em">Desenhando com a luz</h2>
-            <p>Você já deve ter visto fotos noturnas de ruas que só mostram o rastro do farol dos carros… Elas são feitas com tempos de exposição longos. Essa <a href='https://www.flickr.com/photos/ryan-scott/14411447439/in/photolist-nXureH-tFeX1b-FTEkbS-s1XYCR-oeYPeG-ocdu6S-ot3Ued-of1tTK-oV3TPs-owe5Jt-odcLPg-w9EkAn-occ1a3-ov4bcj-owjEyU-owcsEQ-occDwP-ocd1C4-wP5pAY-oui7d9-xB9mTt-owcRTF-oeTrL3-6J1jkB-of2rQU-odhWns-oeTyLV-ouHrAf-6Vyu31-oeZZRb-odaQkk-tCU7qp-oeQ7C8-ocdMLR-rrBZS5-oun8C3-otU7Yj-osHBiY-s1PDHa-oszPXG-od4tkz-rpVHPt-ocaxqL-rqjDev-ouPL8r-6J1jgn-od5Qhz-owjTk8-orF7r9-ov9U1P'>foto</a> do dr-scott, por exemplo, teve uma exposição de 30 segundos.</p>
+            <p>Você já deve ter visto fotos noturnas de ruas que só mostram o rastro do farol dos carros… Elas são feitas com tempos de exposição longos. Essa <a href='https://www.flickr.com/photos/ryan-scott/14411447439/in/photolist-nXureH-tFeX1b-FTEkbS-s1XYCR-oeYPeG-ocdu6S-ot3Ued-of1tTK-oV3TPs-owe5Jt-odcLPg-w9EkAn-occ1a3-ov4bcj-owjEyU-owcsEQ-occDwP-ocd1C4-wP5pAY-oui7d9-xB9mTt-owcRTF-oeTrL3-6J1jkB-of2rQU-odhWns-oeTyLV-ouHrAf-6Vyu31-oeZZRb-odaQkk-tCU7qp-oeQ7C8-ocdMLR-rrBZS5-oun8C3-otU7Yj-osHBiY-s1PDHa-oszPXG-od4tkz-rpVHPt-ocaxqL-rqjDev-ouPL8r-6J1jgn-od5Qhz-owjTk8-orF7r9-ov9U1P'>foto</a>                do dr-scott, por exemplo, teve uma exposição de 30 segundos.</p>
             <p>
                 <img class="lazy-img" data-src="../img/tempo_de_exposicao/luz_carros.jpg" style="max-width: 90%;display: block;margin:0 auto;" />
             </p>
 
-            <p></p><div class="ui hidden divider"></div>
+            <p></p>
+            <div class="ui hidden divider"></div>
             <h2 class="ui header" style="padding-top:2em">Na câmera</h2>
             <p>Da mesma forma que a abertura, existem várias formas de controlar o tempo de exposição na câmera. Uma das possibilidades para controlar a abertura é deixando a câmera no modo manual (geralmente indicado por <strong>M</strong> na câmera). O
-                manual te dá controle total sobre as possibilidades de sua câmera, mas em contrapartida não existe mais ajuste automático para a claridade da foto. Assim, se você aumenta o tempo de exposição, a foto vai ficando mais clara, porque a câmera não compensa
-                a claridade alterando outro ajuste (como a <a href="./abertura.html">abertura</a> ou o <a href="./iso.html">ISO</a>).</p>
+                manual te dá controle total sobre as possibilidades de sua câmera, mas em contrapartida não existe mais ajuste automático para a claridade da foto. Assim, se você aumenta o tempo de exposição, a foto vai ficando mais clara, porque a câmera
+                não compensa a claridade alterando outro ajuste (como a <a href="./abertura.html">abertura</a> ou o <a href="./iso.html">ISO</a>).</p>
             <img class="lazy-img" data-src='../img/abertura/manual.png' alt='modo manual' style="max-width: 60%;display: block;margin:0 auto;" />
-            <p>Se você quer controlar apenas o tempo de exposição de sua foto, existe uma opção mais prática: o modo <strong>prioridade do obturador</strong> (geralmente indicado por <strong>S</strong> ou <strong>Tv</strong> na câmera). Nesse modo, a câmera vai adotar
-                a velocidade que você desejar, mas vai compensar a mudança na claridade alterando outro ajuste (normalmente a <a href="./abertura.html">abertura</a>).</p>
+            <p>Se você quer controlar apenas o tempo de exposição de sua foto, existe uma opção mais prática: o modo <strong>prioridade do obturador</strong> (geralmente indicado por <strong>S</strong> ou <strong>Tv</strong> na câmera). Nesse modo, a câmera
+                vai adotar a velocidade que você desejar, mas vai compensar a mudança na claridade alterando outro ajuste (normalmente a <a href="./abertura.html">abertura</a>).</p>
             <img class="lazy-img" data-src='../img/tempo_de_exposicao/roda.png' alt='prioridade-obturador' style="max-width: 60%;display: block;margin:0 auto;" />
         </div>
     </section>
 
-    <script>
-        //detectar mobile
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            $('#qr_btn').hide()
-            $('#carr-img-container').show()
-            $('.texto_cel').hide()
-        } else {
-            $('.lazy-img').imageloader();
-            $('#carr-img-container').hide()
-        };
-    </script>
 
-    <div class="ui hidden divider"></div>
 
-    <div class="ui two column grid container">
-      <div class="column">
-        <a class="no-print" href="https://jala015.typeform.com/to/EuIIA2" target="_blank"><i class="fa fa-question-circle" style="color:black;font-size:1.5em" data-content="Enviar dúvida" data-variation="inverted basic" id="duvida"></i></a>
-        <script>
-            $('#duvida').popup()
-        </script>
-          <script>
-              $('#duvida').popup()
-          </script>
-          <footer class="no-screen"><h4 class="ui header">cursofotografia.cf</h4></footer>
+    <footer class="ui center aligned container no-print">
+      <div class="ui hidden divider"></div>
+      <div class="ui hidden divider"></div>
+      <a rel="license" href="../creativecommons.html"><img id="creative-commons" data-content="Como reutilizar esse texto" data-position="top center" data-variation="inverted basic" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+      <div class="ui hidden divider"></div>
+
+      <div class="ui three fluid large buttons only-mobile" style="width:100%">
+          <a class="ui button" href='./regra_dos_tercos.html'><i class="fa fa-caret-left" style="font-size:2em;"></i></a>
+          <a class="ui button" href="https://jala015.typeform.com/to/EuIIA2" target="_blank"><i class="fa fa-question" style="font-size:2em;"></i></a>
+          <a class="ui button" href='./balanco_de_brancos.html'><i class="fa fa-caret-right" style="font-size:2em;"></i></a>
       </div>
-        <div class="column">
-            <p class="ui right aligned container" style="font-size:0.8em">
-                <a rel="license" href="../creativecommons.html"><img id="creative-commons" data-content="Como reutilizar esse texto" data-position="top right" data-variation="inverted" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
-                    /></a>
-            </p>
-            <script>
-                $('#creative-commons').popup()
-            </script>
-        </div>
-    </div>
+      <script>
+          $('#creative-commons').popup()
+      </script>
+    </footer>
 
-    <footer class="ui center aligned container">
-        <div class="ui hidden divider"></div>
+    <footer class="ui center aligned container no-mobile">
         <div class="ui buttons no-print">
-            <button class="ui basic button" onclick="location.href='regra_dos_tercos.html'" data-content="Regra dos Terços" data-variation="inverted" id="btn_voltar"><i class="fa fa-caret-left" style="font-size:2em;"></i></button>
-            <button class="ui basic button" onclick="location.href='../aulas.html'"><div class="sub header">AULAS</div></button>
-            <button class="ui basic button" onclick="location.href='./balanco_de_brancos.html'" data-content="Balanço de Brancos" data-variation="inverted" id="btn_proximo"><i class="fa fa-caret-right" style="font-size:2em;"></i></button>
-            <script>
-                $('#btn_proximo').popup()
-            </script>
+            <a class="ui basic button" id="btn_voltar" href='./regra_dos_tercos.html' data-content="Regra dos Terços" data-variation="inverted"><i class="fa fa-caret-left" style="font-size:2em;"></i></a>
             <script>
                 $('#btn_voltar').popup()
             </script>
+            <a class="ui basic button" href='../aulas.html'><div class="sub header">AULAS</div></a>
+            <a class="ui basic button" href='./balanco_de_brancos.html' data-content="Balanço de Brancos" data-variation="inverted" id="btn_proximo"><i class="fa fa-caret-right" style="font-size:2em;"></i></a>
+            <script>
+                $('#btn_proximo').popup()
+            </script>
         </div>
+
+        <footer class="no-screen center aligned container">
+          <div class="ui hidden divider">
+          <h4 class="ui header">cursofotografia.cf</h4>
+          <div class="ui hidden divider">
+        </footer>
     </footer>
 
     <div class="ui basic modal">
@@ -188,32 +216,38 @@
     </div>
 
     <script>
-        $("#btn_cam").click(function() {
-            $("#aula_pc").hide();
-            $("#aula_cam").show();
-        });
-        $("#btn_pc").click(function() {
-            $("#aula_cam").hide();
-            $("#aula_pc").show();
-        });
+      $("#qr_btn").click(function() {
+          $('.ui.basic.modal')
+              .modal('show');
+      });
 
-        $("#back-to-top-btn").click(function() {
-            $('html, body').scrollTop(0);
-        });
-
-        $("#qr_btn").click(function() {
-            $('.ui.basic.modal')
-                .modal('show');
-        });
-
-        $('#btn-carr-img').click(function() {
-            $('.lazy-img').imageloader();
-            $('#carr-img-container').hide()
-            $('.texto_cel').show()
-        });
+      $('#btn-carr-img').click(function() {
+          $('.lazy-img').imageloader();
+          $('#carr-img-container').hide()
+          $(".texto_cel").show()
+      });
     </script>
 
+    <script>
+      //detectar mobile
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          $('.no-mobile').hide();
+          $('.only-mobile').show();
+          $('#titulo').css("padding-top","3em");
+          $(".texto_cel").hide()
+      } else {
+          $('.lazy-img').imageloader();
+          $('.only-mobile').hide();
+          $('.no-mobile').show();
+      };
+    </script>
 
+  </div>
+  <script>
+    $(document).ready(function() {
+      $('#antiflash').transition('fade',400);
+    });
+  </script>
 </body>
 
 </html>

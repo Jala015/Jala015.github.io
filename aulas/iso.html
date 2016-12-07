@@ -1,5 +1,33 @@
 <html lang="pt-BR">
-<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40664679 = new Ya.Metrika({ id:40664679, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40664679" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter40664679 = new Ya.Metrika({
+                    id: 40664679,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true
+                });
+            } catch (e) {}
+        });
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function() {
+                n.parentNode.insertBefore(s, n);
+            };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks");
+</script> <noscript><div><img src="https://mc.yandex.ru/watch/40664679" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
 <head>
     <title>ISO</title>
@@ -15,24 +43,25 @@
 
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
 
-
     <style>
-  ::-moz-selection { /* Code for Firefox */
-    color: black;
-    background: orange;
-  }
+         ::-moz-selection {
+            /* Code for Firefox */
+            color: black;
+            background: orange;
+        }
 
-  ::selection {
-    color: black;
-    background: orange;
-  }
-  </style>
+         ::selection {
+            color: black;
+            background: orange;
+        }
+    </style>
 </head>
 
 
-<body onload="MostraSoUm();" style="background: #ededed">
+<body style="background: #ededed">
+  <div style="display:none" id="antiflash">
 
-    <header>
+    <header class="no-mobile">
         <div class="ui grid container no-print" style="width:90%">
             <div class="left aligned left floated ten wide column">
                 <div class="column" style="padding: 15px 0; text-align:left">
@@ -45,122 +74,123 @@
                     </div>
                 </div>
             </div>
+
             <div class="six wide column" style="padding: 27px 0; text-align:right;">
                 <a style="font-size:1.5em;color: black;margin: auto;" id="qr_btn" data-content="Continue no celular" data-variation="inverted basic" data-position="bottom right"><i class="fa fa-qrcode"></i></a>
                 <script>
                     $('#qr_btn').popup()
                 </script>
-                <div class="ui center aligned container" id="carr-img-container" hidden>
-                    <button class="ui orange button" id="btn-carr-img">CARREGAR IMAGENS</button>
-                    <div class="ui hidden divider"></div>
-                </div>
             </div>
         </div>
     </header>
 
-
+    <header class="only-mobile" style="display:none">
+        <div class="ui three fluid large buttons" style="position: fixed; top: 0; left: 0;z-index: 999;">
+            <a class="ui button" href="../index.html">Início</a>
+            <a class="ui button" href="../aulas.html">Aulas</a>
+            <a class="ui active button">ISO</a>
+        </div>
+    </header>
 
 
     <section itemscope itemtype="http://schema.org/Article" class="ui text container">
-        <h1 itemprop="name" class="ui center aligned header">ISO</h1>
 
-        <div class="ui horizontal divider no-print"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/iso.html" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a>
+        <h1 itemprop="name" class="ui center aligned header" style="padding-top:2em" id="titulo">ISO</h1>
+
+        <div class="ui horizontal divider no-print no-mobile"><a href="https://facebook.com/sharer.php?u=https://cursofotografia.cf/aulas/iso.html" target="_blank"><i class="fa fa-facebook-square" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="compartilhe" data-position="left center" data-variation="inverted" id="btn_face"></i></a>
             <script>
                 $('#btn_face').popup()
             </script>
-            <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf/aulas/iso&text=Dica%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="tweet" data-position="right center" data-variation="inverted" id="btn_tweeter"></i></a>
+            <a href="https://twitter.com/intent/tweet?url=https://cursofotografia.cf/aulas/iso&text=Dica%20simples%20de%20fotografia!%20" target="_blank"><i class="fa fa-twitter" style="font-size: 1.3em; color:black; padding: 0 10px" data-content="tweet" data-position="right center" data-variation="inverted" id="btn_twitter"></i></a>
             <script>
-                $('#btn_tweeter').popup()
+                $('#btn_twitter').popup()
             </script>
         </div>
 
         <div class="ui hidden divider"></div>
 
-        <div itemprop="articleBody"  style="font-size:1.1em">
+        <div class="ui center aligned container" id="carr-img-container">
+            <button class="ui orange fluid button only-mobile" id="btn-carr-img">CARREGAR IMAGENS</button>
+            <div class="ui hidden divider"></div>
+        </div>
+
+        <div itemprop="articleBody" style="font-size:1.1em">
             <p>Você provavelmente já tirou fotos noturnas com o celular e se deparou com uma foto toda granulada. Isso acontece porque o celular está programado para aumentar a sensibilidade do sensor em condições de pouca luz. Chamamos de ISO a medida da
                 sensibilidade do sensor à luz.</p>
             <p>Um ISO baixo significa um sensor menos sensível e consequentemente uma foto mais escura. Aumentar o iso clareia a imagem, mas isso acaba gerando ruído digital.</p>
             <p>A escala de ISO em que uma câmera trabalha pode variar bastante, mas geralmente fica em uma faixa entre 100 e 800. Mudar de 200 para 400 significa duplicar a claridade da imagem. Chamamos de <strong>low key</strong> ISOs excessivamente baixos
                 e de <strong>high key</strong> ISOs excessivamente altos.</p>
-                <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
             <h2 class="ui header" style="padding-top:2em">O ruído</h2>
             <p>Chamamos de ruído a granulação da foto. O ruído aparece porque sensores muito sensíveis começam a registrar raios de luz onde eles não existem. Na verdade, toda foto tem ruído, mas ele fica menos expressivo com sensibilidades menores do sensor.</p>
             <p>Detalhe de imagem com ruído (foto inteira no <a href="https://www.flickr.com/photos/135602814@N04/30153995161" target="_blank">Flickr</a>):</p>
-            <img class="lazy-img" data-src='../img/iso/asa.png' alt='foto' style="max-width: 60%;display: block;margin:0 auto;" /></p><div class="ui hidden divider"></div>
+            <img class="lazy-img" data-src='../img/iso/asa.png' alt='foto' style="max-width: 60%;display: block;margin:0 auto;" /></p>
+            <div class="ui hidden divider"></div>
             <h2 class="ui header" style="padding-top:2em">Quando ajustar o ISO</h2>
             <p>Se você não quer ruído, o ideal é tentar manter o ISO sempre baixo (±100) e priorizar outros ajustes para clarear a foto. Recomendo mudar a <a href="./abertura.html">abertura</a> ou a velocidade do obturador. Em alguns casos, também pode ser
                 usado o flash ou outras fontes de iluminação adicionais.</p>
             <p>Em algumas situações não é possível realizar esses ajustes: ao fotografar pássaros voando, por exemplo, a prioridade é uma velocidade rápida no obturador (para congelar o movimento) e uma abertura pequena (para aumentar a profundidade de campo).
                 Alterações no ISO se tornam necessárias. O excesso de ruído pode ser removido depois no computador, mas a qualidade nunca fica a mesma.</p>
-            <p>Dispositivos <em>mobile</em> costumam ter a abertura fixa. Assim, são programados para aumentarem o ISO em fotos noturnas.</p><div class="ui hidden divider"></div>
+            <p>Dispositivos <em>mobile</em> costumam ter a abertura fixa. Assim, são programados para aumentarem o ISO em fotos noturnas.</p>
+            <div class="ui hidden divider"></div>
 
             <div class="ui styled fluid accordion no-print" style="background:#ededed">
                 <h2 class="title">Antigamente <i class="fa fa-chevron-down"></i></h2>
                 <div class="content">
-            <p>Antes da fotografia digital, o filme da câmera (que fazia o papel do sensor) era oferecido em várias velocidades. Usar um filme rápido significava usar um filme que precisa de menos luz para gerar uma imagem na luminosidade adequada. A velocidade
-                do filme era medida pela escala ASA (hoje convertida para ISO) e se dava pelo tamanho dos cristais fotosensiveis do filme. Esses cristais escureciam quando expostos à luz. Quanto maiores os cristais, mais sensível o o filme, mas a foto
-                ficava mais granulada.</p>
-              </div></div>
-              <div class="no-screen">
+                    <p>Antes da fotografia digital, o filme da câmera (que fazia o papel do sensor) era oferecido em várias velocidades. Usar um filme rápido significava usar um filme que precisa de menos luz para gerar uma imagem na luminosidade adequada.
+                        A velocidade do filme era medida pela escala ASA (hoje convertida para ISO) e se dava pelo tamanho dos cristais fotosensiveis do filme. Esses cristais escureciam quando expostos à luz. Quanto maiores os cristais, mais sensível
+                        o o filme, mas a foto ficava mais granulada.</p>
+                </div>
+            </div>
+            <div class="no-screen">
                 <h2 class="ui center aligned header">Antigamente</h2>
-                <p>Antes da fotografia digital, o filme da câmera (que fazia o papel do sensor) era oferecido em várias velocidades. Usar um filme rápido significava usar um filme que precisa de menos luz para gerar uma imagem na luminosidade adequada. A velocidade
-                  do filme era medida pela escala ASA (hoje convertida para ISO) e se dava pelo tamanho dos cristais fotosensiveis do filme. Esses cristais escureciam quando expostos à luz. Quanto maiores os cristais, mais sensível o o filme, mas a foto
-                  ficava mais granulada.</p></div>
+                <p>Antes da fotografia digital, o filme da câmera (que fazia o papel do sensor) era oferecido em várias velocidades. Usar um filme rápido significava usar um filme que precisa de menos luz para gerar uma imagem na luminosidade adequada. A
+                    velocidade do filme era medida pela escala ASA (hoje convertida para ISO) e se dava pelo tamanho dos cristais fotosensiveis do filme. Esses cristais escureciam quando expostos à luz. Quanto maiores os cristais, mais sensível o o filme,
+                    mas a foto ficava mais granulada.</p>
+            </div>
 
-              <script>
-                  $('.ui.accordion')
-                      .accordion();
-              </script>
+            <script>
+                $('.ui.accordion')
+                    .accordion();
+            </script>
     </section>
 
 
-    <script>
-        //detectar mobile
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            $('#qr_btn').hide()
-            $('#carr-img-container').show()
-        } else {
-            $('.lazy-img').imageloader();
-            $('#carr-img-container').hide()
-        };
-    </script>
 
-    <div class="ui hidden divider"></div>
-    <div class="ui two column grid container">
-      <div class="column">
-        <a class="no-print" href="https://jala015.typeform.com/to/EuIIA2" target="_blank"><i class="fa fa-question-circle" style="color:black;font-size:1.5em" data-content="Enviar dúvida" data-variation="inverted basic" id="duvida"></i></a>
-        <script>
-            $('#duvida').popup()
-        </script>
-          <script>
-              $('#duvida').popup()
-          </script>
-          <footer class="no-screen"><h4 class="ui header">cursofotografia.cf</h4></footer>
+    <footer class="ui center aligned container no-print">
+      <div class="ui hidden divider"></div>
+      <div class="ui hidden divider"></div>
+      <a rel="license" href="../creativecommons.html"><img id="creative-commons" data-content="Como reutilizar esse texto" data-position="top center" data-variation="inverted basic" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+      <div class="ui hidden divider"></div>
+
+      <div class="ui three fluid large buttons only-mobile" style="width:100%">
+          <a class="ui button" href='./abertura.html'><i class="fa fa-caret-left" style="font-size:2em;"></i></a>
+          <a class="ui button" href="https://jala015.typeform.com/to/EuIIA2" target="_blank"><i class="fa fa-question" style="font-size:2em;"></i></a>
+          <a class="ui button" href='./regra_dos_tercos.html'><i class="fa fa-caret-right" style="font-size:2em;"></i></a>
       </div>
-        <div class="column">
-            <p class="ui right aligned container" style="font-size:0.8em">
-                <a rel="license" href="../creativecommons.html"><img id="creative-commons" data-content="Como reutilizar esse texto" data-position="top right" data-variation="inverted" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
-                    /></a>
-            </p>
-            <script>
-                $('#creative-commons').popup()
-            </script>
-        </div>
-    </div>
+      <script>
+          $('#creative-commons').popup()
+      </script>
+    </footer>
 
-    <footer class="ui center aligned container">
-        <div class="ui hidden divider"></div>
+    <footer class="ui center aligned container no-mobile">
         <div class="ui buttons no-print">
-            <button class="ui basic button" id="btn_voltar" onclick="location.href='./abertura.html'" data-content="Abertura" data-variation="inverted"><i class="fa fa-caret-left" style="font-size:2em;"></i></button>
+            <a class="ui basic button" id="btn_voltar" href='./abertura.html' data-content="Abertura" data-variation="inverted"><i class="fa fa-caret-left" style="font-size:2em;"></i></a>
             <script>
                 $('#btn_voltar').popup()
             </script>
-            <button class="ui basic button" onclick="location.href='../aulas.html'"><div class="sub header">AULAS</div></button>
-            <button class="ui basic button" onclick="location.href='./regra_dos_tercos.html'"data-content="Regra dos Terços" data-variation="inverted" id="btn_proximo"><i class="fa fa-caret-right" style="font-size:2em;"></i></button>
+            <a class="ui basic button" href='../aulas.html'><div class="sub header">AULAS</div></a>
+            <a class="ui basic button" href='./regra_dos_tercos.html' data-content="Regra dos Terços" data-variation="inverted" id="btn_proximo"><i class="fa fa-caret-right" style="font-size:2em;"></i></a>
             <script>
                 $('#btn_proximo').popup()
             </script>
         </div>
+
+        <footer class="no-screen center aligned container">
+          <div class="ui hidden divider">
+          <h4 class="ui header">cursofotografia.cf</h4>
+          <div class="ui hidden divider">
+        </footer>
     </footer>
 
     <div class="ui basic modal">
@@ -169,30 +199,36 @@
     </div>
 
     <script>
-        $("#btn_cam").click(function() {
-            $("#aula_pc").hide();
-            $("#aula_cam").show();
-        });
-        $("#btn_pc").click(function() {
-            $("#aula_cam").hide();
-            $("#aula_pc").show();
-        });
+      $("#qr_btn").click(function() {
+          $('.ui.basic.modal')
+              .modal('show');
+      });
 
-        $("#back-to-top-btn").click(function() {
-            $('html, body').scrollTop(0);
-        });
-
-        $("#qr_btn").click(function() {
-            $('.ui.basic.modal')
-                .modal('show');
-        });
-
-        $('#btn-carr-img').click(function() {
-            $('.lazy-img').imageloader();
-            $('#carr-img-container').hide()
-        });
+      $('#btn-carr-img').click(function() {
+          $('.lazy-img').imageloader();
+          $('#carr-img-container').hide()
+      });
     </script>
 
+    <script>
+      //detectar mobile
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          $('.no-mobile').hide();
+          $('.only-mobile').show();
+          $('#titulo').css("padding-top","3em");
+      } else {
+          $('.lazy-img').imageloader();
+          $('.only-mobile').hide();
+          $('.no-mobile').show();
+      };
+    </script>
+
+  </div>
+  <script>
+    $(document).ready(function() {
+      $('#antiflash').transition('fade',400);
+    });
+  </script>
 </body>
 
 </html>
