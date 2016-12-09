@@ -74,7 +74,7 @@
 
             <div class="center aligned column">
                 <div class="column" style="padding: 15px 0; text-align:center;padding-top:2em">
-                    <h2 class="ui center aligned header">Aulas</h2>
+                    <h2 class="ui center aligned header" id="tituloSuave" style="display:none">Aulas</h2>
                 </div>
             </div>
 
@@ -245,7 +245,9 @@
 </div>
 <script>
   $(document).ready(function() {
+    $('#tituloSuave').transition('drop',500);
     $('#antiflash').transition('fade',400);
+
   });
 </script>
 </body>
