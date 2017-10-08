@@ -1,186 +1,102 @@
-<html lang="pt-BR">
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40664679 = new Ya.Metrika({ id:40664679, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40664679" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Roleatório</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-    <title>CursoFotografia</title>
-    <link rel="shortcut icon" href="../img/camera.ico" />
-    <meta name="description" content="É iniciante em fotografia? Esse site tem dicas fáceis que podem melhorar muito a qualidade de suas fotos!">
-    <meta name="keywords" content="foto, fotografia, curso de fotografia, iniciante">
+    <!--Mapbox-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />
 
-    <meta name="google-site-verification" content="CXVEzAskxjuK1qFsQEFbEJxgVFkprXlRYrSyhwCbI18" />
-    <meta name="msvalidate.01" content="88FB0353947566E58B75D375B20CF2DF" />
-
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="./semantic/semantic.css">
-    <script src="./semantic/jquery.min.js" manifest="./cacheJQuery.appcache"></script>
-    <script src="./semantic/semantic.min.js" manifest="./cacheSemanticJS.appcache"></script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4/css/bootstrap.css">
+    <!--carregar Vue-->
+    <script src="https://unpkg.com/vue"></script>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="img_src" data-src="../img/perfil.png" />
+    <!--fontes-->
+    <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+  </head>
 
-    <style>
-         ::-moz-selection {
-            /* Code for Firefox */
-            color: black;
-            background: orange;
-        }
+  <body style="background:#3fd2ff">
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="#"><img src="./images/icon.png" width="40" height="40"></a>
+      <h1 class="text-dark" style="text-align:center; padding-top: 10px; font-family: 'Concert One'">Roleatório</h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">App <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ajuda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Patrocine</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-         ::selection {
-            color: black;
-            background: orange;
-        }
-    </style>
-</head>
-
-<body style="background: #ededed">
-
-    <header>
-        <div class="ui hidden divider no-mobile"></div>
-        <div class="ui hidden divider no-mobile"></div>
-        <div class="ui hidden divider"></div>
-        <h1 class="ui center aligned header"><div class="sub header" style="font-size:0.6em;padding-right:180px;color:#FD9A08">CURSO</div>F O T [ O ] G R A F I A
-  </h1>
-        <div class="ui hidden divider"></div>
-        <div class="ui hidden divider"></div>
-        <div class="ui hidden divider"></div>
-        <div class="ui hidden divider"></div>
-    </header>
-    <section class="ui container" style="width:80%">
-
-        <div class="ui two doubling cards" style="font-family:Nunito">
-            <a class="ui card" href="./aulas.html">
-                <div class="content">
-                    <div class="ui center aligned header" style="font-size:1.4em">Aulas</div>
-                    <div class="description" style="text-align:center;font-size:1.1em">
-                        Domine os controles da sua câmera
-                    </div>
-                </div>
-                <div class="ui center aligned container" style="text-align:center;color:black;padding-bottom:1em">
-                    <i class="fa fa-graduation-cap" style="font-size:1.5em;"></i>
-                </div>
-            </a>
-            <a class="ui card" href="./dicas-rapidas.html">
-                <div class="content">
-                    <div class="ui center aligned header" style="font-size:1.4em">Dicas Rápidas</div>
-                    <div class="description" style="text-align:center;font-size:1.1em">
-                        Soluções para problemas comuns
-                    </div>
-                </div>
-                <div class="ui center aligned container" style="text-align:center;color:black;padding-bottom:1em">
-                    <i class="fa fa-lightbulb-o" style="font-size:2em;"></i>
-                </div>
-            </a>
-        </div>
-
-        <div class="ui hidden divider"></div>
-        <div class="ui hidden divider"></div>
-
-
-
-
-        <div class="ui four tiny buttons center aligned container">
-
-          <a class="ui vertical animated button" href="https://www.facebook.com/cursofotocf" style="border-width:2px" target="_blank">
-              <div class="visible content">
-                  <i class="fa fa-facebook-square" style="font-size:2em"></i>
-              </div>
-              <div class="hidden content">
-                  <span style="font-size:1.5em;font-family:Nunito">Facebook</span>
-              </div>
-          </a>
-
-          <a class="ui vertical animated button" href="https://twitter.com/cursofotocf" style="border-width:2px" target="_blank">
-              <div class="visible content">
-                  <i class="fa fa-twitter" style="font-size:2em"></i>
-              </div>
-              <div class="hidden content">
-                  <span style="font-size:1.5em;font-family:Nunito">Twitter</span>
-              </div>
-          </a>
-
-            <a class="ui vertical animated button" href="https://jala015.typeform.com/to/EuIIA2" style="border-width:2px" target="_blank">
-                <div class="visible content">
-                    <i class="fa fa-comments" style="font-size:2em"></i>
-                </div>
-                <div class="hidden content">
-                    <span style="font-size:1.5em;font-family:Nunito">Contato</span>
-                </div>
-            </a>
-
-            <a class="ui vertical animated button" href="http://500px.com/felipebouabci" style="border-width:2px" target="_blank">
-                <div class="visible content">
-                    <i class="fa fa-500px" style="font-size:2em"></i>
-                </div>
-                <div class="hidden content">
-                    <span style="font-size:1.5em;font-family:Nunito">500px</span>
-                </div>
-            </a>
-        </div>
-
-        <div class="ui center aligned container">
-            <div class="ui hidden divider"></div>
-            <p class="frases_vantagens" style="font-family:Nunito;font-size:1.2em;height:1.5em">
-              <span class="vantagem" id="1">Aulas ilustradas pelo artista <a href="https://www.instagram.com/cadu_mg/" target="_blank">@cadu_mg</a></span>
-              <span class="vantagem" id="2">Poupa dados em celulares</span>
-              <span class="vantagem" id="3">Nenhuma propaganda no site inteiro</span>
-              <span class="vantagem" id="4">Páginas minimalistas e intuitivas</span>
-              <span class="vantagem" id="5">Aulas otimizadas para impressão</span>
-              <span class="vantagem" id="6">Textos em <a href="./creativecommons.html">Creative Commons</a></span>
-            </p>
+    <br/>
+    <div id="vue-app">
+      <div class="container" style="max-width:768px">
+        <div class="card bg-light">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center">Adicione os endereços dos amigos</h5>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Buscar..." aria-label="Buscar..." v-model='endTemp' @keyup.enter='addItem'>
+              <span class="input-group-btn">
+                <button class="btn btn-primary d-none d-md-block" type="button" @click='addItem'>Adicionar endereço</button>
+              </span>
+            </div>
+            <button class="btn btn-primary btn-block d-sm-block d-md-none" type="button" style="margin-top: 15px;" @click='addItem'>Adicionar endereço</button>
           </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="container" style="max-width:768px">
+        <div class="row">
+          <div class="col">
+            <ul class="list-group bg-light" style="border-radius:10px">
+                <li v-for='(item,index) in ruas' class="list-group-item">
+                  <div class="row">
+                    <div class="col">
+                      {{item}}
+                    </div>
+                    <div class='col' style="text-align:right">
+                      <button type="button" class="btn btn-outline-danger btn-sm" role="button" v-on:click='rmItem(index)' style="border:none;border-radius:30px"><i class="fa fa-times"></i></button>
+                    </div>
+                  </div>
+                </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div id='map' style='width: 100%; height: 300px;'></div>
+            <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiamFsYTAxNSIsImEiOiJjaXp2cmx5bzIwMWRuMzJtbTBsMXZ3bGhvIn0.75PRgXO12Zs1s9cvCWk67A';
+            var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/light-v9'
+            });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-        <script>
-          $(".vantagem").hide()
-          $("#1").show()
-          var num = 1
-          setInterval(function() {
-              id = '#' + num.toString();
-              id2 = '#' + (num + 1).toString();
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
-
-              if (num != 6) {
-                $(id).transition({
-                  transition: "fade",
-                  duration: "1s",
-                  onComplete: function() {$(id2).transition("fade", 1000);}
-                  });
-                  num = num + 1
-                }
-              else{
-                $("#6").transition({
-                  transition: "fade",
-                  duration: "1s",
-                  onComplete: function() {$("#1").transition("fade", 1000);}
-                  });
-                  num=1
-                }
-          }, 5000);
-        </script>
-
-
-
-
-
-            <div class="ui hidden divider"></div>
-
-    </section>
-
-    <script>
-        //detectar mobile
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            $('.no-mobile').hide();
-            $('.only-mobile').show();
-        } else {
-            $('.only-mobile').hide();
-            $('.no-mobile').show();
-        };
-    </script>
-
-</body>
-
+    <script src="app.js"></script>
+  </body>
 </html>
