@@ -172,3 +172,9 @@
 .icon-hex-lg:before {
 	content: "\e604";
 }
+
+@media only screen and (max-width: 767px) {
+	.honeycombs{
+		zoom:1.5
+	}
+}
