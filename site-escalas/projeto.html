@@ -10,7 +10,7 @@
 	  src="https://code.jquery.com/jquery-3.1.1.min.js"
 	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	  crossorigin="anonymous"></script>
-	<script src="semantic/semantic.min.js"></script>
+
 
 	<!--JQuery-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -33,38 +33,96 @@
 		}
 	</style>
 
+<!--semantic code-->
+<script src="semantic/semantic.min.js"></script>
 </head>
 
 <body>
 	<div class="ui container">
-		<div class="ui stackable grid">
-			<div class="fourteen wide column">
-				<div class="ui basic segment">
-					<img src="images/logo-scales-reduzido.png" width="250px">
-					<div class="ui basic segment" style="max-width:300px;padding-left:35px">
-							<p>NOSSO PROJETO ESTUDA A EVOLUÇÃO DOS VENENOS DAS SERPENTES ATRAVÉS DE VÁRIAS ESCALAS DE DIVERSIDADE</p>
-					</div>
-				</div>
+		<div class="ui grid">
+			<div class="four wide column computer tablet only">
+				<a class="ui image" href="./index.html">
+					<img src="images/logo-scales-reduzido.png" width="80px" style="padding-top:20px">
+				</a>
 			</div>
-			<div class="two wide column computer only" style="text-align:right">
-				<div class="ui small basic icon buttons" style="border:none">
+			<div class="sixteen wide column mobile only">
+				<h1 class="ui fluid dropdown header" id="menu" style="padding-top:25px;">
+					<div class="content">PROJETO <i class="dropdown icon"></i></div>
+
+					<div class="ui fluid basic menu">
+						<div class="ui basic computer fluid segment">
+							<a class="item">
+								<i class="home icon"></i>
+								Início
+							</a>
+						<div class="ui divider"></div>
+						<a class="item">
+							EQUIPE
+						</a>
+						<a class="item">
+							SERPENTES
+						</a>
+						<a class="item">
+							O VENENO
+						</a>
+						<a class="item">
+							VÍDEOS
+						</a>
+						<a class="item">
+							MATERIAL DIDÁTICO
+						</a>
+						<div class="ui divider"></div>
+						<div class="ui fluid attached buttons">
+							<button class="ui disabled button"><i class="brazil flag"></i></button>
+							<a class="ui button" href="./EN/index.html"><i class="us flag"></i></a>
+						</div>
+					</div>
+					</div>
+			</div>
+			<div class="eight wide column computer tablet only" style="text-align: center;">
+				<h1 class="ui dropdown center aligned header" id="menu" style="padding-top:25px;">
+					<div class="content">PROJETO <i class="dropdown icon"></i></div>
+
+					<div class="ui menu">
+						<div class="ui padded basic computer segment">
+						<a class="item">
+							EQUIPE
+						</a>
+						<a class="item">
+							SERPENTES
+						</a>
+						<a class="item">
+							O VENENO
+						</a>
+						<a class="item">
+							VÍDEOS
+						</a>
+						<a class="item">
+							MATERIAL DIDÁTICO
+						</a>
+					</div>
+					</div>
+			</div>
+			<div class="four wide column computer tablet only" style="text-align:right;">
+				<div class="ui basic icon buttons" style="border:none">
 						<button class="ui disabled button"><i class="brazil flag"></i></button>
 						<a class="ui button" href="./EN/index.html"><i class="us flag"></i></a>
 				</div>
 			</div>
-			<div class="two wide column mobile tablet only" style="text-align:center">
+			<!-- <div class="mobile tablet only" style="text-align:center">
 				<div class="ui big basic icon buttons" style="border:none">
 						<button class="ui disabled button"><i class="brazil flag"></i></button>
 						<a class="ui button" href="./EN/index.html"><i class="us flag"></i></a>
-				</div>
+				</div> -->
 			</div>
 		</div>
+		</h1>
 	</div>
-	<div class="ui hidden section divider"></div>
+	<div class="ui divider"></div>
 
-	<div class="ui container">
+	<div class="ui basic modal">
 		<div class="honeycombs">
-			<a class="comb comb2" href="./projeto.html" >
+			<a class="comb comb2" href="" >
 				<div class="front-content" tyle="font-size:5em">
 					<p>PROJETO</p>
 				</div>
@@ -142,12 +200,18 @@
 
 <script>
 	$(document).ready(function() {
-	$('.honeycombs').honeycombs({
-		combWidth:200,
-		margin: -20,
-		threshold: 3
+		$('.ui.dropdown').dropdown();
+		$('.honeycombs').honeycombs({
+			combWidth:200,
+			margin: -20,
+			threshold: 3
+		});
 	});
-});
-</script>
+ </script>
+ <script type="text/javascript">
+ $('#menu').click(function(){
+	 $('.ui.dropdown').dropdown();
+	 });
+ </script>
 </body>
 </html>
