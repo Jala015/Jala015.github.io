@@ -48,9 +48,9 @@
                 });
 
                 // Fix Firefox padding error
-                if (navigator.userAgent.search("Firefox") > -1) {
-                    $('.comb span').addClass('firefox');
-                }
+                // if (navigator.userAgent.search("Firefox") > -1) {
+                //     $('.comb span').addClass('firefox');
+                // }
             }
 
             /**
