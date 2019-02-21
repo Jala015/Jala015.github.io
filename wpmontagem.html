@@ -1,0 +1,69 @@
+<html lang="pt-BR">
+<head>
+    <title>Wpp Montagem PAX</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="./semantic/semantic.css">
+    <script src="./semantic/jquery.min.js" manifest="./cacheJQuery.appcache"></script>
+    <script src="./semantic/semantic.min.js" manifest="./cacheSemanticJS.appcache"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <style type="text/css">
+    body {
+      background-color: #DADADA;
+    }
+    body > .grid {
+      height: 100%;
+    }
+    .image {
+      margin-top: -100px;
+    }
+    .column {
+      max-width: 450px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="ui middle aligned center aligned grid">
+    <div class="column">
+      <form class="ui large form">
+        <div class="ui raised segment">
+          <div class="ui green message" align="left">
+            <div class="header">
+              Cole o telefone com o DDI do Brasil (+55), o DDD (11) e o número sem hifen
+            </div>
+          <br>  Exemplo:+55 (11) 9 4321-4321 deve ser colado como  +551143214321
+          </div>
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="lock icon"></i>
+              <input id="telefone" placeholder="Cole o telefone aqui">
+            </div>
+          </div>
+          <a class="ui fluid large green submit button" href="./404.html" target="blank"><i class="fa fa-whatsapp"> Abrir no whatsapp</i></a>
+        </div>
+      </form>
+      <div class="ui text container">
+        <br><i>Uso exclusivo da Montagem do Movimento PAX</i>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $.fn.api.settings.api = {
+      'mandar numero' : '{value}'
+    };
+    $(".button").click(function(){
+      var valor=$('#telefone').val();
+      $(this).attr("href", 'https://api.WhatsApp.com/send?phone='+valor);
+    });
+  </script>
+
+</body>
+
+</html>
